@@ -54,6 +54,16 @@ git add . && git commit -m "..." && git push
 - 队友 B 负责 `MenuScene/ResultScene`（UI）和素材
 - 不要同时改同一个文件
 
+### 已确认可协作的成员
+
+- 蓝婷婷（1948959676@qq.com）— 2026-10-18 通过 README 测试提交验证推送链路，见下方"协作测试记录"
+
+### 协作测试记录
+
+| 时间 | 操作人 | 内容 |
+|------|--------|------|
+| 2026-10-18 | 蓝婷婷 | 首次推送测试：在 README 增加本节，验证 clone/pull/commit/push 全链路 |
+
 ## 注意
 
 - npm 安装慢时加 `--registry=https://registry.npmmirror.com`
