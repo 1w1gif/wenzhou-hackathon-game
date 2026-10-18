@@ -1,8 +1,35 @@
 import Phaser from 'phaser';
 
+// 素材缺失时的兜底颜色：侦探黄 / 鱼丸绿 / 捣蛋鬼红 / 背景深蓝
+const FALLBACK_COLORS = {
+  detective: 0xffd166,
+  fishball: 0x06d6a0,
+  enemy: 0xef476f,
+  bg: 0x16213e,
+};
+
 export class GameScene extends Phaser.Scene {
   constructor() {
     super('GameScene');
+  }
+
+  preload() {
+    // 想换装：把图片按这些文件名放进 public/ 文件夹即可，代码不用改。
+    // 缺哪张就自动用对应颜色的方块顶上，游戏照常能跑。
+    this.load.image('detective', 'player.png');
+    this.load.image('fishball', 'fishball.png');
+    this.load.image('enemy', 'enemy.png');
+    this.load.image('bg', 'background.png');
+  }
+
+  // 某张图没放的话，现场画一块染色方块，用同样的 key 注册，后面的代码统一对待
+  #ensureTexture(key) {
+    if (this.textures.exists(key)) return;
+    const g = this.make.graphics({ x: 0, y: 0, add: false });
+    g.fillStyle(FALLBACK_COLORS[key] ?? 0xffffff, 1);
+    g.fillRect(0, 0, 32, 32);
+    g.generateTexture(key, 32, 32);
+    g.destroy();
   }
 
   create() {
@@ -14,20 +41,14 @@ export class GameScene extends Phaser.Scene {
     this.timeLeft = 30;
     this.gameEnded = false;
 
-    // 地面边界（用图形代替素材，之后可换图片）
-    this.add.rectangle(width / 2, height / 2, width, height, 0x16213e);
+    // 素材兜底：public/ 里缺哪张就补哪块方块
+    ['detective', 'fishball', 'enemy', 'bg'].forEach((k) => this.#ensureTexture(k));
 
-    // 运行时生成一个白色方块纹理，之后可替换成角色和物品图片
-    if (!this.textures.exists('block')) {
-      const g = this.make.graphics({ x: 0, y: 0, add: false });
-      g.fillStyle(0xffffff, 1);
-      g.fillRect(0, 0, 32, 32);
-      g.generateTexture('block', 32, 32);
-      g.destroy();
-    }
+    // 背景（图片或深蓝底色）
+    this.add.image(width / 2, height / 2, 'bg').setDisplaySize(width, height);
 
-    // 玩家（黄色方块，之后可换成角色图片）
-    this.player = this.physics.add.sprite(width / 2, height / 2, 'block').setDisplaySize(40, 40).setTint(0xffd166);
+    // 玩家
+    this.player = this.physics.add.sprite(width / 2, height / 2, 'detective').setDisplaySize(40, 40);
     this.player.setCollideWorldBounds(true);
 
     // 键盘：方向键 + WASD
@@ -39,7 +60,7 @@ export class GameScene extends Phaser.Scene {
     for (let i = 0; i < 5; i++) {
       const x = Phaser.Math.Between(60, width - 60);
       const y = Phaser.Math.Between(60, height - 100);
-      const c = this.collectibles.create(x, y, 'block').setDisplaySize(28, 28).setTint(0x06d6a0);
+      const c = this.collectibles.create(x, y, 'fishball').setDisplaySize(28, 28);
     }
 
     // 障碍：3 个红色捣蛋鬼，来回巡逻（离玩家出生点至少 150px，避免开局秒输）
@@ -50,7 +71,7 @@ export class GameScene extends Phaser.Scene {
         x = Phaser.Math.Between(100, width - 100);
         y = Phaser.Math.Between(100, height - 100);
       } while (Phaser.Math.Distance.Between(x, y, this.player.x, this.player.y) < 150);
-      const o = this.obstacles.create(x, y, 'block').setDisplaySize(36, 36).setTint(0xef476f);
+      const o = this.obstacles.create(x, y, 'enemy').setDisplaySize(36, 36);
       o.setVelocity(Phaser.Math.Between(-120, 120), Phaser.Math.Between(-120, 120));
       o.setBounce(1);
       o.setCollideWorldBounds(true);
