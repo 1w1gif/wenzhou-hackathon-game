@@ -28,3 +28,7 @@ dist-ssr
 *.sln
 *.sw?
 .zcode/
+
+# 旧的本地副本（保留在磁盘，不提交）
+yanyue/
+yanyue-baxiang/

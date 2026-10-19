@@ -1,0 +1,13 @@
+{
+  "name": "yanyue-baxiang",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @yanyue/web",
+    "build": "npm run build --workspace @yanyue/web",
+    "lint": "npm run lint --workspace @yanyue/web"
+  }
+}
