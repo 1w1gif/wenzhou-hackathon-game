@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Archives / backups (too large for git)
+*.rar
+*.zip
+*.7z
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +27,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.zcode/
