@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>衍月·八相 | 中秋满月 · 观星塔之约</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #10121b; }
+    .stage {
+      position: relative; width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: url('assets/bg/night_forest_gold.png') center / cover no-repeat;
+    }
+    .stage::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 42%, rgba(16,18,27,0) 30%, rgba(16,18,27,.72) 100%);
+    }
+    .card {
+      position: relative; z-index: 2; text-align: center;
+      padding: 0 24px; max-width: 720px;
+    }
+    h1 {
+      font-family: 'STKaiti', 'KaiTi', 'Noto Serif SC', serif;
+      font-size: clamp(44px, 9vw, 88px);
+      letter-spacing: .18em; color: #f2e7c8;
+      text-shadow: 0 0 32px rgba(197,238,240,.35), 0 2px 6px rgba(0,0,0,.8);
+      font-weight: 600;
+    }
+    .sub {
+      margin-top: 14px;
+      font-family: 'STKaiti', 'KaiTi', 'Noto Serif SC', serif;
+      font-size: clamp(14px, 2.6vw, 20px);
+      letter-spacing: .32em; color: #c5eef0; opacity: .9;
+    }
+    .divider {
+      margin: 30px auto 26px; width: min(380px, 72vw); height: 1px;
+      background: linear-gradient(90deg, transparent, #d6a85d, transparent);
+    }
+    .status {
+      font-family: 'STKaiti', 'KaiTi', 'Noto Serif SC', serif;
+      font-size: clamp(15px, 2.8vw, 22px); color: #e8dfc8;
+      letter-spacing: .14em; line-height: 2;
+    }
+    .status b { color: #d6a85d; font-weight: 600; }
+    .team {
+      position: absolute; z-index: 2; bottom: 26px; left: 0; right: 0;
+      font-size: 12px; letter-spacing: .28em; color: #b9b19e; opacity: .75;
+      font-family: 'STKaiti', 'KaiTi', serif;
+    }
+    .moon-glow {
+      position: absolute; z-index: 1; top: 6%; right: 12%;
+      width: clamp(90px, 16vw, 150px); height: clamp(90px, 16vw, 150px);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(242,231,200,.5), rgba(242,231,200,0) 70%);
+      animation: breathe 5s ease-in-out infinite;
+    }
+    @keyframes breathe { 0%,100% { transform: scale(1); opacity:.7 } 50% { transform: scale(1.12); opacity:1 } }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="moon-glow"></div>
+    <div class="card">
+      <h1>衍月·八相</h1>
+      <div class="sub">中秋满月 · 观星塔之约</div>
+      <div class="divider"></div>
+      <div class="status">
+        月相轮正在铸造，八条世界线尚未展开<br />
+        <b>游戏建设中 · 敬请期待</b>
+      </div>
+    </div>
+    <div class="team">INTERCITY HACK 2026 · 温州场</div>
+  </div>
+</body>
+</html>
