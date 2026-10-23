@@ -1,5 +1,5 @@
 // ui/dialog.ts — 剧情对话框：纸底面板 + 打字机 + 选项列表（青色菱形选中）
-import { Color, DrawNode, Label, Node, Sprite, Texture2D, TextureFilter, Vec2, View } from "Dora";
+import { Color, DrawNode, Label, Node, Sprite, Texture2D, Vec2, View } from "Dora";
 import { InkColor, Palette, ink } from "core/palette";
 import { DialogChoice, DialogLine, StoryNode } from "core/types";
 
@@ -21,7 +21,7 @@ function loadTex(path: string): Texture2D.Type | undefined {
 
 function pxSprite(tex: Texture2D.Type): Sprite.Type {
   const sp = Sprite(tex);
-  sp.filter = TextureFilter.Point;
+  sp.filter = "Point" as unknown as number;
   return sp;
 }
 

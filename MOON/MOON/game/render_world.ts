@@ -1,7 +1,7 @@
 // game/render_world.ts — 世界渲染器：视差水墨背景 + 世界层（地形/机关/角色）
 // 分层：bgDraw（屏幕空间视差背景） <- worldRoot（世界坐标，随摄像机平移）
 //       worldRoot 内：platformDraw（地形） -> propDraw（机关道具装饰） -> charDraw（角色动态）
-import { Color, DrawNode, Node, Rect, Sprite, Texture2D, TextureFilter, Vec2, View } from "Dora";
+import { Color, DrawNode, Node, Rect, Sprite, Texture2D, Vec2, View } from "Dora";
 import { Palette, ink } from "core/palette";
 import {
   BellDef,
@@ -315,7 +315,7 @@ export class WorldRenderer {
           sp.anchor = Vec2(0, 0);
           sp.scaleX = s;
           sp.scaleY = s;
-          sp.filter = TextureFilter.Point;
+          sp.filter = "Point" as unknown as number;
           sp.addTo(bandNode);
           this.bgRecs.push({
             node: sp,
@@ -339,7 +339,7 @@ export class WorldRenderer {
     sp.anchor = Vec2(0, 0);
     sp.scaleX = 0.5;
     sp.scaleY = 0.5;
-    sp.filter = TextureFilter.Point;
+    sp.filter = "Point" as unknown as number;
     sp.position = Vec2(x, y);
     sp.addTo(band);
   }
@@ -461,7 +461,7 @@ export class WorldRenderer {
       sp.anchor = Vec2(0.5, 0);
       sp.scaleX = 0.5;
       sp.scaleY = 0.5;
-      sp.filter = TextureFilter.Point;
+      sp.filter = "Point" as unknown as number;
       sp.position = Vec2(d.x, d.y);
       sp.addTo(this.decorNode);
     }

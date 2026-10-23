@@ -134,7 +134,8 @@ declare module "Dora" {
   }
 
   // ---------- 纹理 / 精灵 / 标签 ----------
-  export const TextureFilter: { Point: number; Linear: number };
+  // Sprite.filter 接受引擎枚举字符串："None" | "Point" | "Anisotropic"
+  // （注意：TextureFilter 并非 Dora 模块的顶层导出，而是 Sprite.TextureFilter 子枚举）
 
   export interface Texture2DType {
     width: number;

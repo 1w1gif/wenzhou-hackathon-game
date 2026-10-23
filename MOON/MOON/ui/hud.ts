@@ -1,5 +1,5 @@
 // ui/hud.ts — 抬头显示：生命/剑意/月相轮/目标/提示/Boss血条/受击红晕/回溯遮罩/结局/标题/暂停
-import { Color, DrawNode, Label, Node, Rect, Sprite, Texture2D, TextureFilter, Vec2, View } from "Dora";
+import { Color, DrawNode, Label, Node, Rect, Sprite, Texture2D, Vec2, View } from "Dora";
 import { InkColor, Palette, ink } from "core/palette";
 import { LoopState } from "core/types";
 import { ENDINGS, PHASE_NAMES, UI_TEXT } from "data/story";
@@ -27,7 +27,7 @@ function loadTex(path: string): Texture2D.Type | undefined {
 
 function pxSprite(tex: Texture2D.Type): Sprite.Type {
   const sp = Sprite(tex);
-  sp.filter = TextureFilter.Point;
+  sp.filter = "Point" as unknown as number;
   return sp;
 }
 

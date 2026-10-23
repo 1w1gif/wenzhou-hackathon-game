@@ -1,6 +1,6 @@
-// game/sheetfx.ts — 像素雪碧图打击特效：横条帧动画 + 点采样（TextureFilter.Point）+ 方向镜像
+// game/sheetfx.ts — 像素雪碧图打击特效：横条帧动画 + 点采样（"Point" as unknown as number）+ 方向镜像
 // 死亡细胞式打击感：命中点瞬间爆出高对比像素火花帧动画
-import { Node, Rect, Sprite, Texture2D, TextureFilter, Vec2 } from "Dora";
+import { Node, Rect, Sprite, Texture2D, Vec2 } from "Dora";
 
 type SheetKey = "hit" | "big";
 
@@ -58,7 +58,7 @@ export class SheetFxSystem {
       return;
     }
     const sp = Sprite(tex, Rect(0, 0, def.frameW, def.frameH));
-    sp.filter = TextureFilter.Point;
+    sp.filter = "Point" as unknown as number;
     sp.position = Vec2(x, y);
     sp.scaleX = (dir >= 0 ? 1 : -1) * def.scale;
     sp.scaleY = def.scale;

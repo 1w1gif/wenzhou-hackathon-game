@@ -10,14 +10,14 @@ local Node = ____Dora.Node
 local BGM_FILES = {tension = "assets/audio/bgm-tension.mp3", conflict = "assets/audio/bgm-conflict.mp3", wuxia = "assets/audio/bgm-wuxia.mp3", calm = "assets/audio/bgm-calm.wav"}
 local SFX_FILES = {sword = "assets/audio/sfx-sword-draw.mp3", dash = "assets/audio/sfx-sword-draw.mp3"}
 local host
-local function hostNode(self)
+local function hostNode()
     if host == nil then
-        host = Node(nil)
+        host = Node()
         host:addTo(Director.entry)
     end
     return host
 end
-function ____exports.playBgm(self, name, fade)
+function ____exports.playBgm(name, fade)
     if fade == nil then
         fade = 1
     end
@@ -33,7 +33,7 @@ function ____exports.playBgm(self, name, fade)
         end
     end
 end
-function ____exports.stopBgm(self, fade)
+function ____exports.stopBgm(fade)
     if fade == nil then
         fade = 1
     end
@@ -49,7 +49,7 @@ function ____exports.stopBgm(self, fade)
         end
     end
 end
-function ____exports.sfx(self, name, volume)
+function ____exports.sfx(name, volume)
     if volume == nil then
         volume = 0.9
     end
@@ -58,12 +58,12 @@ function ____exports.sfx(self, name, volume)
             local ____ = e
         end
         local ____try, ____hasReturned, ____returnValue = pcall(function()
-            local src = AudioSource(nil, SFX_FILES[name], true)
+            local src = AudioSource(SFX_FILES[name], true)
             if src == nil then
                 return true
             end
             src.volume = volume
-            src:addTo(hostNode(nil))
+            src:addTo(hostNode())
             if not src:play() then
                 src:removeFromParent()
             end

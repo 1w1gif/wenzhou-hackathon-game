@@ -1,5 +1,5 @@
 // ui/notebook.ts — 引月札：周目信息 / 收藏计数 / 记忆条目（Tab 开关）
-import { Color, DrawNode, Label, Node, Sprite, Texture2D, TextureFilter, Vec2, View } from "Dora";
+import { Color, DrawNode, Label, Node, Sprite, Texture2D, Vec2, View } from "Dora";
 import { InkColor, Palette, ink } from "core/palette";
 import { LoopState } from "core/types";
 import { MEMORIES_LIST, PHASE_NAMES } from "data/story";
@@ -29,7 +29,7 @@ function loadTex(path: string): Texture2D.Type | undefined {
 
 function pxSprite(tex: Texture2D.Type): Sprite.Type {
   const sp = Sprite(tex);
-  sp.filter = TextureFilter.Point;
+  sp.filter = "Point" as unknown as number;
   return sp;
 }
 

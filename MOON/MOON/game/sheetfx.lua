@@ -2,13 +2,12 @@ local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
 local __TS__ArraySplice = ____lualib.__TS__ArraySplice
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 3,["8"] = 3,["9"] = 3,["10"] = 3,["11"] = 3,["12"] = 3,["13"] = 17,["14"] = 18,["15"] = 18,["16"] = 18,["17"] = 18,["18"] = 18,["19"] = 18,["20"] = 17,["21"] = 19,["22"] = 19,["23"] = 19,["24"] = 19,["25"] = 19,["26"] = 19,["27"] = 17,["28"] = 29,["29"] = 29,["30"] = 29,["31"] = 34,["32"] = 35,["33"] = 36,["34"] = 37,["35"] = 34,["36"] = 40,["37"] = 41,["38"] = 42,["39"] = 43,["41"] = 45,["42"] = 46,["43"] = 47,["44"] = 40,["45"] = 51,["46"] = 52,["49"] = 55,["50"] = 56,["51"] = 57,["54"] = 60,["55"] = 60,["56"] = 60,["57"] = 60,["58"] = 60,["59"] = 60,["60"] = 60,["61"] = 60,["62"] = 60,["63"] = 60,["64"] = 60,["65"] = 61,["66"] = 62,["67"] = 63,["68"] = 64,["69"] = 65,["70"] = 66,["71"] = 66,["72"] = 51,["73"] = 69,["74"] = 70,["75"] = 71,["76"] = 72,["77"] = 73,["78"] = 74,["79"] = 75,["80"] = 76,["82"] = 78,["83"] = 79,["84"] = 80,["86"] = 82,["87"] = 82,["88"] = 82,["89"] = 82,["90"] = 82,["91"] = 82,["92"] = 82,["94"] = 84,["96"] = 69,["97"] = 88,["99"] = 89,["100"] = 89,["101"] = 90,["102"] = 89,["105"] = 92,["106"] = 88});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 3,["8"] = 3,["9"] = 3,["10"] = 3,["11"] = 3,["12"] = 17,["13"] = 18,["14"] = 18,["15"] = 18,["16"] = 18,["17"] = 18,["18"] = 18,["19"] = 17,["20"] = 19,["21"] = 19,["22"] = 19,["23"] = 19,["24"] = 19,["25"] = 19,["26"] = 17,["27"] = 29,["28"] = 29,["29"] = 29,["30"] = 34,["31"] = 35,["32"] = 36,["33"] = 37,["34"] = 34,["35"] = 40,["36"] = 41,["37"] = 42,["38"] = 43,["40"] = 45,["41"] = 46,["42"] = 47,["43"] = 40,["44"] = 51,["45"] = 52,["48"] = 55,["49"] = 56,["50"] = 57,["53"] = 60,["54"] = 60,["55"] = 60,["56"] = 60,["57"] = 61,["58"] = 62,["59"] = 63,["60"] = 64,["61"] = 65,["62"] = 66,["63"] = 66,["64"] = 51,["65"] = 69,["66"] = 70,["67"] = 71,["68"] = 72,["69"] = 73,["70"] = 74,["71"] = 75,["72"] = 76,["74"] = 78,["75"] = 79,["76"] = 80,["78"] = 82,["80"] = 84,["82"] = 69,["83"] = 88,["85"] = 89,["86"] = 89,["87"] = 90,["88"] = 89,["91"] = 92,["92"] = 88});
 local ____exports = {}
 local ____Dora = require("Dora")
 local Rect = ____Dora.Rect
 local Sprite = ____Dora.Sprite
 local Texture2D = ____Dora.Texture2D
-local TextureFilter = ____Dora.TextureFilter
 local Vec2 = ____Dora.Vec2
 local SHEETS = {big = {
     file = "assets/effects/hit-effect-1.png",
@@ -38,7 +37,7 @@ function SheetFxSystem.prototype.texture(self, file)
     if cached ~= nil then
         return cached
     end
-    local loaded = Texture2D(nil, file)
+    local loaded = Texture2D(file)
     self.tex[file] = loaded
     return loaded
 end
@@ -52,18 +51,11 @@ function SheetFxSystem.prototype.spawn(self, x, y, dir, big)
         return
     end
     local sp = Sprite(
-        nil,
         tex,
-        Rect(
-            nil,
-            0,
-            0,
-            def.frameW,
-            def.frameH
-        )
+        Rect(0, 0, def.frameW, def.frameH)
     )
-    sp.filter = TextureFilter.Point
-    sp.position = Vec2(nil, x, y)
+    sp.filter = "Point"
+    sp.position = Vec2(x, y)
     sp.scaleX = (dir >= 0 and 1 or -1) * def.scale
     sp.scaleY = def.scale
     sp:addTo(self.parent)
@@ -83,13 +75,7 @@ function SheetFxSystem.prototype.update(self, dt)
             if idx >= a.def.frames then
                 idx = a.def.frames - 1
             end
-            a.sprite.textureRect = Rect(
-                nil,
-                idx * a.def.frameW,
-                0,
-                a.def.frameW,
-                a.def.frameH
-            )
+            a.sprite.textureRect = Rect(idx * a.def.frameW, 0, a.def.frameW, a.def.frameH)
         end
         i = i - 1
     end
