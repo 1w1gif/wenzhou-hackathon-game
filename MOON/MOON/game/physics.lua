@@ -1,20 +1,20 @@
 local ____lualib = require("lualib_bundle")
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["5"] = 25,["6"] = 26,["7"] = 25,["8"] = 29,["9"] = 30,["10"] = 29,["11"] = 33,["12"] = 34,["13"] = 33,["14"] = 37,["15"] = 38,["16"] = 37,["17"] = 42,["18"] = 43,["20"] = 44,["21"] = 44,["23"] = 45,["24"] = 46,["25"] = 47,["27"] = 49,["30"] = 44,["33"] = 51,["34"] = 42,["35"] = 55,["36"] = 56,["37"] = 56,["38"] = 56,["39"] = 56,["40"] = 56,["41"] = 56,["42"] = 56,["43"] = 57,["44"] = 58,["46"] = 59,["47"] = 59,["49"] = 60,["50"] = 61,["51"] = 62,["53"] = 64,["54"] = 65,["55"] = 66,["57"] = 68,["58"] = 69,["59"] = 70,["60"] = 71,["61"] = 72,["62"] = 73,["63"] = 74,["64"] = 75,["66"] = 77,["67"] = 78,["70"] = 59,["73"] = 80,["74"] = 55,["75"] = 84,["76"] = 85,["77"] = 85,["78"] = 85,["79"] = 85,["80"] = 85,["81"] = 85,["82"] = 85,["83"] = 86,["84"] = 87,["85"] = 88,["86"] = 89,["87"] = 90,["89"] = 91,["90"] = 91,["92"] = 92,["93"] = 93,["94"] = 94,["95"] = 95,["97"] = 97,["98"] = 99,["99"] = 100,["100"] = 101,["102"] = 103,["103"] = 104,["106"] = 107,["107"] = 108,["108"] = 109,["111"] = 113,["112"] = 114,["114"] = 116,["115"] = 117,["116"] = 118,["117"] = 119,["121"] = 91,["124"] = 122,["125"] = 123,["126"] = 124,["127"] = 125,["128"] = 126,["130"] = 128,["131"] = 129,["132"] = 130,["133"] = 131,["134"] = 132,["136"] = 134,["137"] = 84,["138"] = 138,["139"] = 145,["140"] = 146,["141"] = 146,["142"] = 146,["143"] = 146,["144"] = 146,["145"] = 146,["146"] = 146,["147"] = 147,["148"] = 147,["149"] = 147,["150"] = 147,["151"] = 147,["152"] = 147,["153"] = 147,["154"] = 138,["155"] = 156,["156"] = 158,["158"] = 159,["159"] = 159,["160"] = 160,["161"] = 161,["162"] = 162,["163"] = 163,["164"] = 165,["165"] = 166,["166"] = 167,["167"] = 168,["170"] = 171,["171"] = 172,["172"] = 173,["175"] = 159,["178"] = 177,["179"] = 178,["180"] = 179,["181"] = 156,["182"] = 182,["183"] = 183,["185"] = 184,["186"] = 184,["187"] = 185,["188"] = 186,["190"] = 184,["193"] = 189,["194"] = 182,["195"] = 192,["196"] = 197,["197"] = 198,["199"] = 200,["200"] = 201,["202"] = 207,["203"] = 207,["204"] = 208,["205"] = 209,["207"] = 207,["210"] = 212,["211"] = 192,["212"] = 215,["213"] = 216,["214"] = 217,["216"] = 219,["217"] = 220,["219"] = 222,["220"] = 215,["221"] = 225,["222"] = 226,["223"] = 225});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["5"] = 25,["6"] = 26,["7"] = 25,["8"] = 29,["9"] = 30,["10"] = 29,["11"] = 33,["12"] = 34,["13"] = 33,["14"] = 37,["15"] = 38,["16"] = 37,["17"] = 42,["18"] = 43,["20"] = 44,["21"] = 44,["23"] = 45,["24"] = 46,["25"] = 47,["27"] = 49,["30"] = 44,["33"] = 51,["34"] = 42,["35"] = 55,["36"] = 56,["37"] = 56,["38"] = 56,["39"] = 56,["40"] = 56,["41"] = 56,["42"] = 56,["43"] = 57,["44"] = 58,["46"] = 59,["47"] = 59,["49"] = 60,["50"] = 61,["51"] = 62,["53"] = 64,["54"] = 65,["55"] = 66,["57"] = 68,["58"] = 69,["59"] = 70,["60"] = 71,["61"] = 72,["62"] = 73,["63"] = 74,["64"] = 75,["66"] = 77,["67"] = 78,["70"] = 59,["73"] = 80,["74"] = 55,["75"] = 84,["76"] = 85,["77"] = 85,["78"] = 85,["79"] = 85,["80"] = 85,["81"] = 85,["82"] = 85,["83"] = 86,["84"] = 87,["85"] = 88,["86"] = 89,["87"] = 90,["89"] = 91,["90"] = 91,["92"] = 92,["93"] = 93,["94"] = 94,["95"] = 95,["97"] = 97,["98"] = 99,["99"] = 100,["100"] = 101,["102"] = 103,["103"] = 104,["106"] = 107,["107"] = 108,["108"] = 109,["111"] = 113,["112"] = 114,["114"] = 116,["115"] = 117,["116"] = 118,["117"] = 119,["121"] = 91,["124"] = 122,["125"] = 123,["126"] = 124,["127"] = 125,["128"] = 126,["130"] = 128,["131"] = 129,["132"] = 130,["133"] = 131,["134"] = 132,["136"] = 134,["137"] = 84,["138"] = 138,["139"] = 145,["140"] = 146,["141"] = 147,["142"] = 147,["143"] = 147,["144"] = 147,["145"] = 147,["146"] = 147,["147"] = 147,["148"] = 138,["149"] = 156,["150"] = 158,["152"] = 159,["153"] = 159,["154"] = 160,["155"] = 161,["156"] = 162,["157"] = 163,["158"] = 165,["159"] = 166,["160"] = 167,["161"] = 168,["164"] = 171,["165"] = 172,["166"] = 173,["169"] = 159,["172"] = 177,["173"] = 178,["174"] = 179,["175"] = 156,["176"] = 182,["177"] = 183,["179"] = 184,["180"] = 184,["181"] = 185,["182"] = 186,["184"] = 184,["187"] = 189,["188"] = 182,["189"] = 192,["190"] = 197,["191"] = 198,["193"] = 200,["194"] = 201,["196"] = 207,["197"] = 207,["198"] = 208,["199"] = 209,["201"] = 207,["204"] = 212,["205"] = 192,["206"] = 215,["207"] = 216,["208"] = 217,["210"] = 219,["211"] = 220,["213"] = 222,["214"] = 215,["215"] = 225,["216"] = 226,["217"] = 225});
 local ____exports = {}
-function ____exports.rectOverlap(self, a, b)
+function ____exports.rectOverlap(a, b)
     return a.x < b.x + b.w and a.x + a.w > b.x and a.y < b.y + b.h and a.y + a.h > b.y
 end
-function ____exports.bodyRect(self, body)
+function ____exports.bodyRect(body)
     return {x = body.x - body.w / 2, y = body.y - body.h / 2, w = body.w, h = body.h}
 end
-local function overlapX(self, a, b)
+local function overlapX(a, b)
     return a.x < b.x + b.w and a.x + a.w > b.x
 end
-local function overlapY(self, a, b)
+local function overlapY(a, b)
     return a.y < b.y + b.h and a.y + a.h > b.y
 end
-function ____exports.activePlatforms(self, all, openedGates)
+function ____exports.activePlatforms(all, openedGates)
     local list = {}
     do
         local i = 0
@@ -32,7 +32,7 @@ function ____exports.activePlatforms(self, all, openedGates)
     end
     return list
 end
-local function moveX(self, body, platforms, dx)
+local function moveX(body, platforms, dx)
     local result = {
         hitWall = false,
         wallDir = 0,
@@ -41,7 +41,7 @@ local function moveX(self, body, platforms, dx)
         groundId = ""
     }
     body.x = body.x + dx
-    local r = ____exports.bodyRect(nil, body)
+    local r = ____exports.bodyRect(body)
     do
         local i = 0
         while i < #platforms do
@@ -51,7 +51,7 @@ local function moveX(self, body, platforms, dx)
                     goto __continue12
                 end
                 local pr = {x = p.x, y = p.y, w = p.w, h = p.h}
-                if not overlapX(nil, r, pr) or not overlapY(nil, r, pr) then
+                if not overlapX(r, pr) or not overlapY(r, pr) then
                     goto __continue12
                 end
                 if dx > 0 then
@@ -72,7 +72,7 @@ local function moveX(self, body, platforms, dx)
     end
     return result
 end
-local function moveY(self, body, platforms, dy, dropThrough)
+local function moveY(body, platforms, dy, dropThrough)
     local result = {
         hitWall = false,
         wallDir = 0,
@@ -82,7 +82,7 @@ local function moveY(self, body, platforms, dy, dropThrough)
     }
     local prevBottom = body.y - body.h / 2
     body.y = body.y + dy
-    local r = ____exports.bodyRect(nil, body)
+    local r = ____exports.bodyRect(body)
     local bestTop = -1000000000
     local bestId = ""
     do
@@ -91,7 +91,7 @@ local function moveY(self, body, platforms, dy, dropThrough)
             do
                 local p = platforms[i + 1]
                 local pr = {x = p.x, y = p.y, w = p.w, h = p.h}
-                if not overlapX(nil, r, pr) or not overlapY(nil, r, pr) then
+                if not overlapX(r, pr) or not overlapY(r, pr) then
                     goto __continue19
                 end
                 if dy <= 0 then
@@ -135,15 +135,9 @@ local function moveY(self, body, platforms, dy, dropThrough)
     end
     return result
 end
-function ____exports.moveAndCollide(self, body, platforms, dx, dy, dropThrough)
-    local rx = moveX(nil, body, platforms, dx)
-    local ry = moveY(
-        nil,
-        body,
-        platforms,
-        dy,
-        dropThrough
-    )
+function ____exports.moveAndCollide(body, platforms, dx, dy, dropThrough)
+    local rx = moveX(body, platforms, dx)
+    local ry = moveY(body, platforms, dy, dropThrough)
     return {
         hitWall = rx.hitWall,
         wallDir = rx.wallDir,
@@ -152,14 +146,14 @@ function ____exports.moveAndCollide(self, body, platforms, dx, dy, dropThrough)
         groundId = ry.groundId
     }
 end
-function ____exports.updateGroundState(self, body, platforms)
+function ____exports.updateGroundState(body, platforms)
     local probe = {x = body.x - body.w / 2 + 2, y = body.y - body.h / 2 - 3, w = body.w - 4, h = 4}
     do
         local i = 0
         while i < #platforms do
             local p = platforms[i + 1]
             local pr = {x = p.x, y = p.y, w = p.w, h = p.h}
-            if ____exports.rectOverlap(nil, probe, pr) then
+            if ____exports.rectOverlap(probe, pr) then
                 if p.kind == "one-way" then
                     if body.y - body.h / 2 >= pr.y + pr.h - 6 then
                         body.onGround = true
@@ -179,12 +173,12 @@ function ____exports.updateGroundState(self, body, platforms)
     body.groundId = ""
     return false
 end
-function ____exports.ladderAt(self, body, ladders)
-    local r = ____exports.bodyRect(nil, body)
+function ____exports.ladderAt(body, ladders)
+    local r = ____exports.bodyRect(body)
     do
         local i = 0
         while i < #ladders do
-            if ____exports.rectOverlap(nil, r, ladders[i + 1]) then
+            if ____exports.rectOverlap(r, ladders[i + 1]) then
                 return ladders[i + 1]
             end
             i = i + 1
@@ -192,16 +186,16 @@ function ____exports.ladderAt(self, body, ladders)
     end
     return nil
 end
-function ____exports.climbWallAt(self, body, wallDir, walls)
+function ____exports.climbWallAt(body, wallDir, walls)
     if wallDir == 0 then
         return nil
     end
-    local r = ____exports.bodyRect(nil, body)
+    local r = ____exports.bodyRect(body)
     local probe = {x = wallDir > 0 and r.x + r.w - 2 or r.x - 6, y = r.y + 6, w = 8, h = r.h - 12}
     do
         local i = 0
         while i < #walls do
-            if ____exports.rectOverlap(nil, probe, walls[i + 1]) then
+            if ____exports.rectOverlap(probe, walls[i + 1]) then
                 return walls[i + 1]
             end
             i = i + 1
@@ -209,7 +203,7 @@ function ____exports.climbWallAt(self, body, wallDir, walls)
     end
     return nil
 end
-function ____exports.clamp(self, v, lo, hi)
+function ____exports.clamp(v, lo, hi)
     if v < lo then
         return lo
     end
@@ -218,7 +212,7 @@ function ____exports.clamp(self, v, lo, hi)
     end
     return v
 end
-function ____exports.lerp(self, a, b, t)
+function ____exports.lerp(a, b, t)
     return a + (b - a) * t
 end
 return ____exports
