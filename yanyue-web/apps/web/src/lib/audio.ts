@@ -4,6 +4,8 @@
  * 音频管理：BGM 分场景切换（探索/结局），剑 SFX。
  * 素材：public/assets/audio/（队友提供）。首次用户交互后才播放（浏览器自动播放策略）。
  */
+import { asset } from "./base";
+
 const BGM = {
   explore: "/assets/audio/bgm_explore.mp3",
   battle: "/assets/audio/bgm_battle.mp3",
@@ -22,7 +24,7 @@ class AudioManager {
     if (this.current === name && this.bgm) return;
     this.stopBgm();
     if (this.muted) { this.current = name; return; }
-    const el = new Audio(BGM[name]);
+    const el = new Audio(asset(BGM[name]));
     el.loop = loop;
     el.volume = name === "ending" ? 0.7 : 0.5;
     el.play().catch(() => { /* 未交互时静默，等下次调用 */ });
@@ -39,7 +41,7 @@ class AudioManager {
     if (this.muted) return;
     let el = this.sfxPool.get(name);
     if (!el) {
-      el = new Audio(`/assets/audio/sfx_${name}.mp3`);
+      el = new Audio(asset(`/assets/audio/sfx_${name}.mp3`));
       el.volume = volume;
       this.sfxPool.set(name, el);
     }

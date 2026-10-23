@@ -282,3 +282,122 @@ h1, h2, h3, p { margin: 0; }
 }
 .flash-white { animation: flashW 0.5s ease-out; }
 @keyframes flashW { from { background: #f7f3e4; } to { background: transparent; } }
+
+/* ---------------- 触屏控件（水墨玉璧） ---------------- */
+.lbl-short { display: none; }
+.touch-pad { display: none; position: absolute; inset: 0; z-index: 45; pointer-events: none; }
+.touch-cluster { position: absolute; display: flex; align-items: center; gap: 14px; pointer-events: auto; }
+.touch-cluster.left {
+  left: max(16px, env(safe-area-inset-left));
+  bottom: calc(20px + env(safe-area-inset-bottom));
+}
+.touch-cluster.right {
+  right: max(16px, env(safe-area-inset-right));
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  flex-direction: column; align-items: flex-end; gap: 12px;
+}
+.touch-utils { display: flex; gap: 8px; }
+
+.pad-btn {
+  position: relative;
+  width: 64px; height: 64px; padding: 0;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #f2e9d2;
+  background:
+    radial-gradient(circle at 50% 32%, rgba(247,243,228,0.22), rgba(247,243,228,0.04) 52%, transparent 72%),
+    radial-gradient(circle at 50% 58%, rgba(32,39,52,0.82), rgba(13,16,23,0.9));
+  border: 1.5px solid rgba(201,160,92,0.5);
+  box-shadow: inset 0 0 20px rgba(158,200,201,0.15), 0 5px 16px rgba(0,0,0,0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  transition: transform 0.07s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.pad-btn::after {
+  content: ""; position: absolute; inset: 7px; border-radius: 50%;
+  border: 1px solid rgba(158,200,201,0.18);
+  pointer-events: none;
+}
+.pad-btn.on {
+  transform: scale(0.92);
+  border-color: rgba(247,243,228,0.85);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(247,243,228,0.4), rgba(201,160,92,0.14) 58%, rgba(13,16,23,0.88));
+  box-shadow: inset 0 0 26px rgba(247,243,228,0.38), 0 0 26px rgba(201,160,92,0.42);
+}
+.pad-btn.jump { width: 86px; height: 86px; }
+.pad-btn.jump .glyph {
+  font-size: 27px; letter-spacing: 0.06em; color: #f7f1de;
+  text-shadow: 0 0 14px rgba(247,243,228,0.5);
+}
+.pad-btn.jump .sub {
+  position: absolute; bottom: 9px; font-size: 9px; letter-spacing: 0.22em;
+  color: rgba(201,160,92,0.85);
+}
+.pad-btn.mini {
+  width: 46px; height: 46px; font-size: 15px; letter-spacing: 0;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(158,200,201,0.18), rgba(13,16,23,0.88));
+}
+.pad-btn.mini::after { inset: 5px; }
+.pad-btn.mini:active { transform: scale(0.9); }
+
+/* 手机 / 平板 */
+@media (hover: none), (max-width: 760px) {
+  .touch-pad { display: block; }
+  .lbl-full { display: none; }
+  .lbl-short { display: inline; }
+
+  .hud { gap: 7px; padding: 7px 9px; }
+  .hud .brand { display: none; }
+  .hud-pill { font-size: 10.5px; padding: 2px 8px; }
+  .hud-spacer { display: none; }
+  .hud button { display: none; }
+
+  .zone-label {
+    left: 10px; top: 10px; bottom: auto;
+    font-size: 12px; padding: 3px 10px; letter-spacing: 0.16em;
+  }
+  .objective-tip {
+    top: 44px; font-size: 11px; padding: 3px 12px;
+    max-width: 92vw; white-space: normal; text-align: center; line-height: 1.6;
+  }
+  .toast { top: 34%; font-size: 13px; padding: 7px 16px; max-width: 86vw; }
+
+  .dialog {
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    width: 94vw; padding: 12px 15px 10px;
+  }
+  .dialog .text { font-size: 15px; line-height: 1.65; min-height: 44px; }
+  .dialog .next { font-size: 11px; }
+  .dialog .choices .btn { padding: 12px 18px; font-size: 14px; }
+
+  .title-name { font-size: 46px; }
+  .title-sub { font-size: 11px; letter-spacing: 0.34em; }
+  .title-actors { height: 150px; margin: 16px 0 6px; }
+  .title-tip { font-size: 11px; }
+  .title-btns { margin-top: 18px; gap: 12px; }
+  .btn { padding: 11px 20px; }
+
+  .prologue-shot { height: 250px; }
+  .prologue-caption { font-size: 16px; margin-top: 16px; }
+  .prologue-skip { font-size: 11px; margin-top: 22px; }
+
+  .tree-header h1 { font-size: 24px; }
+  .tree-footer { flex-wrap: wrap; gap: 10px; padding: 10px 12px 16px; font-size: 11px; }
+  .journal .book { padding: 18px 18px; max-height: 84vh; }
+  .ending-title { font-size: 30px; }
+  .ending-lines { font-size: 15px; line-height: 2.1; padding: 0 18px; }
+}
+
+/* 横屏手机：压低纵向占用 */
+@media (hover: none) and (orientation: landscape) and (max-height: 480px) {
+  .objective-tip { display: none; }
+  .pad-btn { width: 56px; height: 56px; }
+  .pad-btn.jump { width: 72px; height: 72px; }
+  .pad-btn.mini { width: 40px; height: 40px; font-size: 13px; }
+  .touch-cluster { bottom: calc(12px + env(safe-area-inset-bottom)); }
+}

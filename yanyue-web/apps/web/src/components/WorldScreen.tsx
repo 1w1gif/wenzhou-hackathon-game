@@ -11,7 +11,9 @@ import { yanyueSVG, shenyanSVG, banditSVG, observerSVG, lanternSVG, starSVG, moo
 import { Sprite } from "./Sprite";
 import { FxSprite } from "./FxSprite";
 import { NightSky } from "./NightSky";
+import TouchPad from "./TouchPad";
 import { audio } from "@/lib/audio";
+import { asset } from "@/lib/base";
 
 const TS = 64;
 
@@ -87,6 +89,16 @@ export default function WorldScreen() {
   const showToast = useCallback((text: string, ms = 2400) => {
     setToast({ text, until: Date.now() + ms });
   }, []);
+
+  /** 转动月相轮（键盘 Q / 触屏 ↺ 共用） */
+  const doRewind = useCallback(() => {
+    if (rewind()) {
+      const st = useGame.getState();
+      showToast(`月相轮转动 · 生命 -1\n现在：第 ${st.cur.loopIndex + 1} 夜 · ${MOON_PHASES[st.cur.moonPhaseIndex]}`, 2600);
+    } else {
+      showToast("月相轮已经无法再次转动。\n「你还剩下最后一次选择。」", 3200);
+    }
+  }, [rewind, showToast]);
 
   useEffect(() => {
     if (toast && Date.now() > toast.until) setToast(null);
@@ -231,6 +243,16 @@ export default function WorldScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rows, worldW, worldH, checkpoint, showToast, say]);
 
+  /** 触屏按键映射到与键盘相同的输入状态 */
+  const handleHold = useCallback((key: "left" | "right" | "jump", down: boolean) => {
+    if (key === "left") keys.current["a"] = down;
+    else if (key === "right") keys.current["d"] = down;
+    else {
+      keys.current[" "] = down;
+      if (down) jumpPressedAt.current = performance.now() / 1000;
+    }
+  }, []);
+
   /* ---------------- 到达点触发 ---------------- */
   const checkTriggers = useCallback((b: Body) => {
     const cx = Math.floor((b.x + b.w / 2) / TS);
@@ -330,11 +352,7 @@ export default function WorldScreen() {
       if (dialogOpen.current) return;
       if (k === "t") { toggleTree(); return; }
       if (k === "n") { toggleJournal(); return; }
-      if (k === "q") {
-        if (rewind()) showToast(`月相轮转动 · 生命 -1\n现在：第 ${useGame.getState().cur.loopIndex + 1} 夜 · ${MOON_PHASES[useGame.getState().cur.moonPhaseIndex]}`, 2600);
-        else showToast("月相轮已经无法再次转动。\n「你还剩下最后一次选择。」", 3200);
-        return;
-      }
+      if (k === "q") { doRewind(); return; }
       if (isTypingKey(k)) {
         keys.current[k] = true;
         if (k === " " || k === "w" || k === "arrowup") jumpPressedAt.current = performance.now() / 1000;
@@ -345,7 +363,7 @@ export default function WorldScreen() {
     window.addEventListener("keydown", down);
     window.addEventListener("keyup", up);
     return () => { window.removeEventListener("keydown", down); window.removeEventListener("keyup", up); };
-  }, [rewind, showToast, toggleTree, toggleJournal]);
+  }, [doRewind, showToast, toggleTree, toggleJournal]);
 
   /* ---------------- 场景实体（静态摆放） ---------------- */
   const entities = useMemo(() => {
@@ -370,19 +388,19 @@ export default function WorldScreen() {
           {Array.from({ length: cur.maxLife }, (_, i) => (
             <span key={i} style={{
               width: 14, height: 9, borderRadius: 2, display: "inline-block",
-              backgroundImage: "url(/assets/ui/hp_fill.png)", backgroundSize: "cover",
+              backgroundImage: `url(${asset("/assets/ui/hp_fill.png")})`, backgroundSize: "cover",
               filter: i < cur.life ? "none" : "grayscale(1) brightness(0.4)",
               opacity: i < cur.life ? 1 : 0.5,
             }} />
           ))}
         </span>
-        <span className="hud-pill">剑意 {"—".repeat(cur.swordIntent)}{"·".repeat(Math.max(0, cur.maxSwordIntent - cur.swordIntent))}</span>
+        <span className="hud-pill">剑意 <span className="lbl-full">{"—".repeat(cur.swordIntent)}{"·".repeat(Math.max(0, cur.maxSwordIntent - cur.swordIntent))}</span><span className="lbl-short">{cur.swordIntent}/{cur.maxSwordIntent}</span></span>
         <span className="hud-pill gold">☾ {MOON_PHASES[cur.moonPhaseIndex]} · 第 {cur.loopIndex + 1} 夜</span>
         <span className="hud-pill">信任 {cur.trust}</span>
         <span className="hud-spacer" />
-        <button onClick={() => toggleJournal()}>引月札（N）</button>
-        <button onClick={() => toggleTree()}>时空树（T）</button>
-        <button onClick={() => { if (rewind()) showToast("月相轮转动 · 生命 -1"); else showToast("月相轮已无法转动"); }}>回溯（Q）</button>
+        <button className="hud-act" onClick={() => toggleJournal()}><span className="lbl-full">引月札（N）</span><span className="lbl-short">札</span></button>
+        <button className="hud-act" onClick={() => toggleTree()}><span className="lbl-full">时空树（T）</span><span className="lbl-short">树</span></button>
+        <button className="hud-act" onClick={doRewind}><span className="lbl-full">回溯（Q）</span><span className="lbl-short">↺</span></button>
       </div>
 
       <div className="viewport">
@@ -408,8 +426,12 @@ export default function WorldScreen() {
           </div>
         </div>
         <div className="zone-label">{zone.name}</div>
-        <div className="objective-tip">{zone.hint ?? "A/D 移动 · 空格跳跃（可二段跳）"}</div>
+        <div className="objective-tip">
+          <span className="lbl-full">{zone.hint ?? "A/D 移动 · 空格跳跃（可二段跳）"}</span>
+          <span className="lbl-short">{zone.hint ?? "◀ ▶ 移动 · 跃 跳跃"}</span>
+        </div>
         {toast && <div className="toast">{toast.text}</div>}
+        <TouchPad onHold={handleHold} onRewind={doRewind} onJournal={() => toggleJournal()} onTree={() => toggleTree()} />
       </div>
     </div>
   );
@@ -426,15 +448,15 @@ function Tile({ ch, x, y, rows }: { ch: string; x: number; y: number; rows: stri
 
   if (ch === "#") {
     cls = "tile t-wall";
-    bg = "url(/assets/tiles/brick.png)";
+    bg = `url(${asset("/assets/tiles/brick.png")})`;
     size = "64px 128px";
     filter = "brightness(0.3) saturate(0.3)";
   } else if (ch === "," || ch === "." || ch === "*") {
     if (airAbove) {
-      bg = "url(/assets/tiles/ground_top.png)"; // 可站顶缘：月光沙岩
+      bg = `url(${asset("/assets/tiles/ground_top.png")})`; // 可站顶缘：月光沙岩
       filter = "brightness(0.52) saturate(0.4)";
     } else {
-      bg = "url(/assets/tiles/ground_fill.png)";
+      bg = `url(${asset("/assets/tiles/ground_fill.png")})`;
     }
   }
 

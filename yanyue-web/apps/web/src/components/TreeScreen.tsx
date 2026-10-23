@@ -151,7 +151,7 @@ export default function TreeScreen({ inGame = false }: { inGame?: boolean }) {
             <button className="btn btn-gold" onClick={() => { resetAll(); }}>再来一轮 · 种下新的树</button>
           </>
         )}
-        <span>拖动平移 · 滚轮缩放 · 点击节点跳回那条世界线</span>
+        <span><span className="lbl-full">拖动平移 · 滚轮缩放 · 点击节点跳回那条世界线</span><span className="lbl-short">拖动平移 · 点击节点跳回</span></span>
       </div>
     </div>
   );

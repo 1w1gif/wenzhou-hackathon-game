@@ -51,7 +51,7 @@ export default function Prologue() {
   const shot = SHOTS[step];
 
   return (
-    <div className={`screen prologue-screen ${shake ? "shake" : ""} ${flash ? "flash-white" : ""}`}>
+    <div className={`screen prologue-screen ${shake ? "shake" : ""} ${flash ? "flash-white" : ""}`} onClick={advance}>
       <div className="prologue-shot fade-in" key={step}>
         {shot === "moon" && (
           <div style={{ position: "absolute", right: "14%", top: "-6%", width: 170, height: 170 }} className="float">
@@ -100,7 +100,7 @@ export default function Prologue() {
         )}
       </div>
       <div className="prologue-caption fade-in" key={`c${step}`}>{CAPTIONS[step] ?? ""}</div>
-      <div className="prologue-skip">Enter / 空格 · 下一步{step < SHOTS.length - 1 ? "" : " · 进入游戏"}</div>
+      <div className="prologue-skip"><span className="lbl-full">Enter / 空格 · 下一步{step < SHOTS.length - 1 ? "" : " · 进入游戏"}</span><span className="lbl-short">轻触屏幕 · 下一步{step < SHOTS.length - 1 ? "" : " · 进入游戏"}</span></div>
     </div>
   );
 }

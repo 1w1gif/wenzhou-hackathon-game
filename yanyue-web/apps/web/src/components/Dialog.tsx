@@ -74,7 +74,7 @@ export default function Dialog() {
           ))}
         </div>
       ) : (
-        <div className="next">E / 空格 继续</div>
+        <div className="next"><span className="lbl-full">E / 空格 继续</span><span className="lbl-short">点击继续 ▸</span></div>
       )}
     </div>
   );

@@ -40,7 +40,7 @@ export default function TitleScreen() {
             </button>
           )}
         </div>
-        <div className="title-tip" style={{ marginTop: 14, opacity: 0.7 }}>Enter / 空格 开始</div>
+        <div className="title-tip" style={{ marginTop: 14, opacity: 0.7 }}><span className="lbl-full">Enter / 空格 开始</span><span className="lbl-short">轻触「开始游戏」</span></div>
       </div>
     </div>
   );

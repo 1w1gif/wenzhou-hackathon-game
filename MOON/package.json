@@ -1,0 +1,16 @@
+{
+  "name": "moon",
+  "version": "1.0.0",
+  "description": "《衍月·八相》Dora SSR 像素版：TypeScript 源码编译为 Lua 运行",
+  "private": true,
+  "scripts": {
+    "build": "tstl -p MOON/tsconfig.json",
+    "typecheck": "tsc --noEmit -p MOON/tsconfig.json"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "typescript": "^6.0.2",
+    "typescript-to-lua": "^1.37.1"
+  }
+}

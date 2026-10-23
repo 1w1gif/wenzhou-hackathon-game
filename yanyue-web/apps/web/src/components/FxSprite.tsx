@@ -5,6 +5,7 @@
  * 用 <div> 背景位移播放，component 播完自动卸载。
  */
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/base";
 
 const SLASH = { src: "/assets/fx/slash_sheet.png", frames: 8, fw: 200, fh: 120 };
 const HIT = { src: "/assets/fx/hit_sheet.png", frames: 6, fw: 128, fh: 128 };
@@ -40,7 +41,7 @@ export function FxSprite({ kind, x, y, flip, scale = 1, onDone, fps = 22 }: {
       width: cfg.fw * scale,
       height: cfg.fh * scale,
       transform: flip ? "scaleX(-1)" : undefined,
-      backgroundImage: `url(${cfg.src})`,
+      backgroundImage: `url(${asset(cfg.src)})`,
       backgroundPosition: `-${frame * cfg.fw * scale}px 0`,
       backgroundSize: `${cfg.fw * cfg.frames * scale}px ${cfg.fh * scale}px`,
       imageRendering: "auto",
