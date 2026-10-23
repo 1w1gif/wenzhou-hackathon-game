@@ -32,3 +32,10 @@ dist-ssr
 # 旧的本地副本（保留在磁盘，不提交）
 yanyue/
 yanyue-baxiang/
+
+# Dora 项目：AI 会话残留与临时文件
+MOON/MOON/.agent/
+MOON/MOON/.temp/
+
+# Next.js 构建产物（之前误提交过）
+yanyue-web/apps/web/.next/

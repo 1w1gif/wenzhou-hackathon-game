@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "strict": true,
+    "noImplicitOverride": true,
+    "types": [],
+    "outDir": ".",
+    "rootDir": "."
+  },
+  "tstl": {
+    "luaTarget": "5.4",
+    "luaLibImport": "require",
+    "sourceMapTraceback": true,
+    "noResolvePaths": ["Dora"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", ".agent"]
+}

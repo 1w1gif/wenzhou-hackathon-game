@@ -128,6 +128,19 @@ h1, h2, h3, p { margin: 0; }
 /* ---------------- 图块美术（CSS 程序化，水墨基调） ---------------- */
 .t-ground { background: linear-gradient(180deg, #262c33, #222830); }
 .t-ground.alt { background: linear-gradient(180deg, #232930, #1f252c); }
+.tile-soft { filter: brightness(0.92) saturate(0.85); }
+
+/* ---------------- 水墨夜空背景 ---------------- */
+.nk-star { position: absolute; border-radius: 50%; background: #dfe6f2; animation: nkTwinkle linear infinite; }
+@keyframes nkTwinkle { 0%,100% { opacity: 0.15; } 50% { opacity: 0.85; } }
+.nk-float { animation: nkFloat 10s ease-in-out infinite; }
+@keyframes nkFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+.nk-mist {
+  position: absolute; left: -30%; width: 160%; height: 90px;
+  background: radial-gradient(ellipse 60% 90% at 50% 50%, rgba(190,205,225,0.10), rgba(190,205,225,0) 70%);
+  animation: nkDrift linear infinite;
+}
+@keyframes nkDrift { from { transform: translateX(-12%); } to { transform: translateX(12%); } }
 .t-path { background: linear-gradient(180deg, #3b4049, #353a42); }
 .t-path::after { content: ""; position: absolute; inset: 34%; border-radius: 50%; background: rgba(247,243,228,0.05); }
 .t-wall {

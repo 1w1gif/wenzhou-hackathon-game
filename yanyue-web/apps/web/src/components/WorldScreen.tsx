@@ -9,8 +9,12 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useGame, ZONES, PORTALS, DIALOGS, MOON_PHASES } from "@yanyue/game-core";
 import { yanyueSVG, shenyanSVG, banditSVG, observerSVG, lanternSVG, starSVG, moonSVG } from "@yanyue/art-engine";
 import { Sprite } from "./Sprite";
+import { FxSprite } from "./FxSprite";
+import { NightSky } from "./NightSky";
+import { audio } from "@/lib/audio";
 
 const TS = 64;
+
 const GRAVITY = 2600;
 const MOVE_SPEED = 340;
 const ACCEL = 2800;
@@ -49,6 +53,14 @@ export default function WorldScreen() {
   const worldH = rows.length * TS;
 
   const [toast, setToast] = useState<{ text: string; until: number } | null>(null);
+  /** 剑光/受击 FX 池 */
+  const [fxList, setFxList] = useState<Array<{ id: number; kind: "slash" | "hit"; x: number; y: number; flip: boolean }>>([]);
+  const fxId = useRef(0);
+  const spawnFx = useCallback((kind: "slash" | "hit", x: number, y: number, flip = false) => {
+    const id = ++fxId.current;
+    setFxList(l => [...l, { id, kind, x, y, flip }]);
+    setTimeout(() => setFxList(l => l.filter(f => f.id !== id)), 600);
+  }, []);
   const [facing, setFacing] = useState<1 | -1>(1);
   const [pose, setPose] = useState<"stand" | "run" | "jump">("stand");
   const [checkpoint, setCheckpoint] = useState(spawnRef.current);
@@ -79,6 +91,14 @@ export default function WorldScreen() {
   useEffect(() => {
     if (toast && Date.now() > toast.until) setToast(null);
   }, [toast]);
+
+  // 首次交互解锁音频并进入探索 BGM
+  useEffect(() => {
+    const unlock = () => { audio.play("explore"); window.removeEventListener("keydown", unlock); window.removeEventListener("pointerdown", unlock); };
+    window.addEventListener("keydown", unlock);
+    window.addEventListener("pointerdown", unlock);
+    return () => { window.removeEventListener("keydown", unlock); window.removeEventListener("pointerdown", unlock); };
+  }, []);
 
   // 时空树跳回后：把物理体放到该世界线的落点
   const tpX = useGame((s) => s.px);
@@ -257,7 +277,11 @@ export default function WorldScreen() {
     if (ch === "B" && !metSet.current.has(`B${cx}_${cy}`)) {
       metSet.current.add(`B${cx}_${cy}`);
       hurt(1);
+      audio.sfx("sword");
+      spawnFx("hit", b.x + b.w / 2, b.y + b.h / 2);
+      audio.play("battle");
       showToast("劫匪头目挥刀砍来！你负伤击退了他。", 2600);
+      setTimeout(() => audio.play("explore"), 4200);
     }
     // 上层入口
     if (ch === "^") {
@@ -279,7 +303,7 @@ export default function WorldScreen() {
       confronted.current = true;
       say("confrontation");
     }
-  }, [rows, zoneId, cur, addClue, addMoonStone, addRelic, addTrust, markMet, hurt, record, say, setPos, showToast]);
+  }, [rows, zoneId, cur, addClue, addMoonStone, addRelic, addTrust, markMet, hurt, record, say, setPos, showToast, spawnFx]);
 
   /* ---------------- 对峙选择 ---------------- */
   const confront = useCallback((choice: string) => {
@@ -342,7 +366,16 @@ export default function WorldScreen() {
     <div className="screen world-screen">
       <div className="hud">
         <span className="brand">衍月·八相</span>
-        <span className="hud-pill life">生命 {"◈".repeat(cur.life)}{"◇".repeat(Math.max(0, cur.maxLife - cur.life))}</span>
+        <span className="hud-pill life" style={{ display: "inline-flex", alignItems: "center", gap: 3 }}>
+          {Array.from({ length: cur.maxLife }, (_, i) => (
+            <span key={i} style={{
+              width: 14, height: 9, borderRadius: 2, display: "inline-block",
+              backgroundImage: "url(/assets/ui/hp_fill.png)", backgroundSize: "cover",
+              filter: i < cur.life ? "none" : "grayscale(1) brightness(0.4)",
+              opacity: i < cur.life ? 1 : 0.5,
+            }} />
+          ))}
+        </span>
         <span className="hud-pill">剑意 {"—".repeat(cur.swordIntent)}{"·".repeat(Math.max(0, cur.maxSwordIntent - cur.swordIntent))}</span>
         <span className="hud-pill gold">☾ {MOON_PHASES[cur.moonPhaseIndex]} · 第 {cur.loopIndex + 1} 夜</span>
         <span className="hud-pill">信任 {cur.trust}</span>
@@ -353,10 +386,16 @@ export default function WorldScreen() {
       </div>
 
       <div className="viewport">
+        {/* 水墨夜空背景（程序化，按月相换月色 / 按楼层出塔影） */}
+        <NightSky phase={cur.moonPhaseIndex} floor={zone.floor} />
         <div className="world" style={{ width: worldW, height: worldH, transform: `translate(${Math.max(-(worldW - window.innerWidth), Math.min(0, -body.current.x + window.innerWidth / 2 - TS / 2))}px, ${Math.max(-(worldH - (window.innerHeight - 56)), Math.min(0, -body.current.y + (window.innerHeight - 56) / 2 - 60))}px)` }}>
           {rows.map((row, y) =>
-            row.split("").map((ch, x) => <Tile key={`${x}-${y}`} ch={ch} x={x} y={y} />)
+            row.split("").map((ch, x) => <Tile key={`${x}-${y}`} ch={ch} x={x} y={y} rows={rows} />)
           )}
+          {/* FX 序列帧 */}
+          {fxList.map(f => (
+            <FxSprite key={f.id} kind={f.kind} x={f.x} y={f.y} flip={f.flip} scale={0.55} />
+          ))}
           {entities.map(en => (
             <div key={en.key} className={`entity ${en.cls ?? ""}`}
               style={{ left: en.x * TS + (TS - (en.w ?? TS)) / 2, top: en.y * TS + TS - (en.h ?? TS), width: en.w ?? TS, height: en.h ?? TS }}>
@@ -376,16 +415,41 @@ export default function WorldScreen() {
   );
 }
 
-function Tile({ ch, x, y }: { ch: string; x: number; y: number }) {
-  let cls = `tile t-ground ${(x + y) % 2 ? "alt" : ""}`;
-  if (ch === ",") cls = `tile t-path ${(x + y) % 2 ? "alt" : ""}`;
-  else if (ch === "#") cls = "tile t-wall";
-  else if (ch === "w") cls = "tile t-water";
+function Tile({ ch, x, y, rows }: { ch: string; x: number; y: number; rows: string[] }) {
+  // 上方是否为空气：决定是否画沙岩亮顶缘
+  const airAbove = y === 0 || !"#$,wT".includes(rows[y - 1]?.[x] ?? "#");
+
+  let cls = "tile t-ground";
+  let bg: string | undefined;
+  let size = "64px 32px";
+  let filter = "brightness(0.24) saturate(0.25)"; // 深处近墨，夜空透出
+
+  if (ch === "#") {
+    cls = "tile t-wall";
+    bg = "url(/assets/tiles/brick.png)";
+    size = "64px 128px";
+    filter = "brightness(0.3) saturate(0.3)";
+  } else if (ch === "," || ch === "." || ch === "*") {
+    if (airAbove) {
+      bg = "url(/assets/tiles/ground_top.png)"; // 可站顶缘：月光沙岩
+      filter = "brightness(0.52) saturate(0.4)";
+    } else {
+      bg = "url(/assets/tiles/ground_fill.png)";
+    }
+  }
+
+  const bgStyle = bg ? {
+    backgroundImage: bg,
+    backgroundSize: size,
+    backgroundRepeat: "repeat" as const,
+    filter,
+  } : {};
+  if (ch === "w") cls = "tile t-water";
   else if (ch === "T") cls = "tile t-tree";
   else if (ch === "^") cls = "tile t-portal";
-  else if (ch === "*") cls = `tile t-ground ${(x + y) % 2 ? "alt" : ""} t-checkpoint`;
+  else if (ch === "*") cls += " t-checkpoint";
   return (
     <div key={`${x}-${y}`} className={cls}
-      style={{ left: x * TS, top: y * TS, width: TS, height: TS }} />
+      style={{ left: x * TS, top: y * TS, width: TS, height: TS, ...bgStyle }} />
   );
 }

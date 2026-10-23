@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useGame, ENDINGS } from "@yanyue/game-core";
 import { moonSVG } from "@yanyue/art-engine";
 import { Sprite } from "./Sprite";
+import { audio } from "@/lib/audio";
 
 export default function EndingScreen() {
   const endingSeen = useGame((s) => s.endingSeen);
@@ -12,6 +13,10 @@ export default function EndingScreen() {
   const [shown, setShown] = useState(2);
 
   const ending = ENDINGS[endingSeen ?? "duel"];
+
+  useEffect(() => {
+    audio.play("ending");
+  }, []);
 
   useEffect(() => {
     const t = setInterval(() => setShown((n) => Math.min(n + 1, ending.lines.length)), 900);
@@ -31,7 +36,7 @@ export default function EndingScreen() {
       </div>
       {done && (
         <div className="title-btns fade-in" style={{ position: "absolute", bottom: 48 }}>
-          <button className="btn btn-gold" onClick={() => { goto("world"); toggleTree(true); }}>
+          <button className="btn btn-gold" onClick={() => { audio.stopBgm(); goto("world"); toggleTree(true); }}>
             观看时空树
           </button>
         </div>
@@ -39,3 +44,5 @@ export default function EndingScreen() {
     </div>
   );
 }
+
+function EndBgmStop() { return null; }

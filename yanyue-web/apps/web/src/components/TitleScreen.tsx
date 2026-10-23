@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import { useGame } from "@yanyue/game-core";
-import { yanyueSVG, shenyanSVG, moonSVG } from "@yanyue/art-engine";
+import { yanyueSVG, shenyanSVG } from "@yanyue/art-engine";
 import { Sprite } from "./Sprite";
+import { NightSky } from "./NightSky";
 
 export default function TitleScreen() {
   const goto = useGame((s) => s.goto);
@@ -22,11 +23,7 @@ export default function TitleScreen() {
 
   return (
     <div className="screen title-screen">
-      <div className="title-moon"><Sprite svg={moonSVG()} /></div>
-      <svg className="title-hills" viewBox="0 0 100 40" preserveAspectRatio="none">
-        <path d="M0 40 L0 26 Q18 12 34 24 Q50 34 66 20 Q82 8 100 22 L100 40 Z" fill="#1c2330" />
-        <path d="M0 40 L0 32 Q22 22 42 30 Q62 38 84 28 Q92 24 100 30 L100 40 Z" fill="#232c3c" />
-      </svg>
+      <NightSky phase={4} floor={5} dim />
       <div className="title-card">
         <h1 className="title-name">衍月·八相</h1>
         <div className="title-sub">满 月 之 夜 的 时 间 回 溯</div>
