@@ -74,6 +74,15 @@ declare module "Dora" {
     isKeyDown(key: KeyName): boolean;
   };
 
+  // ---------- 触摸 ----------
+  export interface TouchType {
+    id: number;
+    first: boolean;
+    enabled: boolean;
+    location: Vec2Type;
+    delta: Vec2Type;
+  }
+
   // ---------- 节点 ----------
   export interface NodeType {
     x: number;
@@ -89,10 +98,14 @@ declare module "Dora" {
     position: Vec2Type;
     anchor: Vec2Type;
     color: ColorType;
+    touchEnabled: boolean;
+    swallowTouches: boolean;
     addTo(parent: NodeType): void;
     removeFromParent(): void;
     schedule(callback: (dt: number) => boolean | void): void;
+    unschedule(): void;
     onKeyDown(callback: (key: KeyName) => void): void;
+    slot(event: string, callback: (touch: TouchType) => boolean | void): void;
     perform(action: unknown): void;
   }
   export const Node: {

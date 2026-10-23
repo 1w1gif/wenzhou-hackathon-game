@@ -17,6 +17,7 @@ import { createIntro } from "scenes/intro";
 import { drawShenYan, drawObserver } from "game/render_chars";
 import { playBgm, stopBgm, sfx } from "game/audio";
 import { SheetFxSystem } from "game/sheetfx";
+import { TouchPad } from "ui/touch";
 
 type Mode = "title" | "prologue" | "play" | "dialog" | "confront" | "rewind" | "dead" | "ending";
 
@@ -67,6 +68,7 @@ export class Game {
   private endingId: string;
   private sheetNode: Node.Type;
   private sheetFx: SheetFxSystem;
+  private touchPad: TouchPad;
 
   constructor() {
     this.root = Node();
@@ -102,6 +104,11 @@ export class Game {
     this.hud = new HUD(this.uiRoot);
     this.dialog = new DialogUI(this.uiRoot);
     this.notebook = new NotebookUI(this.uiRoot);
+    this.touchPad = new TouchPad(this.uiRoot);
+    this.touchPad.onInteract = () => this.onKey(KeyName.E);
+    this.touchPad.onRewind = () => this.onKey(KeyName.Q);
+    this.touchPad.onNote = () => this.onKey(KeyName.N);
+    this.touchPad.onRevive = () => this.onKey(KeyName.R);
     this.mode = "title";
     this.paused = false;
     this.time = 0;
@@ -163,15 +170,16 @@ export class Game {
     if (!active) {
       return { left: false, right: false, up: false, down: false, jumpPressed: false, attackPressed: false, qiPressed: false, dashPressed: false };
     }
+    const pad = this.touchPad.pad;
     return {
-      left: Keyboard.isKeyPressed(KeyName.A),
-      right: Keyboard.isKeyPressed(KeyName.D),
-      up: Keyboard.isKeyPressed(KeyName.W),
-      down: Keyboard.isKeyPressed(KeyName.S),
-      jumpPressed: Keyboard.isKeyDown(KeyName.Space),
-      attackPressed: Keyboard.isKeyDown(KeyName.J),
-      qiPressed: Keyboard.isKeyDown(KeyName.K),
-      dashPressed: Keyboard.isKeyDown(KeyName.LShift),
+      left: Keyboard.isKeyPressed(KeyName.A) || pad.left,
+      right: Keyboard.isKeyPressed(KeyName.D) || pad.right,
+      up: Keyboard.isKeyPressed(KeyName.W) || pad.up,
+      down: Keyboard.isKeyPressed(KeyName.S) || pad.down,
+      jumpPressed: Keyboard.isKeyDown(KeyName.Space) || this.touchPad.takeJump(),
+      attackPressed: Keyboard.isKeyDown(KeyName.J) || this.touchPad.takeAttack(),
+      qiPressed: Keyboard.isKeyDown(KeyName.K) || this.touchPad.takeQi(),
+      dashPressed: Keyboard.isKeyDown(KeyName.LShift) || this.touchPad.takeDash(),
     };
   }
 
@@ -260,6 +268,11 @@ export class Game {
 
   private tick(dt: number): void {
     this.time += dt;
+    // 虚拟手柄只在可操作界面显示（play/confront/dialog/dead 常开，标题/序章/结局隐藏）
+    const padVisible = this.mode === "play" || this.mode === "confront" || this.mode === "dialog" || this.mode === "dead";
+    if (this.touchPad.rootNode.visible !== padVisible) {
+      this.touchPad.setVisible(padVisible);
+    }
     let shakeX = 0;
     let shakeY = 0;
     if (this.shakeT > 0) {
