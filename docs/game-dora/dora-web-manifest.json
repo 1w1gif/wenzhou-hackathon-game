@@ -2128,9 +2128,9 @@
     },
     {
       "path": "init.lua",
-      "url": "assets/init.c0e6cd721ab5.lua",
+      "url": "assets/init.9ff7cee53afb.lua",
       "size": 707,
-      "sha256": "c0e6cd721ab5f2ab6425e0c2bd5ae91ae1aec060d6cb8a78a60d8e3ce174c574",
+      "sha256": "9ff7cee53afb28a8ee1a27afbaa422c70af7ba463860a1575a6f95d5696ce0db",
       "startup": true
     },
     {
