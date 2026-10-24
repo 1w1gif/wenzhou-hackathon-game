@@ -308,23 +308,23 @@
     },
     {
       "path": "assets/characters/爬梯子1.png",
-      "url": "assets/assets/characters/爬梯子1.21dd5facee8f.png",
-      "size": 905253,
-      "sha256": "21dd5facee8f10a716517ca091157935f9d7f4c45fdf61129478a6b722f5e024",
+      "url": "assets/assets/characters/爬梯子1.6960a966d630.png",
+      "size": 91623,
+      "sha256": "6960a966d6306aa8e94e2237fd8d157008e37e74d71b02b55ab84911257bd88e",
       "startup": true
     },
     {
       "path": "assets/characters/爬梯子2.png",
-      "url": "assets/assets/characters/爬梯子2.2b2128c5ff27.png",
-      "size": 958418,
-      "sha256": "2b2128c5ff276876d3c103b879a8ea3a341f1b95aa4ea406d268925c7abf325c",
+      "url": "assets/assets/characters/爬梯子2.3dd0fb5a50e9.png",
+      "size": 97243,
+      "sha256": "3dd0fb5a50e936c54566cdd1fa302f3f2040808bd1819bdaafee6d3688ef7199",
       "startup": true
     },
     {
       "path": "assets/characters/衍月.png",
-      "url": "assets/assets/characters/衍月.64c1007dfff9.png",
-      "size": 349109,
-      "sha256": "64c1007dfff9afeaafe210909efbfc1930c4be3480921a45005fe4e3baaa3d7c",
+      "url": "assets/assets/characters/衍月.3e01496b7052.png",
+      "size": 46317,
+      "sha256": "3e01496b705290749041dc2b14c3112fb28e57f30e3179dc28995037104b1eec",
       "startup": true
     },
     {
@@ -665,240 +665,240 @@
     },
     {
       "path": "assets/characters/hero_v2/atk_0.png",
-      "url": "assets/assets/characters/hero_v2/atk_0.24a8b5902d84.png",
-      "size": 1568142,
-      "sha256": "24a8b5902d84139252b2cd9abbb587323ab6ce969d15313c7dd0ca4d7f1beceb",
+      "url": "assets/assets/characters/hero_v2/atk_0.2d6ac4c142e7.png",
+      "size": 172311,
+      "sha256": "2d6ac4c142e771e44b2e8474199d5aac6db3a8a34c97d01873517489421ca6d2",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/atk_1.png",
-      "url": "assets/assets/characters/hero_v2/atk_1.754ac40070bd.png",
-      "size": 1497828,
-      "sha256": "754ac40070bd1cb6fd5335107e76cefb8387897677de7b890e9f143e08ffd5e9",
+      "url": "assets/assets/characters/hero_v2/atk_1.0c1cd7edbe66.png",
+      "size": 211415,
+      "sha256": "0c1cd7edbe66cf09837288beb38bedbb73ec178ac005da102b509cde944f7529",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/atk_2.png",
-      "url": "assets/assets/characters/hero_v2/atk_2.fcd062b711e5.png",
-      "size": 1344799,
-      "sha256": "fcd062b711e53c85ae6e0eaaa1d23c2d3fa52ccccbe825debb1ddf75ab2b0c66",
+      "url": "assets/assets/characters/hero_v2/atk_2.e86463bc5ec7.png",
+      "size": 183033,
+      "sha256": "e86463bc5ec72be7bc58eeb29b5c3a8887b706864b2e51a3d81969b233c292a7",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/atk_3.png",
-      "url": "assets/assets/characters/hero_v2/atk_3.3c79807ef21a.png",
-      "size": 1406057,
-      "sha256": "3c79807ef21adbe4bfb572e4b01558a8bd90195d7e87929320e187d6d2513235",
+      "url": "assets/assets/characters/hero_v2/atk_3.f55123ea472f.png",
+      "size": 192204,
+      "sha256": "f55123ea472f74bfc906a72284fa522629b6ff0550ecd9ce3e47a134529d9150",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/atk_4.png",
-      "url": "assets/assets/characters/hero_v2/atk_4.d92279916231.png",
-      "size": 1619922,
-      "sha256": "d922799162310b1b77509da008f757bf735f72cea3d5b1f5a417b147f098a8fc",
+      "url": "assets/assets/characters/hero_v2/atk_4.ebf95726c996.png",
+      "size": 214548,
+      "sha256": "ebf95726c996785f04c986a4be0797a08f2405ac5b2685195d364e3044c71924",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/cling_0.png",
-      "url": "assets/assets/characters/hero_v2/cling_0.4bf86651275e.png",
-      "size": 1188204,
-      "sha256": "4bf86651275e53222ce972a527d29fc7fd2dd216593c689e325e5b15ecbce93c",
+      "url": "assets/assets/characters/hero_v2/cling_0.28ece037b06a.png",
+      "size": 133787,
+      "sha256": "28ece037b06a0671582ab9f5693fb1d1e6aacb2991a19368c33c373ea2ef80c1",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/cling_1.png",
-      "url": "assets/assets/characters/hero_v2/cling_1.300118b00fd6.png",
-      "size": 1393481,
-      "sha256": "300118b00fd6095d733681ebebc8624c198bf4afa1a335a2c96140930ff3bf4d",
+      "url": "assets/assets/characters/hero_v2/cling_1.f7485b735cfd.png",
+      "size": 167666,
+      "sha256": "f7485b735cfdc0c1f35d307dc0d047be7e69feb08330170f1a9e8c2ef465f4dc",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/cling_2.png",
-      "url": "assets/assets/characters/hero_v2/cling_2.460d8ad0af56.png",
-      "size": 1489736,
-      "sha256": "460d8ad0af562df51068d59edd2d99bfd070fd9e4bfb7c25b640feb911f897f2",
+      "url": "assets/assets/characters/hero_v2/cling_2.d368d2781d1f.png",
+      "size": 190350,
+      "sha256": "d368d2781d1f9b2487c3d8c4cae6ecdfb088a52900df329813f92fe6708c6409",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/dash_0.png",
-      "url": "assets/assets/characters/hero_v2/dash_0.9dd9c9ab6c84.png",
-      "size": 997839,
-      "sha256": "9dd9c9ab6c84af59459f35a84dfd6106e99fead87616a8c1602a630a247c5770",
+      "url": "assets/assets/characters/hero_v2/dash_0.9f0ebad59b68.png",
+      "size": 107845,
+      "sha256": "9f0ebad59b68a229543b9171171fee30d8eb0098a96d2c20a5346c57f6275f0d",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/dash_1.png",
-      "url": "assets/assets/characters/hero_v2/dash_1.67bab616a993.png",
-      "size": 799466,
-      "sha256": "67bab616a99310ee3dd4c584f44dd08d505c64e719fd12f031b90128fed8bfca",
+      "url": "assets/assets/characters/hero_v2/dash_1.ea5e9b60549a.png",
+      "size": 95419,
+      "sha256": "ea5e9b60549affee1aceac9beb014d05006c6dffe594b1fc838b268f7ecc2ec3",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/fall_0.png",
-      "url": "assets/assets/characters/hero_v2/fall_0.9dfe4389ef5a.png",
-      "size": 1486852,
-      "sha256": "9dfe4389ef5ab81c5b4dc916e7341356524bcb17b444be63adf5b0bd9a0028a7",
+      "url": "assets/assets/characters/hero_v2/fall_0.24cdebc5cec4.png",
+      "size": 170520,
+      "sha256": "24cdebc5cec4fd47360b85641f8347e5bdde1e3da915bc2c53f6dc013db4e315",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/hurt_0.png",
-      "url": "assets/assets/characters/hero_v2/hurt_0.9f14fed95593.png",
-      "size": 1311130,
-      "sha256": "9f14fed95593cbda0c3e4fa6cdaf4d5a547f83bcbe27171cf1f36cda92fddcdc",
+      "url": "assets/assets/characters/hero_v2/hurt_0.2a9999060bbd.png",
+      "size": 137002,
+      "sha256": "2a9999060bbd221d980de2c4f70b0f1e7b458415124e37c19a4522666f0b9413",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/jump_0.png",
-      "url": "assets/assets/characters/hero_v2/jump_0.27a6e3feb4fa.png",
-      "size": 1041342,
-      "sha256": "27a6e3feb4fa7282d64f766d0f46a9e863322f4da47931d5304101365e7ec25d",
+      "url": "assets/assets/characters/hero_v2/jump_0.096e3e48b328.png",
+      "size": 111379,
+      "sha256": "096e3e48b3285d37ec5c8756074b7405f7029fb05b309d56b56262b71335443a",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/jump_1.png",
-      "url": "assets/assets/characters/hero_v2/jump_1.aa089d45dc53.png",
-      "size": 1535606,
-      "sha256": "aa089d45dc53f93a9e111bc6beffdc6ded6b8a8e0abc43a08d902ee3b8fcbe12",
+      "url": "assets/assets/characters/hero_v2/jump_1.6deb4c52ebe2.png",
+      "size": 147758,
+      "sha256": "6deb4c52ebe2ca41b62cb60324e5851b4a2da965bb4c6e0e5b0b7443d392b246",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/portrait.png",
-      "url": "assets/assets/characters/hero_v2/portrait.64c1007dfff9.png",
-      "size": 349109,
-      "sha256": "64c1007dfff9afeaafe210909efbfc1930c4be3480921a45005fe4e3baaa3d7c",
+      "url": "assets/assets/characters/hero_v2/portrait.3e01496b7052.png",
+      "size": 46317,
+      "sha256": "3e01496b705290749041dc2b14c3112fb28e57f30e3179dc28995037104b1eec",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/run_0.png",
-      "url": "assets/assets/characters/hero_v2/run_0.c1dcca836ca5.png",
-      "size": 620997,
-      "sha256": "c1dcca836ca553806227f71d38f740c72c16b43b93b9d12569ecf7c9bf8e8e43",
+      "url": "assets/assets/characters/hero_v2/run_0.ba1c11e691fb.png",
+      "size": 79535,
+      "sha256": "ba1c11e691fbe8fdef2af45ac10432d5a06b6c2a899d289cceb2524bf9155998",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/run_1.png",
-      "url": "assets/assets/characters/hero_v2/run_1.f05fde5096db.png",
-      "size": 629281,
-      "sha256": "f05fde5096db31b17ce12c8ded00407fccd78b249b5243ae9f0e85a0aad11430",
+      "url": "assets/assets/characters/hero_v2/run_1.bc6578f004ee.png",
+      "size": 78330,
+      "sha256": "bc6578f004ee932fdee43d47b761a30a19db5a04d1e97a467ebbde75e50e762b",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/run_2.png",
-      "url": "assets/assets/characters/hero_v2/run_2.fe4825cbdfa5.png",
-      "size": 618041,
-      "sha256": "fe4825cbdfa59d35a86af330a28f9cbf1bcd13bc9eaf84a4b6d0bd013e581597",
+      "url": "assets/assets/characters/hero_v2/run_2.594aff618d09.png",
+      "size": 81552,
+      "sha256": "594aff618d09105f634fb03edb7d035d8d437981cc244d1c9e0fc757753bde90",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/run_3.png",
-      "url": "assets/assets/characters/hero_v2/run_3.ba1637e1f714.png",
-      "size": 1987286,
-      "sha256": "ba1637e1f71432ed9eaca082c9435f0a97a999305496ddc24aa895da92269e70",
+      "url": "assets/assets/characters/hero_v2/run_3.7d4c358d9f6e.png",
+      "size": 192850,
+      "sha256": "7d4c358d9f6e657c1bd025f2fb522b4291e766ede8fbb5c0dd665d3bf5336f44",
       "startup": true
     },
     {
       "path": "assets/characters/hero_v2/run_4.png",
-      "url": "assets/assets/characters/hero_v2/run_4.93ca2b31c549.png",
-      "size": 1827525,
-      "sha256": "93ca2b31c5495e32ed1a49b4ecf94ee50b618d0e7bb926b04d3a38c42430fdca",
+      "url": "assets/assets/characters/hero_v2/run_4.fe2f750a32bd.png",
+      "size": 190477,
+      "sha256": "fe2f750a32bd466dcfac9d7c9929b7795c40c84fdf022cb16842672d096f4546",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/atk_0.png",
-      "url": "assets/assets/characters/yanyue/atk_0.f50e6c793bf1.png",
-      "size": 531422,
-      "sha256": "f50e6c793bf1e2f74b08b4f967ed463b732e88b0af5124c1284fd385f22686bf",
+      "url": "assets/assets/characters/yanyue/atk_0.d3d6476e19ee.png",
+      "size": 84349,
+      "sha256": "d3d6476e19ee2824064f61cbbfd64ac2505de9475025326943f61650fb8cb2a4",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/atk_1.png",
-      "url": "assets/assets/characters/yanyue/atk_1.c299f502a097.png",
-      "size": 1180083,
-      "sha256": "c299f502a09749cafc9c78dd5a7b220025881e6b4a35cfafcda273055a24aa1e",
+      "url": "assets/assets/characters/yanyue/atk_1.806ec48f2c28.png",
+      "size": 159370,
+      "sha256": "806ec48f2c2820c982461a27f14055157e00c61089452bdc1baa9a2d24dfe847",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/atk_2.png",
-      "url": "assets/assets/characters/yanyue/atk_2.5b8292c3c3fb.png",
-      "size": 939079,
-      "sha256": "5b8292c3c3fb587437c0aa44d29c2d7934c785ecac482d2e220479035fdac0f5",
+      "url": "assets/assets/characters/yanyue/atk_2.c028f4c8f6c5.png",
+      "size": 152434,
+      "sha256": "c028f4c8f6c5587f1b0c1914c0d1cb6dcddadbbcd1b7482680449e10c015253c",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/cling.png",
-      "url": "assets/assets/characters/yanyue/cling.e55713a7a08f.png",
-      "size": 940956,
-      "sha256": "e55713a7a08f7cb8e14655a817af580705e7e10d275ad628c6bb4b1df8a643c7",
+      "url": "assets/assets/characters/yanyue/cling.223906bbc984.png",
+      "size": 135286,
+      "sha256": "223906bbc984802eb2f3650ec318aceedec67b45b907d93245a7c9cb4169dae1",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/dash_0.png",
-      "url": "assets/assets/characters/yanyue/dash_0.9dd9c9ab6c84.png",
-      "size": 997839,
-      "sha256": "9dd9c9ab6c84af59459f35a84dfd6106e99fead87616a8c1602a630a247c5770",
+      "url": "assets/assets/characters/yanyue/dash_0.9f0ebad59b68.png",
+      "size": 107845,
+      "sha256": "9f0ebad59b68a229543b9171171fee30d8eb0098a96d2c20a5346c57f6275f0d",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/dash_1.png",
-      "url": "assets/assets/characters/yanyue/dash_1.67bab616a993.png",
-      "size": 799466,
-      "sha256": "67bab616a99310ee3dd4c584f44dd08d505c64e719fd12f031b90128fed8bfca",
+      "url": "assets/assets/characters/yanyue/dash_1.ea5e9b60549a.png",
+      "size": 95419,
+      "sha256": "ea5e9b60549affee1aceac9beb014d05006c6dffe594b1fc838b268f7ecc2ec3",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/fall.png",
-      "url": "assets/assets/characters/yanyue/fall.9dfe4389ef5a.png",
-      "size": 1486852,
-      "sha256": "9dfe4389ef5ab81c5b4dc916e7341356524bcb17b444be63adf5b0bd9a0028a7",
+      "url": "assets/assets/characters/yanyue/fall.24cdebc5cec4.png",
+      "size": 170520,
+      "sha256": "24cdebc5cec4fd47360b85641f8347e5bdde1e3da915bc2c53f6dc013db4e315",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/hurt.png",
-      "url": "assets/assets/characters/yanyue/hurt.21ccd740ffd0.png",
-      "size": 1189620,
-      "sha256": "21ccd740ffd0cfe6b73f792c18eba15bbb68943d8c9a7351b9e8f02e85474a03",
+      "url": "assets/assets/characters/yanyue/hurt.da50cf71d990.png",
+      "size": 203483,
+      "sha256": "da50cf71d990bfebc03acf201fcb3998c31f2eb6c697cf57ecdf5fa22c45d71b",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/jump_0.png",
-      "url": "assets/assets/characters/yanyue/jump_0.27a6e3feb4fa.png",
-      "size": 1041342,
-      "sha256": "27a6e3feb4fa7282d64f766d0f46a9e863322f4da47931d5304101365e7ec25d",
+      "url": "assets/assets/characters/yanyue/jump_0.096e3e48b328.png",
+      "size": 111379,
+      "sha256": "096e3e48b3285d37ec5c8756074b7405f7029fb05b309d56b56262b71335443a",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/jump_1.png",
-      "url": "assets/assets/characters/yanyue/jump_1.aa089d45dc53.png",
-      "size": 1535606,
-      "sha256": "aa089d45dc53f93a9e111bc6beffdc6ded6b8a8e0abc43a08d902ee3b8fcbe12",
+      "url": "assets/assets/characters/yanyue/jump_1.6deb4c52ebe2.png",
+      "size": 147758,
+      "sha256": "6deb4c52ebe2ca41b62cb60324e5851b4a2da965bb4c6e0e5b0b7443d392b246",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/run_0.png",
-      "url": "assets/assets/characters/yanyue/run_0.0cc215c96f49.png",
-      "size": 653251,
-      "sha256": "0cc215c96f490df5b97ac0ecda8abbf9a1f75028fffefb3f829a2575a436b50c",
+      "url": "assets/assets/characters/yanyue/run_0.9b9d471208c8.png",
+      "size": 90821,
+      "sha256": "9b9d471208c801b9fca3a376b28220ef142033acad3a5e9368f2796eec07ae5c",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/run_1.png",
-      "url": "assets/assets/characters/yanyue/run_1.62298cc87680.png",
-      "size": 750669,
-      "sha256": "62298cc87680172aede4103eac1397d20f4b60c52e12abb01d9eb1903b1408f7",
+      "url": "assets/assets/characters/yanyue/run_1.125a26143d67.png",
+      "size": 98187,
+      "sha256": "125a26143d6752e93c768c9e1a378a4e5aa7e31eb3ac20b36edf6393bb1e3b8d",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/run_2.png",
-      "url": "assets/assets/characters/yanyue/run_2.1fca688b4aa7.png",
-      "size": 636725,
-      "sha256": "1fca688b4aa7bcb7629a30c4435fe4d1bcde1d2fe574309a2fce44e2f98ccc56",
+      "url": "assets/assets/characters/yanyue/run_2.de8d16b34759.png",
+      "size": 93305,
+      "sha256": "de8d16b347592f549363e1cc89c64520f512b59fdbfe90d5678085336a050103",
       "startup": true
     },
     {
       "path": "assets/characters/yanyue/run_air.png",
-      "url": "assets/assets/characters/yanyue/run_air.ed4871963f4a.png",
-      "size": 1903769,
-      "sha256": "ed4871963f4a78c8e229697ffbb0436e4388ddd9c60fbd252d6011c947395986",
+      "url": "assets/assets/characters/yanyue/run_air.eee7a12d51ca.png",
+      "size": 199492,
+      "sha256": "eee7a12d51ca9ed45591947d28dff5d807353c5f568946b368915b8632fcd65e",
       "startup": true
     },
     {
@@ -1137,6 +1137,20 @@
       "url": "assets/assets/enemies/ninja/peasant_walk.2f5122467d04.png",
       "size": 5577,
       "sha256": "2f5122467d0436c813b8d22f9f2bd81ce76ebf075c8d5ebaace18248694c5e7b",
+      "startup": true
+    },
+    {
+      "path": "assets/font/DialogFont.ttf",
+      "url": "assets/assets/font/DialogFont.16554439b7e9.ttf",
+      "size": 25024512,
+      "sha256": "16554439b7e95da1fc354ed7b2c1551e83e942c3c5afb2a2e883761c6037dc22",
+      "startup": true
+    },
+    {
+      "path": "assets/font/NameFont.ttf",
+      "url": "assets/assets/font/NameFont.ab4ed94df213.ttf",
+      "size": 14327692,
+      "sha256": "ab4ed94df2134bbf00c49f7ec03696e21d7012d9dda8a57a2ad3e4abaeeb5e7a",
       "startup": true
     },
     {
@@ -1624,23 +1638,23 @@
     },
     {
       "path": "assets/tiles/lamp_stone.png",
-      "url": "assets/assets/tiles/lamp_stone.2478e342f5a3.png",
-      "size": 1532630,
-      "sha256": "2478e342f5a3e22b7988887d0b295aaba061908a0aa9344090a1ebd623395e13",
+      "url": "assets/assets/tiles/lamp_stone.e337cb79c7b7.png",
+      "size": 171952,
+      "sha256": "e337cb79c7b779617b4f473455ce5bc99ce9360f7e3604fd029a7d849ba1b917",
       "startup": true
     },
     {
       "path": "assets/tiles/moon_stone.png",
-      "url": "assets/assets/tiles/moon_stone.2478e342f5a3.png",
-      "size": 1532630,
-      "sha256": "2478e342f5a3e22b7988887d0b295aaba061908a0aa9344090a1ebd623395e13",
+      "url": "assets/assets/tiles/moon_stone.e337cb79c7b7.png",
+      "size": 171952,
+      "sha256": "e337cb79c7b779617b4f473455ce5bc99ce9360f7e3604fd029a7d849ba1b917",
       "startup": true
     },
     {
       "path": "assets/tiles/push_stone.png",
-      "url": "assets/assets/tiles/push_stone.7ad8c6c66c05.png",
-      "size": 3931500,
-      "sha256": "7ad8c6c66c05c4f4e5fcee9c6d6f40a04f4d53fc1ee821c00d2f55ff6ad83cda",
+      "url": "assets/assets/tiles/push_stone.63c46dba0fb2.png",
+      "size": 585898,
+      "sha256": "63c46dba0fb2d0966506523ff3b0a1018195c92bed8c1e99ef4dedc4c5576b29",
       "startup": true
     },
     {
@@ -1890,184 +1904,359 @@
     },
     {
       "path": "core/archive.lua",
-      "url": "assets/core/archive.6d346497b112.lua",
-      "size": 5044,
-      "sha256": "6d346497b112a78ed4ebf98fc2086921c01f084dba7a0982c2c78932064bcb7d",
+      "url": "assets/core/archive.3e6296ca88d8.lua",
+      "size": 5990,
+      "sha256": "3e6296ca88d8e04cdb4f64f664bca0c2859b331b22d926eb5f82c3bb672bacc1",
+      "startup": true
+    },
+    {
+      "path": "core/archive.ts",
+      "url": "assets/core/archive.1fc5a8249a11.ts",
+      "size": 4194,
+      "sha256": "1fc5a8249a110f7ea5a3997e6e8574b3fd0988f61caa69bcd727e835f1988fd3",
       "startup": true
     },
     {
       "path": "core/palette.lua",
-      "url": "assets/core/palette.5517d6cf2447.lua",
-      "size": 1415,
-      "sha256": "5517d6cf2447fce514133133136ac8c7a107bfa9e7b62d0fad427f5e67314f8b",
+      "url": "assets/core/palette.96238927ab65.lua",
+      "size": 1784,
+      "sha256": "96238927ab65ebc82253482d2a8e29a23967653b50976b81df96d1da57ee1778",
+      "startup": true
+    },
+    {
+      "path": "core/palette.ts",
+      "url": "assets/core/palette.774016cc47f0.ts",
+      "size": 1493,
+      "sha256": "774016cc47f06c364ce2eee7bad01820c6390e5f1f0505d9ed3b23d8b5d86ac7",
       "startup": true
     },
     {
       "path": "core/types.lua",
-      "url": "assets/core/types.fada19e6b397.lua",
-      "size": 69,
-      "sha256": "fada19e6b397d960d015a5e638708478a2fd10be48cef02febe55421acf07a2e",
+      "url": "assets/core/types.93f2e30dff74.lua",
+      "size": 213,
+      "sha256": "93f2e30dff742265f39905820b75ce00fce0bc53c083fcac1de3adbc76caf9d6",
+      "startup": true
+    },
+    {
+      "path": "core/types.ts",
+      "url": "assets/core/types.d08628789a16.ts",
+      "size": 5938,
+      "sha256": "d08628789a169141aa91bc97fab794fe9b33bbf5f42fc30abd8e3176146eb7a0",
       "startup": true
     },
     {
       "path": "data/ending_images.lua",
-      "url": "assets/data/ending_images.0ea1c3873279.lua",
-      "size": 264,
-      "sha256": "0ea1c3873279dd2b5360acbe1b58e7e810cf8684ecced4a9a8a6c7905bb83156",
+      "url": "assets/data/ending_images.a4240f949a00.lua",
+      "size": 404,
+      "sha256": "a4240f949a001872a5132a8f2b1cb4d60d167d64220d6ee5b07a7cc409181c8a",
+      "startup": true
+    },
+    {
+      "path": "data/ending_images.ts",
+      "url": "assets/data/ending_images.b59755dddcc9.ts",
+      "size": 398,
+      "sha256": "b59755dddcc9b34f51850501615716e55feea79b7c09a6826a3dd3a90cfb0b14",
       "startup": true
     },
     {
       "path": "data/story.lua",
-      "url": "assets/data/story.6a723a877c54.lua",
-      "size": 11585,
-      "sha256": "6a723a877c541f36f9d7b48705cb63e0feca7fa39d8447adeed67f5195d252da",
+      "url": "assets/data/story.8e486592b12a.lua",
+      "size": 12738,
+      "sha256": "8e486592b12ad2b472dabd0abe4bafdbecf84d67b8f080a533b7d03576dd0592",
+      "startup": true
+    },
+    {
+      "path": "data/story.ts",
+      "url": "assets/data/story.25a271d0c3f1.ts",
+      "size": 12171,
+      "sha256": "25a271d0c3f120a2d13dba75253b0ac5e6c39d5a5208c1015e06895e3bd07201",
       "startup": true
     },
     {
       "path": "data/tower.lua",
-      "url": "assets/data/tower.f6476c6db957.lua",
-      "size": 31358,
-      "sha256": "f6476c6db957103d6b9bde1c317db829206731e28a5a47e84acb1f239f5b58ed",
+      "url": "assets/data/tower.5793bfac192f.lua",
+      "size": 52175,
+      "sha256": "5793bfac192fadc7f6de553f6b54b696aacbd2787ae28a3a13dad1e99455251c",
+      "startup": true
+    },
+    {
+      "path": "data/tower.ts",
+      "url": "assets/data/tower.5295e1ca229f.ts",
+      "size": 28799,
+      "sha256": "5295e1ca229f9767ab70ce538284a45001ff225642b2a387237181b0d2665365",
       "startup": true
     },
     {
       "path": "game/audio.lua",
-      "url": "assets/game/audio.d61d7c945b16.lua",
-      "size": 3029,
-      "sha256": "d61d7c945b16b15ec7d8be828c039baa83f7341b17da1e981ce5927215d5407a",
+      "url": "assets/game/audio.5009c3abc3a4.lua",
+      "size": 3759,
+      "sha256": "5009c3abc3a44a9f04764009a2f40682e2f9954c3ea1210a81b939468fa10be3",
+      "startup": true
+    },
+    {
+      "path": "game/audio.ts",
+      "url": "assets/game/audio.b0be46344a1c.ts",
+      "size": 2949,
+      "sha256": "b0be46344a1cbea698778e9e22fa9cb66f28e42b6bbacb4ddaeee824ac70893a",
       "startup": true
     },
     {
       "path": "game/boomfx.lua",
-      "url": "assets/game/boomfx.e41da0b7cf6b.lua",
-      "size": 3165,
-      "sha256": "e41da0b7cf6b2f190697726a1eff7849ad394170cbd98a1862ce02c5e11cc369",
+      "url": "assets/game/boomfx.342831e6e972.lua",
+      "size": 4073,
+      "sha256": "342831e6e972f7aff1cfc8441aedd4c10851673fb5cc2a94e94b8e94a7581dfa",
+      "startup": true
+    },
+    {
+      "path": "game/boomfx.ts",
+      "url": "assets/game/boomfx.c31c1fdd964b.ts",
+      "size": 2719,
+      "sha256": "c31c1fdd964ba8fd197e84bdc77338f7ac6c52a4e44ea4da589dafe10a31e3fc",
       "startup": true
     },
     {
       "path": "game/causality_fx.lua",
-      "url": "assets/game/causality_fx.848a46810415.lua",
-      "size": 3494,
-      "sha256": "848a46810415245779e491b3a38439d670984a0184bcf52d59a3c85f334a8efe",
+      "url": "assets/game/causality_fx.e91bea1c3f47.lua",
+      "size": 4937,
+      "sha256": "e91bea1c3f47e08ba8f812cc117dd5ce5e4ab4ae6e1a04da670760db240650e7",
+      "startup": true
+    },
+    {
+      "path": "game/causality_fx.ts",
+      "url": "assets/game/causality_fx.3958b4873bbf.ts",
+      "size": 2951,
+      "sha256": "3958b4873bbf3e7c7e23b458f8b624476fa8fc7e9cf272ef8917d7b29b4ed3c5",
       "startup": true
     },
     {
       "path": "game/decor_light.lua",
-      "url": "assets/game/decor_light.20966cbe42bf.lua",
-      "size": 4575,
-      "sha256": "20966cbe42bf77927b0cc93153a7910d1d18b1436f88bbcc01be89ea12c0d902",
+      "url": "assets/game/decor_light.41a0d4be8a82.lua",
+      "size": 5873,
+      "sha256": "41a0d4be8a82aa96dbe5fb004e8594ef7af24a178841705ca0035b11ad80f31a",
+      "startup": true
+    },
+    {
+      "path": "game/decor_light.ts",
+      "url": "assets/game/decor_light.fbea6787a9cf.ts",
+      "size": 3856,
+      "sha256": "fbea6787a9cfa35670ff3165cfc0152cc740abfae65d056e74d15370b1fd48a0",
       "startup": true
     },
     {
       "path": "game/effects.lua",
-      "url": "assets/game/effects.d57878412a4e.lua",
-      "size": 8631,
-      "sha256": "d57878412a4efe4f4010f6a4a06beac7f07de161c877e2e88fa166af31dd3426",
+      "url": "assets/game/effects.8a74045b64eb.lua",
+      "size": 12649,
+      "sha256": "8a74045b64ebd89e42d923b55b4d7b76931301b004b65ac9a5020b2950fc3db4",
+      "startup": true
+    },
+    {
+      "path": "game/effects.ts",
+      "url": "assets/game/effects.bfdab51bf2ab.ts",
+      "size": 7108,
+      "sha256": "bfdab51bf2ab21fa653e1767329985196fccf0fd0f957f2c8d6a6fab714e6373",
       "startup": true
     },
     {
       "path": "game/enemies.lua",
-      "url": "assets/game/enemies.de3540880f57.lua",
-      "size": 26051,
-      "sha256": "de3540880f57d9775e79d3520d5f480cd91959c899c820683c3e498e8748f2fd",
+      "url": "assets/game/enemies.b8be2fa7898b.lua",
+      "size": 39000,
+      "sha256": "b8be2fa7898ba93ce25362842c67cc9f54eb8920f213cf23eacdeab793111653",
+      "startup": true
+    },
+    {
+      "path": "game/enemies.ts",
+      "url": "assets/game/enemies.1cf29d2370df.ts",
+      "size": 27950,
+      "sha256": "1cf29d2370df8c5d1dcd84c40c125ef564add198abc9e7f8886ac11153044cd6",
       "startup": true
     },
     {
       "path": "game/game.lua",
-      "url": "assets/game/game.d695bf3f35a0.lua",
-      "size": 83900,
-      "sha256": "d695bf3f35a06add19c654e8cfe36e372388c8559e93e62495fb8068b5ac958b",
+      "url": "assets/game/game.3d1d9fe846af.lua",
+      "size": 107863,
+      "sha256": "3d1d9fe846afa479d455b6c0fe8c8e7687a3bc72a406b3eebfdc8168f6b26462",
+      "startup": true
+    },
+    {
+      "path": "game/game.ts",
+      "url": "assets/game/game.1107212ca82b.ts",
+      "size": 87453,
+      "sha256": "1107212ca82b6e24bc54b2b3f841d416193778bef3fce3952ea8c64546ce502b",
       "startup": true
     },
     {
       "path": "game/hero_frames.lua",
-      "url": "assets/game/hero_frames.467e2292b6b0.lua",
-      "size": 4072,
-      "sha256": "467e2292b6b01114cd59d2d275255b16d5210cbac491be919790459fe05b0a71",
+      "url": "assets/game/hero_frames.ca44ea0ceb17.lua",
+      "size": 5361,
+      "sha256": "ca44ea0ceb178ef230cc04e671ff34348271cbfe85c49186e917e3cab419776f",
+      "startup": true
+    },
+    {
+      "path": "game/hero_frames.ts",
+      "url": "assets/game/hero_frames.7041a35193b1.ts",
+      "size": 6335,
+      "sha256": "7041a35193b1bd1c9345c2eebd514a02592e7da5ad35e2b9cce72ecc41f10a1f",
       "startup": true
     },
     {
       "path": "game/mechanisms.lua",
-      "url": "assets/game/mechanisms.44cb0653303e.lua",
-      "size": 18995,
-      "sha256": "44cb0653303e7cf1ea03fb153809df1913d4c7b62bc97f415de85936f8154e4d",
+      "url": "assets/game/mechanisms.ea35d963fd00.lua",
+      "size": 26191,
+      "sha256": "ea35d963fd001c53f8220484df515ee7a8f71231be24cd48db35816d2a71934b",
+      "startup": true
+    },
+    {
+      "path": "game/mechanisms.ts",
+      "url": "assets/game/mechanisms.477e064e8b6f.ts",
+      "size": 18215,
+      "sha256": "477e064e8b6f73e36a5832b0eee74fe17d74bac37a5bafe0351c1597cd8b0dac",
       "startup": true
     },
     {
       "path": "game/ninja_render.lua",
-      "url": "assets/game/ninja_render.a70c58d4da4b.lua",
-      "size": 9341,
-      "sha256": "a70c58d4da4bea112e7578dfd46f52f67b852017c822f832fbf396735f405e64",
+      "url": "assets/game/ninja_render.a6ccc1c89851.lua",
+      "size": 12036,
+      "sha256": "a6ccc1c8985143dc8f9a62c8246a21248e90f4a446bf26b7748fc1b8de944f24",
+      "startup": true
+    },
+    {
+      "path": "game/ninja_render.ts",
+      "url": "assets/game/ninja_render.8115e900c19c.ts",
+      "size": 11714,
+      "sha256": "8115e900c19c8aff0fab15c381ca01751d7f977a1270a59218de07526ed13ea7",
       "startup": true
     },
     {
       "path": "game/physics.lua",
-      "url": "assets/game/physics.025cd888d452.lua",
-      "size": 6241,
-      "sha256": "025cd888d452563ca02f31b6d657ed13071bae14598fbe0f62f8234083947aef",
+      "url": "assets/game/physics.466468d8e188.lua",
+      "size": 8675,
+      "sha256": "466468d8e188ec2e48dc0a09ab0096d509d392a5b0c0e58c8e094fc956bedfeb",
+      "startup": true
+    },
+    {
+      "path": "game/physics.ts",
+      "url": "assets/game/physics.09102eda97f1.ts",
+      "size": 6068,
+      "sha256": "09102eda97f1a25b651183b030941b2a02764b20b028fd3b599adf3c59439449",
       "startup": true
     },
     {
       "path": "game/player.lua",
-      "url": "assets/game/player.86c29605693d.lua",
-      "size": 15245,
-      "sha256": "86c29605693de165fd70955f29be1c3b6c9fbaa1600e0bd55818eb60a51491fc",
+      "url": "assets/game/player.bb841dac3028.lua",
+      "size": 19629,
+      "sha256": "bb841dac3028b1d67e944db384b9b09546b6b956820aa2b81fc237cbd388e7dd",
+      "startup": true
+    },
+    {
+      "path": "game/player.ts",
+      "url": "assets/game/player.f384fd1832d8.ts",
+      "size": 15616,
+      "sha256": "f384fd1832d810873ca4a20b654ca7e5a355e9c7e439d8cd88f447218f5d788f",
       "startup": true
     },
     {
       "path": "game/render_chars.lua",
-      "url": "assets/game/render_chars.ea3ae1332f78.lua",
-      "size": 28564,
-      "sha256": "ea3ae1332f7866bc101f002715e584bd79bc894e7f2b00b0af0039b95bb93e65",
+      "url": "assets/game/render_chars.8b06b8e912c4.lua",
+      "size": 45966,
+      "sha256": "8b06b8e912c4d044b55798a33035c6304c967776d7a08f165e3de2b39a118dc7",
+      "startup": true
+    },
+    {
+      "path": "game/render_chars.ts",
+      "url": "assets/game/render_chars.55fd9ce32c49.ts",
+      "size": 19977,
+      "sha256": "55fd9ce32c491ac9cf17016a4fe45ec073cbab01ae1d51a9cf9d2538b6b75d59",
       "startup": true
     },
     {
       "path": "game/render_world.lua",
-      "url": "assets/game/render_world.83d5a1c009be.lua",
-      "size": 113740,
-      "sha256": "83d5a1c009bebaafc644d35842f4e654f3b5e15246b952159a538ad34200ec54",
+      "url": "assets/game/render_world.02d336b8ca27.lua",
+      "size": 173665,
+      "sha256": "02d336b8ca2788f9f505debba0d573ff5fed50feb1be0c48ec7b4535c444895a",
+      "startup": true
+    },
+    {
+      "path": "game/render_world.ts",
+      "url": "assets/game/render_world.60080c8f1565.ts",
+      "size": 101361,
+      "sha256": "60080c8f1565e9507ade67c47260738b0a0007d561621c34afc3575ec8a1ef84",
       "startup": true
     },
     {
       "path": "game/sheetfx.lua",
-      "url": "assets/game/sheetfx.db3f63a10995.lua",
-      "size": 2836,
-      "sha256": "db3f63a109956314a6c5aea9bfc9b00c00cf542b7f66b87a583c66ee74a887ab",
+      "url": "assets/game/sheetfx.41005bed96d4.lua",
+      "size": 3429,
+      "sha256": "41005bed96d44e6bbe947ed37774ebb0c64905217553f6d8f95fd70490ed924c",
+      "startup": true
+    },
+    {
+      "path": "game/sheetfx.ts",
+      "url": "assets/game/sheetfx.87d349fd98f2.ts",
+      "size": 2737,
+      "sha256": "87d349fd98f2829b8dad4198bfa4864d09230f7d7cb9c56cc089e75b24dbd9d4",
       "startup": true
     },
     {
       "path": "game/slashfx.lua",
-      "url": "assets/game/slashfx.ce2e8958f76a.lua",
-      "size": 8551,
-      "sha256": "ce2e8958f76a628a2f21f2e9db4d50838360023383f0036d88bc7e237c19841a",
+      "url": "assets/game/slashfx.4ca9ccba74d0.lua",
+      "size": 11389,
+      "sha256": "4ca9ccba74d053a5b501dd629fa5af49f053b76a0a88121e8d3d4134253d2fbf",
+      "startup": true
+    },
+    {
+      "path": "game/slashfx.ts",
+      "url": "assets/game/slashfx.b4f9575515b6.ts",
+      "size": 7477,
+      "sha256": "b4f9575515b6422d26e75c91bcc6654edc238d245d147dfec79a8a2e41e8a591",
       "startup": true
     },
     {
       "path": "game/stealth.lua",
-      "url": "assets/game/stealth.e16b982a73d6.lua",
-      "size": 23161,
-      "sha256": "e16b982a73d6903a2ae14f839c5978df668822bea40d00a14fca60723af3ef01",
+      "url": "assets/game/stealth.3712bae59635.lua",
+      "size": 31607,
+      "sha256": "3712bae59635edd64d7bc693d7eb421c437953bee73b5a44b997f5d041aa6d22",
+      "startup": true
+    },
+    {
+      "path": "game/stealth.ts",
+      "url": "assets/game/stealth.5539ec8e977d.ts",
+      "size": 24780,
+      "sha256": "5539ec8e977d9ff2d29018fcdeb50635df394d08388bf980b5423c85e1b9c957",
       "startup": true
     },
     {
       "path": "game/timeline_tree.lua",
-      "url": "assets/game/timeline_tree.8ef9d64066db.lua",
-      "size": 4739,
-      "sha256": "8ef9d64066db73b96cb54878bb37cd5d78584d45f9261e319a3acc09bc8b27bd",
+      "url": "assets/game/timeline_tree.78cc7a43b3ae.lua",
+      "size": 5576,
+      "sha256": "78cc7a43b3ae749c972adec32e14bf66a8f4c18a9fd38f56274dd1bf1b40eba5",
+      "startup": true
+    },
+    {
+      "path": "game/timeline_tree.ts",
+      "url": "assets/game/timeline_tree.5c96b6e0a3f2.ts",
+      "size": 5442,
+      "sha256": "5c96b6e0a3f259ebcbfe45c1a1b255f9d9984a0274dec14a7e623aad6de11f86",
       "startup": true
     },
     {
       "path": "game/world.lua",
-      "url": "assets/game/world.ffdc332bb3d6.lua",
-      "size": 4797,
-      "sha256": "ffdc332bb3d6b03fe88f923cf884c89d749f8caaa32796e13bf4ac61a97454b0",
+      "url": "assets/game/world.72563f117303.lua",
+      "size": 6064,
+      "sha256": "72563f117303edc0b64420bd27c54bd45b6e6aaf21e4ab741c51426c5487df23",
+      "startup": true
+    },
+    {
+      "path": "game/world.ts",
+      "url": "assets/game/world.40afa7af68ee.ts",
+      "size": 4465,
+      "sha256": "40afa7af68ee32d0b172f5d9ecdfbaa301f13f8d3a9c7d31cb9dddfbc48750ae",
       "startup": true
     },
     {
       "path": "init.lua",
-      "url": "assets/init.06673ed8fd8d.lua",
-      "size": 288,
-      "sha256": "06673ed8fd8de647511dc88c5e6d6c0ed7075afee95adc1df6f12fb7461a59e6",
+      "url": "assets/init.f35955b1a9bb.lua",
+      "size": 645,
+      "sha256": "f35955b1a9bb085dd8e6c950977cad53a34b3795cdd37a69842a96390ceaf357",
       "startup": true
     },
     {
@@ -2079,58 +2268,114 @@
     },
     {
       "path": "scenes/intro.lua",
-      "url": "assets/scenes/intro.8bab33af0db2.lua",
-      "size": 33785,
-      "sha256": "8bab33af0db20acaac879f2cb882d6293869ec5f6f913e4b2246268ea7be0030",
+      "url": "assets/scenes/intro.042031af014a.lua",
+      "size": 52142,
+      "sha256": "042031af014a31aef7981967f6567c4870f83bba4bba777adf113e4a5f8bf0d7",
+      "startup": true
+    },
+    {
+      "path": "scenes/intro.ts",
+      "url": "assets/scenes/intro.c54d85ed8dbb.ts",
+      "size": 29964,
+      "sha256": "c54d85ed8dbb08a821b3e9648d954875e105f4f7aefa027b97e114433bf422ca",
       "startup": true
     },
     {
       "path": "ui/dialog.lua",
-      "url": "assets/ui/dialog.27f401508202.lua",
-      "size": 15610,
-      "sha256": "27f4015082026fc5b9e5cced0612a500eb3334af00a38c29b73adcecd19bea68",
+      "url": "assets/ui/dialog.ebd62d02b269.lua",
+      "size": 20090,
+      "sha256": "ebd62d02b269d15e5392b02f877b9605bc786290dce78e9c59a239aa5d61bb35",
+      "startup": true
+    },
+    {
+      "path": "ui/dialog.ts",
+      "url": "assets/ui/dialog.866b3b00ad65.ts",
+      "size": 14863,
+      "sha256": "866b3b00ad65f68783e83200b72e87c1e6ded76c9b850efd95c9e9ec1c0a98b0",
       "startup": true
     },
     {
       "path": "ui/hud.lua",
-      "url": "assets/ui/hud.6c0aedc7dd22.lua",
-      "size": 46636,
-      "sha256": "6c0aedc7dd221e4208cf91a420bc54679f9aa3a641963b85458abb49512cdf06",
+      "url": "assets/ui/hud.8b1aca7d6892.lua",
+      "size": 65151,
+      "sha256": "8b1aca7d6892f6bcd59d2f67ef860c7e4656cbc55976722053632e83b935ff6a",
+      "startup": true
+    },
+    {
+      "path": "ui/hud.ts",
+      "url": "assets/ui/hud.4b3c1360b4fb.ts",
+      "size": 51898,
+      "sha256": "4b3c1360b4fbd9f1a1fe9c5e24666f6126ce9fcbd29a763291ae1c9acff8eabd",
       "startup": true
     },
     {
       "path": "ui/name_entry.lua",
-      "url": "assets/ui/name_entry.14c86adf87b0.lua",
-      "size": 6036,
-      "sha256": "14c86adf87b0e73ec89f3c6d8aeaf2cde62df0999f9b41431d1bc2a746116175",
+      "url": "assets/ui/name_entry.194880f0b66d.lua",
+      "size": 7521,
+      "sha256": "194880f0b66db130866f2b94edca805d03b6dc35a1fea320fb304e69143d5cd5",
+      "startup": true
+    },
+    {
+      "path": "ui/name_entry.ts",
+      "url": "assets/ui/name_entry.c8d6ac339561.ts",
+      "size": 5827,
+      "sha256": "c8d6ac3395618a01278e30bcc5f9be68cdee7c6250eae34235db35200e543e96",
       "startup": true
     },
     {
       "path": "ui/notebook.lua",
-      "url": "assets/ui/notebook.9340900fb5d1.lua",
-      "size": 10398,
-      "sha256": "9340900fb5d1d9c22c29ae946349867fe01abc29bba492f6c0dfff0d3554cddc",
+      "url": "assets/ui/notebook.af597bce259c.lua",
+      "size": 13639,
+      "sha256": "af597bce259c092b617f751b2b4f069fc2131676d590382a95b945424c447f6a",
+      "startup": true
+    },
+    {
+      "path": "ui/notebook.ts",
+      "url": "assets/ui/notebook.748a7c383d62.ts",
+      "size": 8300,
+      "sha256": "748a7c383d620ae5b99962e0609521732bdf950ac89812b9581e63fc66d3bf6e",
       "startup": true
     },
     {
       "path": "ui/tech_ui.lua",
-      "url": "assets/ui/tech_ui.79d42665d60a.lua",
-      "size": 1765,
-      "sha256": "79d42665d60aa2020994a2a14db887cfddbf17a0c3b7ea56da52741ec8d16bc9",
+      "url": "assets/ui/tech_ui.fb1a5d6def8b.lua",
+      "size": 2320,
+      "sha256": "fb1a5d6def8bd46e164a79bc8126a883d267c7534b5f94c72326519f1acbb99b",
+      "startup": true
+    },
+    {
+      "path": "ui/tech_ui.ts",
+      "url": "assets/ui/tech_ui.6666d884cbb7.ts",
+      "size": 1682,
+      "sha256": "6666d884cbb76b1d81df19bd311f03909b711671397e882998c7b53e83471e23",
       "startup": true
     },
     {
       "path": "ui/tree_gallery.lua",
-      "url": "assets/ui/tree_gallery.60234f71805c.lua",
-      "size": 13266,
-      "sha256": "60234f71805c28dc38c6c0a5037e3f1a0fe76779fccf62f92baeddb7faa255fc",
+      "url": "assets/ui/tree_gallery.546db3ebcc39.lua",
+      "size": 17535,
+      "sha256": "546db3ebcc39cd27183a9923d7ab1be9fc85b89520b3a09cedab1b5162a5920a",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_gallery.ts",
+      "url": "assets/ui/tree_gallery.ad815624cef1.ts",
+      "size": 11303,
+      "sha256": "ad815624cef1b2aca4b917d67db447c6f23528178c7594ed4782ec6d191adcfb",
       "startup": true
     },
     {
       "path": "ui/tree_overlay.lua",
-      "url": "assets/ui/tree_overlay.0a89ea48f17b.lua",
-      "size": 13181,
-      "sha256": "0a89ea48f17b9eb71004eb4cf04a595d843cae84b05bc416cac1ccbed8ddabd5",
+      "url": "assets/ui/tree_overlay.9a717d287fea.lua",
+      "size": 17750,
+      "sha256": "9a717d287fea3e0165f68238d7885528c063b42a5ac43dcf89c4cd024f6f3744",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_overlay.ts",
+      "url": "assets/ui/tree_overlay.b46715a9aca9.ts",
+      "size": 11665,
+      "sha256": "b46715a9aca94608743087cd597fb11a721a95618f0c23da1e6ca5960b45a6f2",
       "startup": true
     }
   ]

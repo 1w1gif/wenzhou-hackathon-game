@@ -17,8 +17,46 @@ const W = 480, H = 270;
 
 class BootScene extends Phaser.Scene {
   constructor() { super('Boot'); }
-  create(): void { createPixelTextures(this); this.scene.start('Intro'); }
+  preload(): void {
+    const barBg = this.add.rectangle(240, 142, 204, 10, 0x282b39);
+    const bar = this.add.rectangle(140, 142, 0, 6, 0x75cbd1).setOrigin(0, .5);
+    this.add.text(240, 118, '月相轮转动中…', { fontFamily: 'serif', fontSize: '11px', color: '#f2e7c8' }).setOrigin(.5);
+    this.load.on('progress', (v: number) => { bar.width = 200 * v; });
+    this.load.once('complete', () => { barBg.destroy(); bar.destroy(); });
+
+    // 夜景视差背景（按楼层高度切换，血月留给回溯）
+    this.load.image('night_forest_gold', 'assets/bg/night_forest_gold.png');
+    this.load.image('night_clouds_blue', 'assets/bg/night_clouds_blue.png');
+    this.load.image('night_pale', 'assets/bg/night_pale.png');
+    this.load.image('night_blood', 'assets/bg/night_blood.png');
+    // 天空遗迹瓦片
+    this.load.image('ground_top', 'assets/tiles/ground_top.png');
+    this.load.image('ground_fill', 'assets/tiles/ground_fill.png');
+    this.load.image('bridge', 'assets/tiles/bridge.png');
+    this.load.image('brick', 'assets/tiles/brick.png');
+    // 打击特效序列帧
+    this.load.spritesheet('slash_sheet', 'assets/fx/slash_sheet.png', { frameWidth: 160, frameHeight: 120 });
+    this.load.spritesheet('hit_sheet', 'assets/fx/hit_sheet.png', { frameWidth: 128, frameHeight: 128 });
+    // 音频
+    this.load.audio('bgm_explore', 'assets/audio/bgm_explore.mp3');
+    this.load.audio('bgm_battle', 'assets/audio/bgm_battle.mp3');
+    this.load.audio('bgm_ending', 'assets/audio/bgm_ending.wav');
+    this.load.audio('sfx_sword', 'assets/audio/sfx_sword.mp3');
+  }
+  create(): void {
+    createPixelTextures(this);
+    this.anims.create({ key: 'fx_slash', frames: this.anims.generateFrameNumbers('slash_sheet', { start: 0, end: 9 }), frameRate: 24, repeat: 0 });
+    this.anims.create({ key: 'fx_hit', frames: this.anims.generateFrameNumbers('hit_sheet', { start: 0, end: 5 }), frameRate: 20, repeat: 0 });
+    this.scene.start('Intro');
+  }
 }
+
+/** 楼层 → 夜景背景（0-1 古镇金月山林，2-3 塔中云海，4+ 高空淡月星空） */
+const FLOOR_BG: string[] = [
+  'night_forest_gold', 'night_forest_gold',
+  'night_clouds_blue', 'night_clouds_blue',
+  'night_pale', 'night_pale', 'night_pale',
+];
 
 class IntroScene extends Phaser.Scene {
   private timer = 0; private skip!: Phaser.Input.Keyboard.Key; private enter!: Phaser.Input.Keyboard.Key;
@@ -45,9 +83,11 @@ class GameScene extends Phaser.Scene {
   private player!: PlayerController; private combat!: CombatSystem; private hud!: Hud; private dialogue!: DialogueBox; private notebook!: NotebookPanel;
   private platforms!: Phaser.Physics.Arcade.StaticGroup;
   private enemies: Array<Bandit | Thrower | BanditBoss | ShenYan> = [];
+  private bgFar!: Phaser.GameObjects.Image; private bgGlow!: Phaser.GameObjects.Rectangle;
   private keys!: { q: Phaser.Input.Keyboard.Key; n: Phaser.Input.Keyboard.Key; e: Phaser.Input.Keyboard.Key; k: Phaser.Input.Keyboard.Key; t: Phaser.Input.Keyboard.Key; esc: Phaser.Input.Keyboard.Key };
   private hasMet = false; private bossSpawned = false; private bossRef: BanditBoss | null = null; private bossDone = false;
-  private confronted = false; private trustRecorded = false; private lastFloor = '';
+  private confronted = false; private trustRecorded = false; private lastFloor = ''; private lastBgKey = '';
+  private rewindFlash = 0;
 
   constructor() { super('Game'); }
 
@@ -55,19 +95,23 @@ class GameScene extends Phaser.Scene {
     // 场景实例会被复用，每次进入世界线都要重置运行态
     this.enemies = [];
     this.hasMet = false; this.bossSpawned = false; this.bossRef = null; this.bossDone = false;
-    this.confronted = false; this.trustRecorded = false; this.lastFloor = '';
+    this.confronted = false; this.trustRecorded = false; this.lastFloor = ''; this.lastBgKey = '';
 
     store.attach(this); store.load();
     this.physics.world.setBounds(0, 0, WORLD.width, WORLD.height); this.cameras.main.setBounds(0, 0, WORLD.width, WORLD.height);
-    this.add.image(2800, 2050, 'moon').setScale(8).setAlpha(.12).setScrollFactor(.08).setDepth(-10);
-    const bg = this.add.graphics().setScrollFactor(.12).setDepth(-9); drawPixelBackground(bg, WORLD.width, WORLD.height);
+
+    // 夜景视差背景：图略大于视口，低 scrollFactor 模拟远景，整幅画随镜头缓慢移动
+    this.bgFar = this.add.image(0, 0, FLOOR_BG[0])
+      .setOrigin(0).setDisplaySize(WORLD.width * .06 + W + 40, WORLD.height * .06 + H + 40)
+      .setScrollFactor(.06).setDepth(-10);
+    this.bgGlow = this.add.rectangle(0, 0, WORLD.width * .06 + W + 40, WORLD.height * .06 + H + 40, 0x11131d, 0)
+      .setOrigin(0).setScrollFactor(.06).setDepth(-9);
+
     this.platforms = this.physics.add.staticGroup();
     for (const f of FLOORS) for (const p of f.platforms) {
       const block = this.platforms.create(p.x + p.w / 2, p.y + p.h / 2, undefined) as Phaser.Physics.Arcade.Sprite;
       block.setSize(p.w, p.h).setDisplaySize(p.w, p.h).setVisible(false);
-      const g = this.add.graphics().setDepth(5);
-      g.fillStyle(p.type === 'wall' ? 0x353a4a : 0x242938, 1); g.fillRect(p.x, p.y, p.w, p.h);
-      g.lineStyle(2, p.type === 'wall' ? PIXEL.cyan : 0x4b5265, .8); g.lineBetween(p.x, p.y, p.x + p.w, p.y);
+      this.drawPlatform(p);
     }
 
     // 时空树跳回落在当时的位置，否则用最近检查点
@@ -100,6 +144,7 @@ class GameScene extends Phaser.Scene {
         : '满月未升的黄昏 · 强盗还没来',
       2400
     );
+    this.startBgm();
   }
 
   private spawnEnemies(): void {
@@ -110,6 +155,57 @@ class GameScene extends Phaser.Scene {
       this.combat.add(e);
       this.enemies.push(e);
     });
+  }
+
+  /** 用瓦片铺平台：顶面一行草皮（128x64 压到 48x24），下面平铺土层；墙用砖墙 */
+  private drawPlatform(p: { x: number; y: number; w: number; h: number; type: string }): void {
+    if (p.type === 'wall') {
+      this.add.tileSprite(p.x + p.w / 2, p.y + p.h / 2, p.w, p.h, 'brick').setDepth(5).setAlpha(.96);
+      return;
+    }
+    if (p.type === 'one-way') {
+      // 细平台直接画草皮顶条
+      this.add.tileSprite(p.x + p.w / 2, p.y + p.h / 2, p.w, p.h, 'ground_top').setDepth(4);
+      return;
+    }
+    const TOP = 24;
+    const count = Math.max(1, Math.round(p.w / 48));
+    const tw = p.w / count;
+    for (let i = 0; i < count; i++) {
+      this.add.image(p.x + tw / 2 + i * tw, p.y + TOP / 2, 'ground_top').setDisplaySize(tw + 1, TOP).setDepth(4);
+    }
+    const fillH = p.h - TOP;
+    if (fillH > 8) this.add.tileSprite(p.x + p.w / 2, p.y + TOP + fillH / 2, p.w, fillH, 'ground_fill').setDepth(4);
+  }
+
+  /** 依据玩家高度与回溯状态切换夜景：正常按楼层，回溯期间转为血月 */
+  private updateBackdrop(rewinding: boolean): void {
+    const level = Math.max(0, Math.min(6, Math.floor((WORLD.height - this.player.sprite.y) / 600)));
+    const key = rewinding ? 'night_blood' : FLOOR_BG[level];
+    if (key === this.lastBgKey) return;
+    this.lastBgKey = key;
+    this.tweens.add({ targets: this.bgFar, alpha: 0, duration: 160, onComplete: () => {
+      this.bgFar.setTexture(key);
+      this.tweens.add({ targets: this.bgFar, alpha: 1, duration: 220 });
+    }});
+    // 血月泛红，正常天空透出深蓝
+    const tint = rewinding ? 0x58181c : 0x000000;
+    this.bgGlow.fillColor = tint;
+    this.bgGlow.fillAlpha = rewinding ? .28 : 0;
+  }
+
+  /** 场景 BGM：入场起探索曲，遇 boss 切战斗，结局另起 */
+  private startBgm(): void {
+    const music = this.sound.getAll('bgm');
+    music.forEach(m => m.stop());
+    if (!this.sound.locked) this.playLoop('bgm_explore', .35);
+    this.input.once(Phaser.Input.Events.POINTER_DOWN, () => { if (!this.sound.get('bgm_explore')?.isPlaying) this.playLoop('bgm_explore', .35); });
+  }
+
+  private playLoop(key: string, vol: number): void {
+    const old = this.sound.getAll('bgm'); old.forEach(m => m.stop());
+    const m = this.sound.add(key, { loop: true, volume: vol });
+    m.play();
   }
 
   update(time: number, delta: number): void {
@@ -124,6 +220,8 @@ class GameScene extends Phaser.Scene {
     if (Phaser.Input.Keyboard.JustDown(this.keys.k) && store.get().swordIntent > 0) { store.get().swordIntent--; this.combat.swordQi(this.player.sprite, this.player.facingDir); }
 
     this.trackFloor();
+    this.updateBackdrop(store.get().moonPhaseIndex > 0 && this.rewindFlash > 0);
+    if (this.rewindFlash > 0) this.rewindFlash -= delta;
 
     if (!this.hasMet && this.player.sprite.x > 820 && this.player.sprite.y > 3600) {
       this.hasMet = true; store.markMetShenyan(); store.addTrust(1);
@@ -135,11 +233,13 @@ class GameScene extends Phaser.Scene {
       this.physics.add.collider(boss, this.platforms);
       this.combat.add(boss); this.enemies.push(boss); this.bossRef = boss;
       this.hud.showObjective('击败守在星盘前的劫匪头目');
+      this.playLoop('bgm_battle', .4);
     }
     if (this.bossRef && this.bossRef.dead && !this.bossDone) {
       this.bossDone = true; store.markBossKilled();
       this.hud.showObjective('塔顶的满月即将升顶');
       this.hud.showToast('劫匪头目被击退');
+      this.playLoop('bgm_explore', .35);
     }
 
     // 最终对峙：三选一
@@ -162,6 +262,8 @@ class GameScene extends Phaser.Scene {
     const n = tree.record('rewind', `回溯 · ${store.currentPhase()}`, store.get(), this.player.sprite.x, this.player.sprite.y);
     this.hud.showToast(`月相轮转动 · 生命 -1\n时空树长出新枝（第 ${n.night} 夜）`, 2400);
     this.cameras.main.flash(260, 197, 238, 240);
+    this.rewindFlash = 1600;
+    this.updateBackdrop(true);
   }
 
   private interact(): void {
@@ -213,6 +315,8 @@ class EndingScene extends Phaser.Scene {
     const ending = ENDINGS_TEXT[data.id] ?? ENDINGS_TEXT.duel;
     this.lines = [ending.title, '', ...ending.lines];
     this.key = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    this.sound.getAll('bgm').forEach(m => m.stop());
+    if (!this.sound.locked) this.sound.play('bgm_ending', { loop: true, volume: .4 });
     this.show();
   }
   show(): void {
