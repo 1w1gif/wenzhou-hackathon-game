@@ -2366,9 +2366,9 @@
     },
     {
       "path": "ui/hud.lua",
-      "url": "assets/ui/hud.391859f8b377.lua",
-      "size": 48811,
-      "sha256": "391859f8b3773952beaedb5e8e58f24be954047218a24d9568648fbdab009523",
+      "url": "assets/ui/hud.31db24faa1e1.lua",
+      "size": 48886,
+      "sha256": "31db24faa1e10a92e1e2743ad5ba1f711b6310023886a29ad562ea7ba237e0a3",
       "startup": true
     },
     {
