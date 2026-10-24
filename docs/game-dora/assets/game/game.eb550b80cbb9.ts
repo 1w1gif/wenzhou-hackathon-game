@@ -8,7 +8,7 @@ import { EffectSystem } from "game/effects";
 import { EnemySystem } from "game/enemies";
 import { StealthSystem } from "game/stealth";
 import { MechanismSystem } from "game/mechanisms";
-import { WorldRenderer } from "game/render_world";
+import { CAM_ZOOM, WorldRenderer } from "game/render_world";
 import { HUD } from "ui/hud";
 import { DialogUI } from "ui/dialog";
 import { NotebookUI } from "ui/notebook";
@@ -2118,8 +2118,8 @@ export class Game {
     const view = View.size;
     const active = this.mode === "play" || this.mode === "confront" || this.mode === "dialog" || this.mode === "rewind" || this.mode === "dead" || this.mode === "ending";
     if (active) {
-      // 相机放大后世界视野减半，夹取边界按世界单位折算（zoom 与 render_world.CAM_ZOOM 一致）
-      const zoom = 1.5;
+      // 夹取边界按世界单位折算（可见世界 = 逻辑视野 ÷ CAM_ZOOM，与渲染层同一常量）
+      const zoom = CAM_ZOOM;
       const hw = view.width / (2 * zoom);
       const hh = view.height / (2 * zoom);
       const tx = clamp(this.player.body.x, hw, Tower.WORLD_W - hw);
@@ -2134,7 +2134,7 @@ export class Game {
       this.camY = 400;
     }
     // 与 worldRoot 同步（屏幕中心原点 + CAM_ZOOM 放大）：fx/npc/立绘均按世界坐标绘制
-    const zoom2 = 1.5;
+    const zoom2 = CAM_ZOOM;
     this.fxDraw.scaleX = zoom2;
     this.fxDraw.scaleY = zoom2;
     this.fxDraw.position = Vec2(-this.camX * zoom2 + shakeX, -this.camY * zoom2 + shakeY);

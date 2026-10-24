@@ -125,7 +125,9 @@ interface ScenePropDef {
 
 const CULL = 900;
 // 相机放大倍率：>1 时世界整体放大（视野变小、人物变大）。UI/HUD/视差背景保持屏幕尺寸不变。
-export const CAM_ZOOM = 1.5;
+// 2026-10-27 深夜用户终审=1.0（「我要之前的版本」）：1.5 是旧版没有的额外放大层，把视野缩小了一圈。
+// game.ts 相机夹取与 fx/npc/立绘同步均已改为引用本常量，调视野只改这里，勿再各处硬编码。
+export const CAM_ZOOM = 1.0;
 const GOLD = ink(212, 168, 84, 255);
 const CYAN = ink(108, 156, 148, 255);
 const PAPER_DIM = ink(219, 208, 184, 120);

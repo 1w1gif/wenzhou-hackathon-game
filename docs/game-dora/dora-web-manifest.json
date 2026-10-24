@@ -2142,16 +2142,16 @@
     },
     {
       "path": "game/game.lua",
-      "url": "assets/game/game.51179f1eca8c.lua",
-      "size": 85837,
-      "sha256": "51179f1eca8cb50172e44534aec5835233a701830a711b6599b9fd340d83f711",
+      "url": "assets/game/game.16268976a009.lua",
+      "size": 86004,
+      "sha256": "16268976a009ffe541a8beab48ab9599cca8e22d54d8a5ac10663e922ff86636",
       "startup": true
     },
     {
       "path": "game/game.ts",
-      "url": "assets/game/game.aa92b2892a38.ts",
-      "size": 88339,
-      "sha256": "aa92b2892a38c15a9e357220448a868cdb6acdadd2196be262e97d2d2ecd83b7",
+      "url": "assets/game/game.eb550b80cbb9.ts",
+      "size": 88352,
+      "sha256": "eb550b80cbb9d52d24c3fb47369fa01afcd3be714a9572b9ae40e09a5015d033",
       "startup": true
     },
     {
@@ -2240,16 +2240,16 @@
     },
     {
       "path": "game/render_world.lua",
-      "url": "assets/game/render_world.27d5e070abd4.lua",
+      "url": "assets/game/render_world.28b555a1f44a.lua",
       "size": 114126,
-      "sha256": "27d5e070abd499e4d6f98104b57be179bc555356f54b356f59566c86db249a50",
+      "sha256": "28b555a1f44a49408361fea0fb4da15700bb7bd7b91b13e5a5b796568a38346b",
       "startup": true
     },
     {
       "path": "game/render_world.ts",
-      "url": "assets/game/render_world.1ffa7442294f.ts",
-      "size": 101984,
-      "sha256": "1ffa7442294fe9c64b5672765d78ab668d21f38787478557198d34c637b10fc5",
+      "url": "assets/game/render_world.a7eb2332d415.ts",
+      "size": 102249,
+      "sha256": "a7eb2332d415275ad86cc34e5f4d70349721a0f10744adb42a9e3f7ad2c5d930",
       "startup": true
     },
     {
@@ -2324,9 +2324,9 @@
     },
     {
       "path": "init.lua",
-      "url": "assets/init.fc254cdcf453.lua",
-      "size": 657,
-      "sha256": "fc254cdcf45319e890d6fd218e62438ca1f113b7568ee57020d6ea1468c51793",
+      "url": "assets/init.9c3a3d637542.lua",
+      "size": 644,
+      "sha256": "9c3a3d637542f958216cb4529458c4eac2891e23d7905c8e5f909fb82adb943c",
       "startup": true
     },
     {

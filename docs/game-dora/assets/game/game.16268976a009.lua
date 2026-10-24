@@ -43,6 +43,7 @@ local StealthSystem = ____stealth.StealthSystem -- 9
 local ____mechanisms = require("game.mechanisms") -- 10
 local MechanismSystem = ____mechanisms.MechanismSystem -- 10
 local ____render_world = require("game.render_world") -- 11
+local CAM_ZOOM = ____render_world.CAM_ZOOM -- 11
 local WorldRenderer = ____render_world.WorldRenderer -- 11
 local ____hud = require("ui.hud") -- 12
 local HUD = ____hud.HUD -- 12
@@ -2176,179 +2177,181 @@ function Game.prototype.drawNpcs(self) -- 1998
 			self.shenSpDark.visible = dark == self.shenSpDark -- 2057
 		end -- 2057
 		if dark ~= nil then -- 2057
-			self.shenNode.position = self.npcDraw.position -- 2061
-			dark.position = Vec2(sx, sy) -- 2062
-			dark.scaleX = math.abs(dark.scaleX) * (p.x > sx and 1 or -1) -- 2063
-		else -- 2063
-			drawShenYan( -- 2065
-				d, -- 2065
-				sx, -- 2065
-				sy, -- 2065
-				p.x > sx and -1 or 1, -- 2065
-				self.time, -- 2065
-				self.state.flags.confront -- 2065
-			) -- 2065
-		end -- 2065
-	else -- 2065
-		if self.shenSpNormal ~= nil then -- 2065
-			self.shenSpNormal.visible = false -- 2069
-		end -- 2069
-		if self.shenSpDark ~= nil then -- 2069
-			self.shenSpDark.visible = false -- 2072
-		end -- 2072
-	end -- 2072
-	local blueTexReady = self.slashFx:hasBlueTex() -- 2075
-	local shots = {} -- 2076
-	do -- 2076
-		local i = 0 -- 2077
-		while i < #self.qiShots do -- 2077
-			do -- 2077
-				local q = self.qiShots[i + 1] -- 2078
-				if not q.alive then -- 2078
-					goto __continue418 -- 2080
-				end -- 2080
-				local wob = math.sin(self.time * 22 + q.phase) * 4 -- 2082
-				if blueTexReady then -- 2082
-					shots[#shots + 1] = {x = q.x, y = q.y + wob, dir = q.dir} -- 2085
-					goto __continue418 -- 2086
-				end -- 2086
-				local function buildCres(scale, ox) -- 2088
-					local pts = {} -- 2089
-					local R = 46 * scale -- 2090
-					local aOut = 1.45 -- 2091
-					do -- 2091
-						local k = 0 -- 2092
-						while k <= 10 do -- 2092
-							local t = aOut - 2 * aOut * k / 10 -- 2093
-							pts[#pts + 1] = Vec2( -- 2094
-								q.x + q.dir * (ox + R * math.cos(t)), -- 2094
-								q.y + wob + R * math.sin(t) -- 2094
-							) -- 2094
-							k = k + 1 -- 2092
-						end -- 2092
-					end -- 2092
-					local c2 = -0.6 * R -- 2096
-					local ri = 1.2266 * R -- 2097
-					local aIn = 0.9425 -- 2098
-					do -- 2098
-						local k = 0 -- 2099
-						while k <= 10 do -- 2099
-							local t = -aIn + 2 * aIn * k / 10 -- 2100
-							pts[#pts + 1] = Vec2( -- 2101
-								q.x + q.dir * (ox + c2 + ri * math.cos(t)), -- 2101
-								q.y + wob + ri * math.sin(t) -- 2101
-							) -- 2101
-							k = k + 1 -- 2099
-						end -- 2099
-					end -- 2099
-					return pts -- 2103
+			self.shenNode.scaleX = self.npcDraw.scaleX -- 2061
+			self.shenNode.scaleY = self.npcDraw.scaleY -- 2062
+			self.shenNode.position = self.npcDraw.position -- 2063
+			dark.position = Vec2(sx, sy) -- 2064
+			dark.scaleX = math.abs(dark.scaleX) * (p.x > sx and 1 or -1) -- 2065
+		else -- 2065
+			drawShenYan( -- 2067
+				d, -- 2067
+				sx, -- 2067
+				sy, -- 2067
+				p.x > sx and -1 or 1, -- 2067
+				self.time, -- 2067
+				self.state.flags.confront -- 2067
+			) -- 2067
+		end -- 2067
+	else -- 2067
+		if self.shenSpNormal ~= nil then -- 2067
+			self.shenSpNormal.visible = false -- 2071
+		end -- 2071
+		if self.shenSpDark ~= nil then -- 2071
+			self.shenSpDark.visible = false -- 2074
+		end -- 2074
+	end -- 2074
+	local blueTexReady = self.slashFx:hasBlueTex() -- 2077
+	local shots = {} -- 2078
+	do -- 2078
+		local i = 0 -- 2079
+		while i < #self.qiShots do -- 2079
+			do -- 2079
+				local q = self.qiShots[i + 1] -- 2080
+				if not q.alive then -- 2080
+					goto __continue418 -- 2082
+				end -- 2082
+				local wob = math.sin(self.time * 22 + q.phase) * 4 -- 2084
+				if blueTexReady then -- 2084
+					shots[#shots + 1] = {x = q.x, y = q.y + wob, dir = q.dir} -- 2087
+					goto __continue418 -- 2088
 				end -- 2088
-				d:drawPolygon( -- 2105
-					buildCres(0.72, -38), -- 2105
-					Color(CYAN.r, CYAN.g, CYAN.b, 42) -- 2105
-				) -- 2105
-				d:drawPolygon( -- 2106
-					buildCres(0.86, -18), -- 2106
-					Color(CYAN.r, CYAN.g, CYAN.b, 82) -- 2106
-				) -- 2106
+				local function buildCres(scale, ox) -- 2090
+					local pts = {} -- 2091
+					local R = 46 * scale -- 2092
+					local aOut = 1.45 -- 2093
+					do -- 2093
+						local k = 0 -- 2094
+						while k <= 10 do -- 2094
+							local t = aOut - 2 * aOut * k / 10 -- 2095
+							pts[#pts + 1] = Vec2( -- 2096
+								q.x + q.dir * (ox + R * math.cos(t)), -- 2096
+								q.y + wob + R * math.sin(t) -- 2096
+							) -- 2096
+							k = k + 1 -- 2094
+						end -- 2094
+					end -- 2094
+					local c2 = -0.6 * R -- 2098
+					local ri = 1.2266 * R -- 2099
+					local aIn = 0.9425 -- 2100
+					do -- 2100
+						local k = 0 -- 2101
+						while k <= 10 do -- 2101
+							local t = -aIn + 2 * aIn * k / 10 -- 2102
+							pts[#pts + 1] = Vec2( -- 2103
+								q.x + q.dir * (ox + c2 + ri * math.cos(t)), -- 2103
+								q.y + wob + ri * math.sin(t) -- 2103
+							) -- 2103
+							k = k + 1 -- 2101
+						end -- 2101
+					end -- 2101
+					return pts -- 2105
+				end -- 2090
 				d:drawPolygon( -- 2107
-					buildCres(1, 0), -- 2107
-					Color(CYAN.r, CYAN.g, CYAN.b, 150) -- 2107
+					buildCres(0.72, -38), -- 2107
+					Color(CYAN.r, CYAN.g, CYAN.b, 42) -- 2107
 				) -- 2107
 				d:drawPolygon( -- 2108
-					buildCres(0.6, 7), -- 2108
-					Color(255, 255, 255, 215) -- 2108
+					buildCres(0.86, -18), -- 2108
+					Color(CYAN.r, CYAN.g, CYAN.b, 82) -- 2108
 				) -- 2108
-			end -- 2108
-			::__continue418:: -- 2108
-			i = i + 1 -- 2077
-		end -- 2077
-	end -- 2077
-	if blueTexReady then -- 2077
-		self.slashFx:syncShots(shots) -- 2111
-	end -- 2111
+				d:drawPolygon( -- 2109
+					buildCres(1, 0), -- 2109
+					Color(CYAN.r, CYAN.g, CYAN.b, 150) -- 2109
+				) -- 2109
+				d:drawPolygon( -- 2110
+					buildCres(0.6, 7), -- 2110
+					Color(255, 255, 255, 215) -- 2110
+				) -- 2110
+			end -- 2110
+			::__continue418:: -- 2110
+			i = i + 1 -- 2079
+		end -- 2079
+	end -- 2079
+	if blueTexReady then -- 2079
+		self.slashFx:syncShots(shots) -- 2113
+	end -- 2113
 end -- 1998
-function Game.prototype.updateVisuals(self, dt, shakeX, shakeY) -- 2115
-	local view = View.size -- 2116
-	local active = self.mode == "play" or self.mode == "confront" or self.mode == "dialog" or self.mode == "rewind" or self.mode == "dead" or self.mode == "ending" -- 2117
-	if active then -- 2117
-		local zoom = 1.5 -- 2120
-		local hw = view.width / (2 * zoom) -- 2121
-		local hh = view.height / (2 * zoom) -- 2122
-		local tx = clamp(self.player.body.x, hw, Tower.WORLD_W - hw) -- 2123
-		local ty = clamp(self.player.body.y + 70, Tower.TOPS[1] + hh - 56 / zoom, Tower.WORLD_H - hh) -- 2125
-		local k = math.min(1, dt * 6) -- 2126
-		self.camX = tx -- 2128
-		self.camY = self.camY + (ty - self.camY) * k -- 2129
-	else -- 2129
-		self.camX = 800 -- 2131
-		self.camY = 400 -- 2132
-	end -- 2132
-	local zoom2 = 1.5 -- 2135
-	self.fxDraw.scaleX = zoom2 -- 2136
-	self.fxDraw.scaleY = zoom2 -- 2137
-	self.fxDraw.position = Vec2(-self.camX * zoom2 + shakeX, -self.camY * zoom2 + shakeY) -- 2138
-	self.npcDraw.scaleX = zoom2 -- 2139
-	self.npcDraw.scaleY = zoom2 -- 2140
-	self.npcDraw.position = self.fxDraw.position -- 2141
-	self.sheetNode.scaleX = zoom2 -- 2142
-	self.sheetNode.scaleY = zoom2 -- 2143
-	self.sheetNode.position = self.fxDraw.position -- 2144
-	self.fx:update(dt) -- 2145
-	self.sheetFx:update(dt) -- 2146
-	self.boomFx:update(dt) -- 2147
-	self.slashFx:update(dt) -- 2148
-	self.fxDraw:clear() -- 2149
-	self.fx:draw(self.fxDraw) -- 2150
-	self.npcDraw:clear() -- 2151
-	if self.mode ~= "title" and self.mode ~= "prologue" then -- 2151
-		self:drawNpcs() -- 2153
-	end -- 2153
-	self.renderer:setWorldVisible(self.mode ~= "title" and self.mode ~= "prologue") -- 2155
-	self.renderer:setCamera(self.camX, self.camY, shakeX, shakeY) -- 2156
-	self.renderer:syncTreePuzzle(self.state.flags) -- 2158
-	self.renderer:syncBarrel(dt, self.state.flags.barrelDown == true, self.state.flags.barrelLeft == true) -- 2159
-	self.renderer:update( -- 2160
-		dt, -- 2160
-		self.state, -- 2160
-		self.player, -- 2160
-		self.enemies, -- 2160
-		self.mech, -- 2160
-		self.time -- 2160
-	) -- 2160
-	self:syncInteractPrompt() -- 2161
-	local cpNow = self:findCheckpoint(self.state.currentCheckpointId) -- 2162
-	local floorNow = math.max( -- 2163
-		0, -- 2163
-		math.min(cpNow and cpNow.floor or 0, #Tower.FLOORS - 1) -- 2163
-	) -- 2163
-	local ____self_28 = self.hud -- 2163
-	local ____self_28_update_29 = ____self_28.update -- 2163
-	local ____dt_27 = dt -- 2164
-	local ____self_state_25 = self.state -- 2165
-	local ____self_player_26 = self.player -- 2166
-	local ____table_nearBoss_result_24 -- 2167
-	if self:nearBoss() then -- 2167
-		____table_nearBoss_result_24 = self.enemies:boss() -- 2167
-	else -- 2167
-		____table_nearBoss_result_24 = nil -- 2167
-	end -- 2167
-	____self_28_update_29( -- 2167
-		____self_28, -- 2167
-		____dt_27, -- 2164
-		{ -- 2164
-			state = ____self_state_25, -- 2165
-			player = ____self_player_26, -- 2166
-			boss = ____table_nearBoss_result_24, -- 2167
-			objective = self.state.objective, -- 2168
-			mission = Tower.FLOOR_MISSIONS[math.min(floorNow, #Tower.FLOOR_MISSIONS - 1) + 1], -- 2169
-			floorName = Tower.FLOORS[floorNow + 1], -- 2170
-			guideLight = floorNow == 6 or floorNow == 4, -- 2171
-			hint = self:hintText(), -- 2172
-			time = self.time, -- 2173
-			fade = self:teleportFade() -- 2174
-		} -- 2174
-	) -- 2174
-	self.notebook:update(dt, self.state) -- 2176
-end -- 2115
-return ____exports -- 2115
+function Game.prototype.updateVisuals(self, dt, shakeX, shakeY) -- 2117
+	local view = View.size -- 2118
+	local active = self.mode == "play" or self.mode == "confront" or self.mode == "dialog" or self.mode == "rewind" or self.mode == "dead" or self.mode == "ending" -- 2119
+	if active then -- 2119
+		local zoom = CAM_ZOOM -- 2122
+		local hw = view.width / (2 * zoom) -- 2123
+		local hh = view.height / (2 * zoom) -- 2124
+		local tx = clamp(self.player.body.x, hw, Tower.WORLD_W - hw) -- 2125
+		local ty = clamp(self.player.body.y + 70, Tower.TOPS[1] + hh - 56 / zoom, Tower.WORLD_H - hh) -- 2127
+		local k = math.min(1, dt * 6) -- 2128
+		self.camX = tx -- 2130
+		self.camY = self.camY + (ty - self.camY) * k -- 2131
+	else -- 2131
+		self.camX = 800 -- 2133
+		self.camY = 400 -- 2134
+	end -- 2134
+	local zoom2 = CAM_ZOOM -- 2137
+	self.fxDraw.scaleX = zoom2 -- 2138
+	self.fxDraw.scaleY = zoom2 -- 2139
+	self.fxDraw.position = Vec2(-self.camX * zoom2 + shakeX, -self.camY * zoom2 + shakeY) -- 2140
+	self.npcDraw.scaleX = zoom2 -- 2141
+	self.npcDraw.scaleY = zoom2 -- 2142
+	self.npcDraw.position = self.fxDraw.position -- 2143
+	self.sheetNode.scaleX = zoom2 -- 2144
+	self.sheetNode.scaleY = zoom2 -- 2145
+	self.sheetNode.position = self.fxDraw.position -- 2146
+	self.fx:update(dt) -- 2147
+	self.sheetFx:update(dt) -- 2148
+	self.boomFx:update(dt) -- 2149
+	self.slashFx:update(dt) -- 2150
+	self.fxDraw:clear() -- 2151
+	self.fx:draw(self.fxDraw) -- 2152
+	self.npcDraw:clear() -- 2153
+	if self.mode ~= "title" and self.mode ~= "prologue" then -- 2153
+		self:drawNpcs() -- 2155
+	end -- 2155
+	self.renderer:setWorldVisible(self.mode ~= "title" and self.mode ~= "prologue") -- 2157
+	self.renderer:setCamera(self.camX, self.camY, shakeX, shakeY) -- 2158
+	self.renderer:syncTreePuzzle(self.state.flags) -- 2160
+	self.renderer:syncBarrel(dt, self.state.flags.barrelDown == true, self.state.flags.barrelLeft == true) -- 2161
+	self.renderer:update( -- 2162
+		dt, -- 2162
+		self.state, -- 2162
+		self.player, -- 2162
+		self.enemies, -- 2162
+		self.mech, -- 2162
+		self.time -- 2162
+	) -- 2162
+	self:syncInteractPrompt() -- 2163
+	local cpNow = self:findCheckpoint(self.state.currentCheckpointId) -- 2164
+	local floorNow = math.max( -- 2165
+		0, -- 2165
+		math.min(cpNow and cpNow.floor or 0, #Tower.FLOORS - 1) -- 2165
+	) -- 2165
+	local ____self_28 = self.hud -- 2165
+	local ____self_28_update_29 = ____self_28.update -- 2165
+	local ____dt_27 = dt -- 2166
+	local ____self_state_25 = self.state -- 2167
+	local ____self_player_26 = self.player -- 2168
+	local ____table_nearBoss_result_24 -- 2169
+	if self:nearBoss() then -- 2169
+		____table_nearBoss_result_24 = self.enemies:boss() -- 2169
+	else -- 2169
+		____table_nearBoss_result_24 = nil -- 2169
+	end -- 2169
+	____self_28_update_29( -- 2169
+		____self_28, -- 2169
+		____dt_27, -- 2166
+		{ -- 2166
+			state = ____self_state_25, -- 2167
+			player = ____self_player_26, -- 2168
+			boss = ____table_nearBoss_result_24, -- 2169
+			objective = self.state.objective, -- 2170
+			mission = Tower.FLOOR_MISSIONS[math.min(floorNow, #Tower.FLOOR_MISSIONS - 1) + 1], -- 2171
+			floorName = Tower.FLOORS[floorNow + 1], -- 2172
+			guideLight = floorNow == 6 or floorNow == 4, -- 2173
+			hint = self:hintText(), -- 2174
+			time = self.time, -- 2175
+			fade = self:teleportFade() -- 2176
+		} -- 2176
+	) -- 2176
+	self.notebook:update(dt, self.state) -- 2178
+end -- 2117
+return ____exports -- 2117
