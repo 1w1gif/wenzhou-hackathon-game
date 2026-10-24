@@ -6,6 +6,20 @@
   "entry": "init.lua",
   "files": [
     {
+      "path": "assets/art/cover.jpeg",
+      "url": "assets/assets/art/cover.357a0ff6cbcc.jpeg",
+      "size": 4058414,
+      "sha256": "357a0ff6cbcc6b459a67b7736f70359e6d713b7f1e2ecba65b73cfddb743a612",
+      "startup": true
+    },
+    {
+      "path": "assets/art/yanyue-key-visual.png",
+      "url": "assets/assets/art/yanyue-key-visual.d57cfd553641.png",
+      "size": 309966,
+      "sha256": "d57cfd55364193d35d9a8dc2da28ffa590c9bc8590175f563214208fb56ea36d",
+      "startup": true
+    },
+    {
       "path": "assets/audio/bgm-calm.wav",
       "url": "assets/assets/audio/bgm-calm.53ef871c40c2.wav",
       "size": 2822712,
@@ -17,6 +31,55 @@
       "url": "assets/assets/audio/bgm-conflict.6e1d13d6d2fc.mp3",
       "size": 5747019,
       "sha256": "6e1d13d6d2fcf2769c577bc61a4fc1c4cb60067075b7c3f2ee7b33edb3f97179",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-cover.mp3",
+      "url": "assets/assets/audio/bgm-cover.aaaa19c338e8.mp3",
+      "size": 3119871,
+      "sha256": "aaaa19c338e8cc333ce23ecf7c2a0a557f6785b3e957a3eb0746854c1ca1217d",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-floor1.mp3",
+      "url": "assets/assets/audio/bgm-floor1.43f8b5604242.mp3",
+      "size": 2207913,
+      "sha256": "43f8b5604242a049efee9c074adf35b0bf4af0e2e1ca774f9d55d2963aa133c8",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-floor4.mp3",
+      "url": "assets/assets/audio/bgm-floor4.bd55ea662d50.mp3",
+      "size": 3548517,
+      "sha256": "bd55ea662d50a12b189959eea9bd23a3d1b87a24669f66f4f388f43d5446375c",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-floor7.mp3",
+      "url": "assets/assets/audio/bgm-floor7.2f56dcd5b4ce.mp3",
+      "size": 5383358,
+      "sha256": "2f56dcd5b4ce8644294963e33a52313ca20b88b987ea3fb64d368fd75b2a4287",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-main.mp3",
+      "url": "assets/assets/audio/bgm-main.475cf8325b1d.mp3",
+      "size": 4088729,
+      "sha256": "475cf8325b1dc006c455b695be9712f929238c95f3d740d1d11b1023637bb33b",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-prologue.ogg",
+      "url": "assets/assets/audio/bgm-prologue.c2ed8cca7e68.ogg",
+      "size": 421328,
+      "sha256": "c2ed8cca7e68e7e0e34806a61df6ce1f3c926ff25c34bc2005aa0f5a0376375c",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/bgm-start.mp3",
+      "url": "assets/assets/audio/bgm-start.daccd7b06a82.mp3",
+      "size": 202804,
+      "sha256": "daccd7b06a820f903a800747475da1206c12de4df9d7cabbcdc21550b921cc8b",
       "startup": true
     },
     {
@@ -34,10 +97,59 @@
       "startup": true
     },
     {
+      "path": "assets/audio/sfx-dash.mp3",
+      "url": "assets/assets/audio/sfx-dash.47a164938743.mp3",
+      "size": 5686,
+      "sha256": "47a1649387432b5af315d3dd552587f39b4c3e700d832119474d8edd0f27c38a",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/sfx-enemy-hurt.mp3",
+      "url": "assets/assets/audio/sfx-enemy-hurt.0b3b1031a7c2.mp3",
+      "size": 8822,
+      "sha256": "0b3b1031a7c290975a0ec30a24bc0359f4d601ce28b9e9f3cb5336a7e9984923",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/sfx-hero-hit.mp3",
+      "url": "assets/assets/audio/sfx-hero-hit.7cb4194c6d15.mp3",
+      "size": 76447,
+      "sha256": "7cb4194c6d1543ffbb68c36826195cd58645a2237252863c23cb281905f6b335",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/sfx-jump1.mp3",
+      "url": "assets/assets/audio/sfx-jump1.bbdad64d66e1.mp3",
+      "size": 22044,
+      "sha256": "bbdad64d66e146eece6d1f49deb70f2e413894041a16f9dc9c2b8c814ee034ed",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/sfx-jump2.mp3",
+      "url": "assets/assets/audio/sfx-jump2.1201f9c24640.mp3",
+      "size": 24076,
+      "sha256": "1201f9c24640296f9933972e6b8cb25ac8d9305db5c522ff36ed4f6fa5a2439f",
+      "startup": true
+    },
+    {
       "path": "assets/audio/sfx-sword-draw.mp3",
       "url": "assets/assets/audio/sfx-sword-draw.dac8e2e069ba.mp3",
       "size": 28334,
       "sha256": "dac8e2e069ba363194f34067218e19e61d343f6871adac46a276ad398218c02b",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/sfx-ui-click.wav",
+      "url": "assets/assets/audio/sfx-ui-click.9b1879cf846f.wav",
+      "size": 67606,
+      "sha256": "9b1879cf846f8c22a900a6dc61df0266182a736eeb20a8ad6a50981ec2138ed0",
+      "startup": true
+    },
+    {
+      "path": "assets/audio/summer_nights.ogg",
+      "url": "assets/assets/audio/summer_nights.b1706e38f494.ogg",
+      "size": 1751975,
+      "sha256": "b1706e38f494bdcd4e50c3ef95a76ef4879209a0108d7c128a4090feeb459b2d",
       "startup": true
     },
     {
@@ -66,6 +178,48 @@
       "url": "assets/assets/bg/crystal_layer1.b9788d5f37d3.png",
       "size": 24903,
       "sha256": "b9788d5f37d3f79fcf69232400a022cd74bfe0ec55ea30c42074b282531e0669",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/far_clouds.png",
+      "url": "assets/assets/bg/dusk/far_clouds.cbb54d92bb8b.png",
+      "size": 1841,
+      "sha256": "cbb54d92bb8baaefea954208a1c64ebec6a418d3bab6b23d36cefeccac46aeca",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/far_mountains.png",
+      "url": "assets/assets/bg/dusk/far_mountains.5aa7c33cc8ce.png",
+      "size": 2980,
+      "sha256": "5aa7c33cc8ce0a9f74518f709874533126133409da494b50151207e17c6b7773",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/mountains.png",
+      "url": "assets/assets/bg/dusk/mountains.b8d08593b521.png",
+      "size": 6272,
+      "sha256": "b8d08593b521ae12de44d78d79b0d9f92ceb08e4e08bfd8cdbde8e9d32742c1e",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/near_clouds.png",
+      "url": "assets/assets/bg/dusk/near_clouds.137314921e12.png",
+      "size": 2733,
+      "sha256": "137314921e1279a0be60e7960e6c5233626d1be197987453c6c9194916d07095",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/sky.png",
+      "url": "assets/assets/bg/dusk/sky.a6d20dccd8f4.png",
+      "size": 3080,
+      "sha256": "a6d20dccd8f4bd8a9179c23c504c9d3ec7c938a465a8b3a8d8dd4afcdc67d392",
+      "startup": true
+    },
+    {
+      "path": "assets/bg/dusk/trees.png",
+      "url": "assets/assets/bg/dusk/trees.4d0bd09876e4.png",
+      "size": 5444,
+      "sha256": "4d0bd09876e423425e26c8081fa84a87f812da7d0eeaaf35d03be54e9021e632",
       "startup": true
     },
     {
@@ -153,17 +307,640 @@
       "startup": true
     },
     {
-      "path": "assets/characters/418b44eeff8435c9f2db902bdbfe881c.png",
-      "url": "assets/assets/characters/418b44eeff8435c9f2db902bdbfe881c.5fcb06fa9be4.png",
-      "size": 488045,
-      "sha256": "5fcb06fa9be418269f8613279ef91bfdbb38e9c7f697b3d008842ecbd81dd4f7",
+      "path": "assets/characters/爬梯子1.png",
+      "url": "assets/assets/characters/爬梯子1.352fa541d5ae.png",
+      "size": 961427,
+      "sha256": "352fa541d5ae0afa3deb9680afbc1386341b3b7c7a58e23a3ea9029ba9a38e8e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/爬梯子2.png",
+      "url": "assets/assets/characters/爬梯子2.d04a267d050b.png",
+      "size": 1020142,
+      "sha256": "d04a267d050b07fe1bb00be3a7acc1b37bc2a382939a7b1aaf80878aeb31182e",
       "startup": true
     },
     {
       "path": "assets/characters/衍月.png",
-      "url": "assets/assets/characters/衍月.5fcb06fa9be4.png",
-      "size": 488045,
-      "sha256": "5fcb06fa9be418269f8613279ef91bfdbb38e9c7f697b3d008842ecbd81dd4f7",
+      "url": "assets/assets/characters/衍月.d72d2cc87127.png",
+      "size": 367874,
+      "sha256": "d72d2cc87127f9f706cde33e4ffb2b471ff841d9e3186b1f23bc57b54628ca7a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/00.png",
+      "url": "assets/assets/characters/archer/idle_east/00.c314511a2872.png",
+      "size": 3002,
+      "sha256": "c314511a28724cd8cb98ab3a9784ccbea0f5d83a38486c433df7178fab801209",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/01.png",
+      "url": "assets/assets/characters/archer/idle_east/01.ba2e1a8023d9.png",
+      "size": 2970,
+      "sha256": "ba2e1a8023d9e389dac03fa46b508bfcb5140aed122a2b5c673fdd49e0563f2d",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/02.png",
+      "url": "assets/assets/characters/archer/idle_east/02.113a50e9eeca.png",
+      "size": 3070,
+      "sha256": "113a50e9eecaaeb3a17e516f47d57d3a4233f65e3b0847e5eb8be507cfab23f5",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/03.png",
+      "url": "assets/assets/characters/archer/idle_east/03.7ba62f6cfa66.png",
+      "size": 3041,
+      "sha256": "7ba62f6cfa6636750941a29136a229eb78c2a41fa7e2ab159ee9d3e7b4529f6a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/04.png",
+      "url": "assets/assets/characters/archer/idle_east/04.368871b85607.png",
+      "size": 3091,
+      "sha256": "368871b85607151796918fc45ba87378c3b8ccd647d7a1b5a7e9a5e299c2facc",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/05.png",
+      "url": "assets/assets/characters/archer/idle_east/05.53770119f3c4.png",
+      "size": 2981,
+      "sha256": "53770119f3c4f048d6e7f693e62b5e91d2645651f587f6fb4cd19c5ae3a16681",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/06.png",
+      "url": "assets/assets/characters/archer/idle_east/06.f4bd60224f68.png",
+      "size": 3020,
+      "sha256": "f4bd60224f686d0673a62f21346cb86ced1967b58f5e044d9780aea28d67552c",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/07.png",
+      "url": "assets/assets/characters/archer/idle_east/07.1cdb3309e424.png",
+      "size": 3022,
+      "sha256": "1cdb3309e42430827fd569a89160ee5fba69a017328cb488387a9ffae1a0505c",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/08.png",
+      "url": "assets/assets/characters/archer/idle_east/08.52a8fb346ff0.png",
+      "size": 2998,
+      "sha256": "52a8fb346ff0f86e50ff600985de2d3739612b101135cd1cc19631c4e6a0e0b7",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/09.png",
+      "url": "assets/assets/characters/archer/idle_east/09.9c31b3df4e29.png",
+      "size": 3068,
+      "sha256": "9c31b3df4e29f3430ba0c4063a290a1dda30e9c3a26c105e0e4a37d961d1a40e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/10.png",
+      "url": "assets/assets/characters/archer/idle_east/10.48ece19328ba.png",
+      "size": 3071,
+      "sha256": "48ece19328baf2f5f19ff454826c01a55bdb35808ec56f141e4b640626acd2aa",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_east/11.png",
+      "url": "assets/assets/characters/archer/idle_east/11.238f8e39c452.png",
+      "size": 3018,
+      "sha256": "238f8e39c4525bf8aab1e13e532b67512b9aaad7b8a7ea5893a0aaaeb7faac6a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/00.png",
+      "url": "assets/assets/characters/archer/idle_west/00.5704492900cd.png",
+      "size": 2841,
+      "sha256": "5704492900cddc474613bd5038f34c35054bca5e47c81625cf7643e520162859",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/01.png",
+      "url": "assets/assets/characters/archer/idle_west/01.043fafdd9798.png",
+      "size": 2778,
+      "sha256": "043fafdd979892f7c705bd57595d75392ac58795fd021a340a553ee992c1a533",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/02.png",
+      "url": "assets/assets/characters/archer/idle_west/02.2f4efd3a35bc.png",
+      "size": 2761,
+      "sha256": "2f4efd3a35bc2a857bafdb449e18a526d1d462a3dd323b5404e436bf43af60ac",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/03.png",
+      "url": "assets/assets/characters/archer/idle_west/03.f335fcfede75.png",
+      "size": 2758,
+      "sha256": "f335fcfede75aecf10297a98d0aed1e643249a4d991319e5b2c8bfb79ead7817",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/04.png",
+      "url": "assets/assets/characters/archer/idle_west/04.60119bc3d155.png",
+      "size": 2803,
+      "sha256": "60119bc3d1551235d3f40ad3a8d0f4280a4dd87ae1e9d77c034fa6d2fca3db1e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/05.png",
+      "url": "assets/assets/characters/archer/idle_west/05.b05fe3fef6b1.png",
+      "size": 2828,
+      "sha256": "b05fe3fef6b13cdb45e6a4ad75e1cfd784764476ab7fb47297f2293955a105a9",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/06.png",
+      "url": "assets/assets/characters/archer/idle_west/06.86c006c3390e.png",
+      "size": 2894,
+      "sha256": "86c006c3390e12256edcd445a6546494a31d6a56d8be2281b491bdb57b14a798",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/07.png",
+      "url": "assets/assets/characters/archer/idle_west/07.a30d6614ab9c.png",
+      "size": 2729,
+      "sha256": "a30d6614ab9cdea4fb793213466dcd1fb18aaa5a457de7b755ec1d364da04a57",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/08.png",
+      "url": "assets/assets/characters/archer/idle_west/08.1ddcce095be7.png",
+      "size": 2765,
+      "sha256": "1ddcce095be7b1f739f1bcf792a9de66a68ebade12c1200fc90a59b9ab3737a3",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/09.png",
+      "url": "assets/assets/characters/archer/idle_west/09.7af2c21c2122.png",
+      "size": 2715,
+      "sha256": "7af2c21c2122aa64cade32a40eb39fa09bc1a434ce88c685e107442ef7a7b055",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/10.png",
+      "url": "assets/assets/characters/archer/idle_west/10.955b35bb97a2.png",
+      "size": 2731,
+      "sha256": "955b35bb97a25fea8fa7a513a577fe52ca9bbec91aaa6a0573b0fa1befef42c2",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/idle_west/11.png",
+      "url": "assets/assets/characters/archer/idle_west/11.8c7d081a58aa.png",
+      "size": 2709,
+      "sha256": "8c7d081a58aa441856a3c8237182e0160efd6b75a1337cd68cdc2786ad7555ee",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/00.png",
+      "url": "assets/assets/characters/archer/walk_east/00.4490e8654044.png",
+      "size": 3242,
+      "sha256": "4490e865404415c29d50f4818e3edf00780782919b300a1d07663d7522fb31da",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/01.png",
+      "url": "assets/assets/characters/archer/walk_east/01.fbbed811d6f0.png",
+      "size": 3190,
+      "sha256": "fbbed811d6f0d5b3133bf573b0d00fb69bcc4fc963dafcfcb077cd0cb77bc932",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/02.png",
+      "url": "assets/assets/characters/archer/walk_east/02.5bd1728b9994.png",
+      "size": 3272,
+      "sha256": "5bd1728b999452ac841a29c76fe379332bc33bb6928442e0b0b1489c56838fa0",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/03.png",
+      "url": "assets/assets/characters/archer/walk_east/03.e6b892995780.png",
+      "size": 3075,
+      "sha256": "e6b8929957806ee862d80880ca7da9be08106262a15f0c40ceed0407ae60e61d",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/04.png",
+      "url": "assets/assets/characters/archer/walk_east/04.a7c30052cbaa.png",
+      "size": 3157,
+      "sha256": "a7c30052cbaa51ac872f98c64e29f5f489ff423d8fde1026e1e7c60f6634885b",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/05.png",
+      "url": "assets/assets/characters/archer/walk_east/05.e9d6c1aa6171.png",
+      "size": 3023,
+      "sha256": "e9d6c1aa6171aebbd5c26cc410150ae6c163f1f1f79f14a6e84d835a42b6ef42",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/06.png",
+      "url": "assets/assets/characters/archer/walk_east/06.b8c12c85d8da.png",
+      "size": 3384,
+      "sha256": "b8c12c85d8daa862bf67f60d4f25cc861991f00c04f4a1db4ab2a7c2ca728939",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/07.png",
+      "url": "assets/assets/characters/archer/walk_east/07.316aca061626.png",
+      "size": 3379,
+      "sha256": "316aca061626946f3a2eddbc721d5466f065d9751a92331c15b9c93d26e0427f",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/08.png",
+      "url": "assets/assets/characters/archer/walk_east/08.6cde0e011639.png",
+      "size": 3424,
+      "sha256": "6cde0e011639a6b8f4126ecc32384e966a3de876f2e26bf93b0ff2d0789df42f",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/09.png",
+      "url": "assets/assets/characters/archer/walk_east/09.49927f96ca89.png",
+      "size": 3164,
+      "sha256": "49927f96ca89701b2c2c18afb6d08ebe47e3c5e920f6c7cb8838ec9671d5e96f",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/10.png",
+      "url": "assets/assets/characters/archer/walk_east/10.c193ec2de3d1.png",
+      "size": 3138,
+      "sha256": "c193ec2de3d13e3b5693098f8313f2928f64061b17b501234f389e3650af3538",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_east/11.png",
+      "url": "assets/assets/characters/archer/walk_east/11.9d198950a7d2.png",
+      "size": 3003,
+      "sha256": "9d198950a7d2c23c5adcb334fa2528e5f3071020fd19b3c7cefb049c43fecddb",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/00.png",
+      "url": "assets/assets/characters/archer/walk_west/00.6981ea6cd7cf.png",
+      "size": 3070,
+      "sha256": "6981ea6cd7cfdf0ce1b9a18e55c8afba1fccbeb35f82a9d6836c83686bd27053",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/01.png",
+      "url": "assets/assets/characters/archer/walk_west/01.f90b9bb9015a.png",
+      "size": 3117,
+      "sha256": "f90b9bb9015aeb968ff7a986addd67007b2fdb08edbaa28fe69964fd880aa096",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/02.png",
+      "url": "assets/assets/characters/archer/walk_west/02.3ddc73d5e4cc.png",
+      "size": 3187,
+      "sha256": "3ddc73d5e4cccd6ec57a717c817684664e930a06540ca845116ea710a579f099",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/03.png",
+      "url": "assets/assets/characters/archer/walk_west/03.d2ef42d5d184.png",
+      "size": 2974,
+      "sha256": "d2ef42d5d18488e7ef73e13c5d46f733c7596bbb9399eae4bb8d3e1e4ca2102e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/04.png",
+      "url": "assets/assets/characters/archer/walk_west/04.a6b7b2a63eac.png",
+      "size": 2961,
+      "sha256": "a6b7b2a63eacc6450da5907e145752ffe8e6ed26c63b41f5aabf9d2fd5169bcb",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/05.png",
+      "url": "assets/assets/characters/archer/walk_west/05.fa84a46940d0.png",
+      "size": 2787,
+      "sha256": "fa84a46940d0bf2079fb0796e809946fd88273000225b1a0c081cc4916ad39b3",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/06.png",
+      "url": "assets/assets/characters/archer/walk_west/06.a801603d9249.png",
+      "size": 2961,
+      "sha256": "a801603d9249b0f74bfeea59b89ef3e59d72a0148dd02214d473d52582877436",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/07.png",
+      "url": "assets/assets/characters/archer/walk_west/07.e6ace0cd296f.png",
+      "size": 3000,
+      "sha256": "e6ace0cd296f3631bdf060fd445c7e2057bd7ad31a3bb162cfe896a238ffff26",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/08.png",
+      "url": "assets/assets/characters/archer/walk_west/08.42eadc0d7d83.png",
+      "size": 3125,
+      "sha256": "42eadc0d7d83bfe85d10cb5f214d2b95f249b1a4af9faa1c563f1afcc0bb0db9",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/09.png",
+      "url": "assets/assets/characters/archer/walk_west/09.66d3ef642323.png",
+      "size": 3014,
+      "sha256": "66d3ef642323e6d4cbe77077643ae2c1429469715bcfc3c55b6e9c1da5b1cb1e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/10.png",
+      "url": "assets/assets/characters/archer/walk_west/10.8fc0cc5636ed.png",
+      "size": 3049,
+      "sha256": "8fc0cc5636ed80a57822f4463b18a71a309e24b8d6033b39ee9339e44233e7a4",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/archer/walk_west/11.png",
+      "url": "assets/assets/characters/archer/walk_west/11.4be89f24c9e9.png",
+      "size": 2781,
+      "sha256": "4be89f24c9e913a57cb24c51a95df3b355a923f41915b57ee3270c39e239b6dc",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/atk_0.png",
+      "url": "assets/assets/characters/hero_v2/atk_0.c31a3642095f.png",
+      "size": 1661806,
+      "sha256": "c31a3642095f2ed204033f992cdf62fb338a4c02b07d10e245d1daeb916167db",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/atk_1.png",
+      "url": "assets/assets/characters/hero_v2/atk_1.c2e0b51a8b29.png",
+      "size": 1565856,
+      "sha256": "c2e0b51a8b29da36afda77a778683a74996ddec846097988d9abb4d612298b5d",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/atk_2.png",
+      "url": "assets/assets/characters/hero_v2/atk_2.f5e524ca7395.png",
+      "size": 1392810,
+      "sha256": "f5e524ca7395e773728f7e8a45f9a1465b9762ca83f472810d5c78c824b6f4a6",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/atk_3.png",
+      "url": "assets/assets/characters/hero_v2/atk_3.5e08a0635be3.png",
+      "size": 1473362,
+      "sha256": "5e08a0635be3b3210879064bfcf230913bc8de88337c5759321d6f7e646b5dd8",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/atk_4.png",
+      "url": "assets/assets/characters/hero_v2/atk_4.917a741a82cc.png",
+      "size": 1699217,
+      "sha256": "917a741a82cc727f729e019c5f09b0f0c94d60555aa868b395ff46b9b491f59b",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/cling_0.png",
+      "url": "assets/assets/characters/hero_v2/cling_0.eda23b4face3.png",
+      "size": 1261291,
+      "sha256": "eda23b4face32606a152d9a483b448644c28615dc3a2ea6cafec7607416b93aa",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/cling_1.png",
+      "url": "assets/assets/characters/hero_v2/cling_1.a0c694612774.png",
+      "size": 1867283,
+      "sha256": "a0c694612774cec6e57d15475768e3f96021ea7feaf62107953c2491428710b0",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/cling_2.png",
+      "url": "assets/assets/characters/hero_v2/cling_2.c67dea42947c.png",
+      "size": 1976409,
+      "sha256": "c67dea42947ceb18880323d65c95519201db79e0ba2e6bcc1af3e2a2cc95dafa",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/dash_0.png",
+      "url": "assets/assets/characters/hero_v2/dash_0.5b2b0a4d3a3f.png",
+      "size": 1052818,
+      "sha256": "5b2b0a4d3a3f75f45970fd3ef6312932b4246ba4dfba8f066297c3fa3a256574",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/dash_1.png",
+      "url": "assets/assets/characters/hero_v2/dash_1.980acc7c5325.png",
+      "size": 835321,
+      "sha256": "980acc7c5325073fc1915081ccaa6a4d1e16c72945edebd5977217a40d163538",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/fall_0.png",
+      "url": "assets/assets/characters/hero_v2/fall_0.8d826393e6e1.png",
+      "size": 1597376,
+      "sha256": "8d826393e6e1373d27dfbb3fb6d43ef82aebdd034c220544b6467816e15f043e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/hurt_0.png",
+      "url": "assets/assets/characters/hero_v2/hurt_0.d3d91a004a65.png",
+      "size": 1387196,
+      "sha256": "d3d91a004a658508cec74c125486711b8ea5b2e54d47777a840d5395d9bbc082",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/jump_0.png",
+      "url": "assets/assets/characters/hero_v2/jump_0.1f9746c1447c.png",
+      "size": 1100559,
+      "sha256": "1f9746c1447c044fca70ba578d05206dce26728b6d6565e572351d5d0a81258f",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/jump_1.png",
+      "url": "assets/assets/characters/hero_v2/jump_1.23f210009637.png",
+      "size": 1651378,
+      "sha256": "23f210009637510164e236166496a2a1675762b71093d0740e19d71b70e35523",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/portrait.png",
+      "url": "assets/assets/characters/hero_v2/portrait.d72d2cc87127.png",
+      "size": 367874,
+      "sha256": "d72d2cc87127f9f706cde33e4ffb2b471ff841d9e3186b1f23bc57b54628ca7a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/run_0.png",
+      "url": "assets/assets/characters/hero_v2/run_0.f809900c5cc4.png",
+      "size": 656444,
+      "sha256": "f809900c5cc409ea3880b89a9dca1f35eef803c137697ff4050ebc2e6f631cef",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/run_1.png",
+      "url": "assets/assets/characters/hero_v2/run_1.1dc022b1f661.png",
+      "size": 666521,
+      "sha256": "1dc022b1f66107523be0fd687ba3e3663aecbd1aea53963a1270955c4f74fb95",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/run_2.png",
+      "url": "assets/assets/characters/hero_v2/run_2.65fae2fd8d11.png",
+      "size": 655864,
+      "sha256": "65fae2fd8d1149fba600c5a30aad3efe69851898425970791d0efe212cbbc0b1",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/run_3.png",
+      "url": "assets/assets/characters/hero_v2/run_3.b96eba288163.png",
+      "size": 2128128,
+      "sha256": "b96eba288163cdbe7ed02162fa79e4f7478eb34f727c5afbe44a99c4d8340376",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/hero_v2/run_4.png",
+      "url": "assets/assets/characters/hero_v2/run_4.205314314ecf.png",
+      "size": 1943330,
+      "sha256": "205314314ecffd8cf112b6e4fb098f5704a19d770ac02117faa3894652d03e9a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/atk_0.png",
+      "url": "assets/assets/characters/yanyue/atk_0.e158e348c3ab.png",
+      "size": 561678,
+      "sha256": "e158e348c3ab0f7cbfd8032808dc1eeb5e6d57f52af652f2548925443d4f0f8a",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/atk_1.png",
+      "url": "assets/assets/characters/yanyue/atk_1.98cd86b45bd4.png",
+      "size": 1264717,
+      "sha256": "98cd86b45bd4c1973d376b65b5e7e2ca34616a6103f94b70a5ec99d3b7201032",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/atk_2.png",
+      "url": "assets/assets/characters/yanyue/atk_2.b2f0ecd5e334.png",
+      "size": 996193,
+      "sha256": "b2f0ecd5e3344beb4cfc79e01d3398a51f5a049c12e6b1aecc6c1e9de08b8695",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/cling.png",
+      "url": "assets/assets/characters/yanyue/cling.647e793c71b8.png",
+      "size": 1002416,
+      "sha256": "647e793c71b8052692815805ec90e3c87002b2990737746b36c82691dfb8f5ca",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/dash_0.png",
+      "url": "assets/assets/characters/yanyue/dash_0.5b2b0a4d3a3f.png",
+      "size": 1052818,
+      "sha256": "5b2b0a4d3a3f75f45970fd3ef6312932b4246ba4dfba8f066297c3fa3a256574",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/dash_1.png",
+      "url": "assets/assets/characters/yanyue/dash_1.980acc7c5325.png",
+      "size": 835321,
+      "sha256": "980acc7c5325073fc1915081ccaa6a4d1e16c72945edebd5977217a40d163538",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/fall.png",
+      "url": "assets/assets/characters/yanyue/fall.8d826393e6e1.png",
+      "size": 1597376,
+      "sha256": "8d826393e6e1373d27dfbb3fb6d43ef82aebdd034c220544b6467816e15f043e",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/hurt.png",
+      "url": "assets/assets/characters/yanyue/hurt.782367d350da.png",
+      "size": 1251699,
+      "sha256": "782367d350da0523ff9b8df9f0fffd1f723fbb3f46b267dda5d1cf328c1b0aba",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/jump_0.png",
+      "url": "assets/assets/characters/yanyue/jump_0.1f9746c1447c.png",
+      "size": 1100559,
+      "sha256": "1f9746c1447c044fca70ba578d05206dce26728b6d6565e572351d5d0a81258f",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/jump_1.png",
+      "url": "assets/assets/characters/yanyue/jump_1.23f210009637.png",
+      "size": 1651378,
+      "sha256": "23f210009637510164e236166496a2a1675762b71093d0740e19d71b70e35523",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/run_0.png",
+      "url": "assets/assets/characters/yanyue/run_0.8b6a683cd702.png",
+      "size": 694013,
+      "sha256": "8b6a683cd702c8a22eaf8b2a79c885bbe9e4d64211ff4172cf2c4ba2cb64559d",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/run_1.png",
+      "url": "assets/assets/characters/yanyue/run_1.bc2eb4bd291a.png",
+      "size": 804592,
+      "sha256": "bc2eb4bd291ad1ee3ef35de41bf0b0dbbfd3d7a34f8e29483ed88319280ef365",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/run_2.png",
+      "url": "assets/assets/characters/yanyue/run_2.01ec62e69f38.png",
+      "size": 677002,
+      "sha256": "01ec62e69f389af1a1973e70fd1814e7f980d9b7c333497e0848da070cc77d2b",
+      "startup": true
+    },
+    {
+      "path": "assets/characters/yanyue/run_air.png",
+      "url": "assets/assets/characters/yanyue/run_air.1db5f34b895e.png",
+      "size": 2080015,
+      "sha256": "1db5f34b895ed963859c9fc93ef60005d5870918d4ebbd75e9503b34896e3764",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/lantern_1.png",
+      "url": "assets/assets/decor/lantern_1.361956dc4674.png",
+      "size": 8695,
+      "sha256": "361956dc46742d743b11c98849606a7f26ee807b7b248e000bf55ff648c97083",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/lantern_2.png",
+      "url": "assets/assets/decor/lantern_2.38725c1d2a19.png",
+      "size": 9674,
+      "sha256": "38725c1d2a198521f283204a900394e9e5a4985ec7fd472511f7c6483b6d5a06",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/lantern_3.png",
+      "url": "assets/assets/decor/lantern_3.e085c211889d.png",
+      "size": 10249,
+      "sha256": "e085c211889d99d18b9e1bcc4fb2b76dced8ada4d78de116b048dfd017c745ae",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/lantern_4.png",
+      "url": "assets/assets/decor/lantern_4.a818feec1478.png",
+      "size": 10922,
+      "sha256": "a818feec1478d4bcb71a19319f736d4c8aff515c1a4f1db44397ad44c28d5602",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/lantern_5.png",
+      "url": "assets/assets/decor/lantern_5.636902dcb331.png",
+      "size": 10424,
+      "sha256": "636902dcb3317f50515febfffd7725ad5b2fd43d3975699cc84af9370abda167",
+      "startup": true
+    },
+    {
+      "path": "assets/decor/torch.png",
+      "url": "assets/assets/decor/torch.334998aaee78.png",
+      "size": 11916,
+      "sha256": "334998aaee78aba3837e489ba1ec022f55e7510a70f75de516192f1f1af404ec",
       "startup": true
     },
     {
@@ -178,6 +955,545 @@
       "url": "assets/assets/effects/hit-effect-2.86a515cd5823.png",
       "size": 1915,
       "sha256": "86a515cd58235de5a5b198495e5171dcfe4e133abce5c47206fb2ff59df6975e",
+      "startup": true
+    },
+    {
+      "path": "assets/effects/slash_blue.png",
+      "url": "assets/assets/effects/slash_blue.fd087daf6c4f.png",
+      "size": 1308,
+      "sha256": "fd087daf6c4f856965b9dc5b04b13af83e91ca02d3a670b2e96794ae01ae6d38",
+      "startup": true
+    },
+    {
+      "path": "assets/effects/slash_white.png",
+      "url": "assets/assets/effects/slash_white.a3b8c1f7d377.png",
+      "size": 1826,
+      "sha256": "a3b8c1f7d37705b9ebdfb53763e9269d8e57ccf5131aec9a14ee50aa4dc44e81",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_attack_1.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_attack_1.4917f3115263.png",
+      "size": 24506,
+      "sha256": "4917f31152630c10ca0e7f43607ecbd5343ea3c658f80e8b278485fb0b89e428",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_attack_2.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_attack_2.d7e53b66d51d.png",
+      "size": 26887,
+      "sha256": "d7e53b66d51dae3d77d9deb3284fd4d477473e1902d5e6b1797dbcf52eba7926",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_dead.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_dead.2bd4503124bb.png",
+      "size": 21639,
+      "sha256": "2bd4503124bb8a0aebecf0e5bdb461663bfa40b5c6d486ed30baf18b720c9ce6",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_hurt.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_hurt.a3335ce06cb3.png",
+      "size": 19435,
+      "sha256": "a3335ce06cb33afa4bd154cde09532fde5993abef46edde98b2ccfe7958e6765",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_idle.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_idle.ec2265941005.png",
+      "size": 21178,
+      "sha256": "ec2265941005ac675c164e83bdfdbaa7e4f33490e4f7a194523fd1d13f005056",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_jump.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_jump.15693575e5a5.png",
+      "size": 28554,
+      "sha256": "15693575e5a5dfad91dc39cd177bb8881cce0d053a19adcbaceb296c23ce8a40",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_run.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_run.d7f630bf3f96.png",
+      "size": 23220,
+      "sha256": "d7f630bf3f965785a379bcfe64c502bfb3c380d5011edfa3f8b7f9f9a02665ce",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/kunoichi_walk.png",
+      "url": "assets/assets/enemies/ninja/kunoichi_walk.e66caf068214.png",
+      "size": 22729,
+      "sha256": "e66caf068214b7874119eb61035ca1b44ea4a9f6aff31c33f69358511b1db8a5",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_attack_1.png",
+      "url": "assets/assets/enemies/ninja/monk_attack_1.282d2146aacc.png",
+      "size": 22183,
+      "sha256": "282d2146aacc161e50d619a0e7addd20ef6feb2c0bdba391bfdd39405329db8a",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_attack_2.png",
+      "url": "assets/assets/enemies/ninja/monk_attack_2.d61cc75fc505.png",
+      "size": 22373,
+      "sha256": "d61cc75fc5057b4d81f60e3d9e8dd69e82469ba1f53f01ffa35d133419105f36",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_dead.png",
+      "url": "assets/assets/enemies/ninja/monk_dead.6411a04fb098.png",
+      "size": 21395,
+      "sha256": "6411a04fb098597cbf29a6fcaa3712b4509fe67b50dbc6471dcf53c172afd2cb",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_hurt.png",
+      "url": "assets/assets/enemies/ninja/monk_hurt.ff6ed3a93f05.png",
+      "size": 20451,
+      "sha256": "ff6ed3a93f055a1c18e3bf0c2203b78e385c515253156fa97321270b73e33994",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_idle.png",
+      "url": "assets/assets/enemies/ninja/monk_idle.26530839a059.png",
+      "size": 20555,
+      "sha256": "26530839a059f00a8712f8f1782bef088174abb87fb169dfbd79ed4b9d4f5b7e",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_jump.png",
+      "url": "assets/assets/enemies/ninja/monk_jump.ee90ffe5fe98.png",
+      "size": 27528,
+      "sha256": "ee90ffe5fe9802b14369e1466c8adb1261b63aa9f5ff9130e4930ef4c0579af7",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_run.png",
+      "url": "assets/assets/enemies/ninja/monk_run.a3f63bc7e8f6.png",
+      "size": 24807,
+      "sha256": "a3f63bc7e8f6fd8fdaab7807c6d5e25112ad5db7b8c97d4d7290966559733365",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/monk_walk.png",
+      "url": "assets/assets/enemies/ninja/monk_walk.3ce8e8f33d22.png",
+      "size": 23244,
+      "sha256": "3ce8e8f33d2259ba58a9ead2418229cb6a8131b92cd42b19e9296102efabdc42",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_attack_1.png",
+      "url": "assets/assets/enemies/ninja/peasant_attack_1.74fb7d3fbee1.png",
+      "size": 26199,
+      "sha256": "74fb7d3fbee1b509e7b3397eba3e55ee6a913053dfecf42028700742a0b97914",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_attack_2.png",
+      "url": "assets/assets/enemies/ninja/peasant_attack_2.c16e732faf8b.png",
+      "size": 23999,
+      "sha256": "c16e732faf8be92989fab1c4381109d0cce6cedc6beb362e2c8c1e9ccfefc898",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_dead.png",
+      "url": "assets/assets/enemies/ninja/peasant_dead.76211ab0ad0e.png",
+      "size": 23248,
+      "sha256": "76211ab0ad0ea9346f5d01d73b35619496461443558ba15d15d0a93987973021",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_hurt.png",
+      "url": "assets/assets/enemies/ninja/peasant_hurt.b5ae46214385.png",
+      "size": 21191,
+      "sha256": "b5ae4621438515d62f834615ebcec9475bdd59895f076e3290b45cb14c32a0c5",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_idle.png",
+      "url": "assets/assets/enemies/ninja/peasant_idle.a1ae9f911e76.png",
+      "size": 21926,
+      "sha256": "a1ae9f911e76bb7556617c70fba180bfd6cafccaefc631eb87a111d727e5cbbb",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_jump.png",
+      "url": "assets/assets/enemies/ninja/peasant_jump.2c5a11901555.png",
+      "size": 31414,
+      "sha256": "2c5a1190155532894bc4d9066212afc3924461d46a49f7ee574d97d083c1dd69",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_run.png",
+      "url": "assets/assets/enemies/ninja/peasant_run.a36a60305f05.png",
+      "size": 26113,
+      "sha256": "a36a60305f0580bbbb26b5d6876c118aef8cc27737e9817f375735d67b72d995",
+      "startup": true
+    },
+    {
+      "path": "assets/enemies/ninja/peasant_walk.png",
+      "url": "assets/assets/enemies/ninja/peasant_walk.c6b2b00f5f95.png",
+      "size": 27363,
+      "sha256": "c6b2b00f5f95dcb9f68dd40a09024cd1c19c1a9c0b96d4775bf1f48ca6e87778",
+      "startup": true
+    },
+    {
+      "path": "assets/font/DialogFont.ttf",
+      "url": "assets/assets/font/DialogFont.16554439b7e9.ttf",
+      "size": 25024512,
+      "sha256": "16554439b7e95da1fc354ed7b2c1551e83e942c3c5afb2a2e883761c6037dc22",
+      "startup": true
+    },
+    {
+      "path": "assets/font/NameFont.ttf",
+      "url": "assets/assets/font/NameFont.ab4ed94df213.ttf",
+      "size": 14327692,
+      "sha256": "ab4ed94df2134bbf00c49f7ec03696e21d7012d9dda8a57a2ad3e4abaeeb5e7a",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_1.png",
+      "url": "assets/assets/fx/boom/bolt_1.5fd37b82dfde.png",
+      "size": 1324,
+      "sha256": "5fd37b82dfde0812fbf8c96ccddc649126c7cf893303ff835567789496850a04",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_2.png",
+      "url": "assets/assets/fx/boom/bolt_2.766ada04aba5.png",
+      "size": 2754,
+      "sha256": "766ada04aba57fc929b8f0b7f69f1d4b61de180d2b2119ad65f20437ccf0f355",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_3.png",
+      "url": "assets/assets/fx/boom/bolt_3.f3ba067e9411.png",
+      "size": 2768,
+      "sha256": "f3ba067e94112eed9d3c4a8e4899c7044d290c9c0a72c7f7c5d1a9e2d463a4e7",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_4.png",
+      "url": "assets/assets/fx/boom/bolt_4.9c15820f8457.png",
+      "size": 3304,
+      "sha256": "9c15820f8457141c32fdc297e0efbbbab2c32b4c5244476414609be74c625b16",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_5.png",
+      "url": "assets/assets/fx/boom/bolt_5.d13f069703f3.png",
+      "size": 2746,
+      "sha256": "d13f069703f303eec911ee8bfc4fffe3ed87a2671a8bea4d0b9297c6daaacc9e",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/bolt_6.png",
+      "url": "assets/assets/fx/boom/bolt_6.8a2c1e6826de.png",
+      "size": 2561,
+      "sha256": "8a2c1e6826def4017ecb9555c370b764f2861cc5e2bf6b38e5043f34014dc60e",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_1.png",
+      "url": "assets/assets/fx/boom/cir_1.5d5646c92d3b.png",
+      "size": 3278,
+      "sha256": "5d5646c92d3bd7b9c5e8f8b9a0ae4b22871f4dc7b85bced6f68747cb68fbcb3f",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_10.png",
+      "url": "assets/assets/fx/boom/cir_10.fadefc462fcf.png",
+      "size": 5325,
+      "sha256": "fadefc462fcfcb1aa0337f35e1d960e8f2a62d750eb22d2598ee0022b4501fca",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_2.png",
+      "url": "assets/assets/fx/boom/cir_2.906cfbad5eaa.png",
+      "size": 3806,
+      "sha256": "906cfbad5eaac7ec7a5b895314e41b4057f3530d85a651d9a7eb222dc5c31990",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_3.png",
+      "url": "assets/assets/fx/boom/cir_3.93bcde4e621d.png",
+      "size": 4083,
+      "sha256": "93bcde4e621d1573e20ecb0e08143d038314eb0bd8dc8026ad60e4ae8fffceab",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_4.png",
+      "url": "assets/assets/fx/boom/cir_4.6bc7bcbf255e.png",
+      "size": 5143,
+      "sha256": "6bc7bcbf255e828f9556806dee3d4ae0efdbd25d2b53516858c8d36ab01cf24c",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_5.png",
+      "url": "assets/assets/fx/boom/cir_5.56eff004ed88.png",
+      "size": 6639,
+      "sha256": "56eff004ed88dfc0354b99e5b1176ae04770a3923de53fcb8d579370a1a67d37",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_6.png",
+      "url": "assets/assets/fx/boom/cir_6.15264ef12754.png",
+      "size": 7714,
+      "sha256": "15264ef127541aa08724e42c45f7a43880e718d7e075354843308e176b1d4ce6",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_7.png",
+      "url": "assets/assets/fx/boom/cir_7.8306d4df093a.png",
+      "size": 8180,
+      "sha256": "8306d4df093a84335876aababc5191c5128f9be9e2be6572dd87f88a7f5e38fd",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_8.png",
+      "url": "assets/assets/fx/boom/cir_8.e6c4a7cce340.png",
+      "size": 8621,
+      "sha256": "e6c4a7cce340e43d352da3308e080bd3e441b4edf6b3b3882e66383d25aa2b80",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/cir_9.png",
+      "url": "assets/assets/fx/boom/cir_9.acd637633672.png",
+      "size": 7884,
+      "sha256": "acd6376336729f712840dc71aace9f0e15d2fa991871da7b83752bc6b6f4f4c2",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_1.png",
+      "url": "assets/assets/fx/boom/exp_1.bb0fef873fae.png",
+      "size": 2978,
+      "sha256": "bb0fef873faeb92c57a301b0b59cc8a26ae875300a942b56efdb8a2d53a53476",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_10.png",
+      "url": "assets/assets/fx/boom/exp_10.bcae1f2011cd.png",
+      "size": 5766,
+      "sha256": "bcae1f2011cdc5940b3152baec66b7fe81ecd5103b271cbd1c2bbc988879b9d4",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_2.png",
+      "url": "assets/assets/fx/boom/exp_2.b3f53e65ce70.png",
+      "size": 3212,
+      "sha256": "b3f53e65ce709e2fbbd8b6b47850585998bc658c298b6708bca561b5b4e81c63",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_3.png",
+      "url": "assets/assets/fx/boom/exp_3.dcb60eb0dd7d.png",
+      "size": 2163,
+      "sha256": "dcb60eb0dd7d543156528e95a8a0fc87e3f1e948aed4cc1b90132841f2d24c21",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_4.png",
+      "url": "assets/assets/fx/boom/exp_4.03ca20698f0d.png",
+      "size": 4712,
+      "sha256": "03ca20698f0d3dc6a309c1ec168cd5c6787d52b3884d1d1611faf8fd315c75ef",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_5.png",
+      "url": "assets/assets/fx/boom/exp_5.ddbcc38b073f.png",
+      "size": 5535,
+      "sha256": "ddbcc38b073f17c15484decd834469136fbbeb5230da859b3a970674cb240999",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_6.png",
+      "url": "assets/assets/fx/boom/exp_6.1b27d7f85722.png",
+      "size": 6827,
+      "sha256": "1b27d7f8572270244781fcfceb8ad98f8b0aa9ed6792aaa6a304dd09150e3edd",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_7.png",
+      "url": "assets/assets/fx/boom/exp_7.1045d5d8b42f.png",
+      "size": 7593,
+      "sha256": "1045d5d8b42f3e988f19884d19dc2e91b97cd31fa8f4959f34af105559f6f458",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_8.png",
+      "url": "assets/assets/fx/boom/exp_8.1e663846a4dd.png",
+      "size": 6939,
+      "sha256": "1e663846a4dd555fc7e46aa216d5359a7e9d111a66e94b62168dc1d358f439ac",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/exp_9.png",
+      "url": "assets/assets/fx/boom/exp_9.7fc8557c3893.png",
+      "size": 6851,
+      "sha256": "7fc8557c38937797d4a4c0617f2ea94ffbfa20b627502b2dc920de9ebf47dfcc",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_1.png",
+      "url": "assets/assets/fx/boom/fire_1.e9f5417ec1b2.png",
+      "size": 2955,
+      "sha256": "e9f5417ec1b2486dd1bc272a6e8690f3ef009d41ba3bac1f6dea77e579491573",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_2.png",
+      "url": "assets/assets/fx/boom/fire_2.2e5fb610c0d2.png",
+      "size": 3001,
+      "sha256": "2e5fb610c0d2b49f6ff0d762d4a97fa9c09e2b81b7a4b248f356fe50c704f916",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_3.png",
+      "url": "assets/assets/fx/boom/fire_3.bf294deb69dd.png",
+      "size": 3026,
+      "sha256": "bf294deb69ddc931ad033b3d2cec1e419d189cf19aa81e664421015cae4688cb",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_4.png",
+      "url": "assets/assets/fx/boom/fire_4.8413b5243bb5.png",
+      "size": 3039,
+      "sha256": "8413b5243bb5190ff379234e0e5271312a73806f2995e49586b5174435c11b03",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_5.png",
+      "url": "assets/assets/fx/boom/fire_5.738f3d03d914.png",
+      "size": 3137,
+      "sha256": "738f3d03d9145d3c2b1981beba952582dae6244dba2f517afff6f83b78d4f121",
+      "startup": true
+    },
+    {
+      "path": "assets/fx/boom/fire_6.png",
+      "url": "assets/assets/fx/boom/fire_6.5676b3abf4d9.png",
+      "size": 2966,
+      "sha256": "5676b3abf4d90539000b8db26a4bf655ce81b300042d9c53dc49d784f6facb51",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a1_pit.png",
+      "url": "assets/assets/props/a1_pit.c51deaa68b0c.png",
+      "size": 2570272,
+      "sha256": "c51deaa68b0cf49724a7e3bf755b176751f491dd332af212a7179c5567b323e1",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a2_sapling.png",
+      "url": "assets/assets/props/a2_sapling.2cefb847d7bc.png",
+      "size": 826131,
+      "sha256": "2cefb847d7bc6df85c8a82f31f01168f71ab63c6fa5e8e16b70bb5afdaa10847",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a3_tree.png",
+      "url": "assets/assets/props/a3_tree.7e72f1321920.png",
+      "size": 2423786,
+      "sha256": "7e72f1321920e2001787aec111707e2b59136d027d5a126d84aa08295eb31efd",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a4_stump.png",
+      "url": "assets/assets/props/a4_stump.df987398c25c.png",
+      "size": 1863243,
+      "sha256": "df987398c25c3753fa316210a35009f16b1f0d6b4924dfee38440ed968cf0127",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a5_well.png",
+      "url": "assets/assets/props/a5_well.6dfc86f4a28f.png",
+      "size": 2749660,
+      "sha256": "6dfc86f4a28fc3955532d31f19ea95bb756c020fdcaf9aae6e031e9e8f0f4fbb",
+      "startup": true
+    },
+    {
+      "path": "assets/props/a6_bucket.png",
+      "url": "assets/assets/props/a6_bucket.64c29f57f6a6.png",
+      "size": 1882539,
+      "sha256": "64c29f57f6a609eb610bbba0fd53319a13ae3c29b3276f3586f670e9267702a2",
+      "startup": true
+    },
+    {
+      "path": "assets/props/b1_bush.png",
+      "url": "assets/assets/props/b1_bush.e8b646db6cd2.png",
+      "size": 2656553,
+      "sha256": "e8b646db6cd2383d60457bfb05d8a678a1baad5b55dd49722f72937c923c5a6b",
+      "startup": true
+    },
+    {
+      "path": "assets/props/b5_counter.png",
+      "url": "assets/assets/props/b5_counter.aacf0631274f.png",
+      "size": 1296121,
+      "sha256": "aacf0631274f64630c872a77719b0810a4059f1e2a301de7a4c2190ab0ca0049",
+      "startup": true
+    },
+    {
+      "path": "assets/props/b6_barrel.png",
+      "url": "assets/assets/props/b6_barrel.92d94eb29d44.png",
+      "size": 2868844,
+      "sha256": "92d94eb29d44fb654d5d00e612292a41aafb75e6aaaf97074875f5aa5ed61f8a",
+      "startup": true
+    },
+    {
+      "path": "assets/props/b7_table.png",
+      "url": "assets/assets/props/b7_table.f2d328d5da52.png",
+      "size": 1634790,
+      "sha256": "f2d328d5da52dd0e6e367cf61c0aaea923f0ea2531bce590b646918fd560982c",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e2_dice.png",
+      "url": "assets/assets/props/e2_dice.64d4ca81e614.png",
+      "size": 2322692,
+      "sha256": "64d4ca81e614da231e39b8e1f2c4860e36f42cdc19f930b87a01d193e24e4e44",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e3_lingzhi.png",
+      "url": "assets/assets/props/e3_lingzhi.99722fccc59e.png",
+      "size": 2008194,
+      "sha256": "99722fccc59e7e2741eed80e1cf05dab3452190249b8071ba2e9383346557e61",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e4_ginseng.png",
+      "url": "assets/assets/props/e4_ginseng.60ff9229b5ea.png",
+      "size": 1527003,
+      "sha256": "60ff9229b5ea6f15db0f7b00444d2a4a28b372ada16e558446a45667790c54ea",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e5_herb.png",
+      "url": "assets/assets/props/e5_herb.c2677bf78188.png",
+      "size": 1296102,
+      "sha256": "c2677bf781880484ae63f2c22710cf2c6bef45b5c2ee52483a2d92a6ff66bc0b",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e6_offering.png",
+      "url": "assets/assets/props/e6_offering.362128fc40cf.png",
+      "size": 4318406,
+      "sha256": "362128fc40cfe546bd890c029306d8dcb96067dcac94c0065d38e5749245297c",
+      "startup": true
+    },
+    {
+      "path": "assets/props/e7_shard.png",
+      "url": "assets/assets/props/e7_shard.b474f882766d.png",
+      "size": 1777004,
+      "sha256": "b474f882766d9e4cd5efd696c9bd6bfcbc3e30843fcb4df34240f9fdb69979eb",
+      "startup": true
+    },
+    {
+      "path": "assets/props/withered_reed.png",
+      "url": "assets/assets/props/withered_reed.9389a06d78d0.png",
+      "size": 2653813,
+      "sha256": "9389a06d78d0de2b4872fd2fd174c8c1108e09fb5d6c0297b50f3a822dc2af80",
       "startup": true
     },
     {
@@ -321,6 +1637,27 @@
       "startup": true
     },
     {
+      "path": "assets/tiles/lamp_stone.png",
+      "url": "assets/assets/tiles/lamp_stone.498350813dff.png",
+      "size": 1662853,
+      "sha256": "498350813dffc88cec2ef02d71dbc5ac72e9aac936779017d09fd6cb388d461f",
+      "startup": true
+    },
+    {
+      "path": "assets/tiles/moon_stone.png",
+      "url": "assets/assets/tiles/moon_stone.498350813dff.png",
+      "size": 1662853,
+      "sha256": "498350813dffc88cec2ef02d71dbc5ac72e9aac936779017d09fd6cb388d461f",
+      "startup": true
+    },
+    {
+      "path": "assets/tiles/push_stone.png",
+      "url": "assets/assets/tiles/push_stone.3e5e43f5497a.png",
+      "size": 4146515,
+      "sha256": "3e5e43f5497a87ac39e0ef942ecb431b807ebff3ae819ec1b83b7d7cbe0ee479",
+      "startup": true
+    },
+    {
       "path": "assets/tiles/skyruins_brick.png",
       "url": "assets/assets/tiles/skyruins_brick.ff0c2c45b0f6.png",
       "size": 4426,
@@ -370,38 +1707,136 @@
       "startup": true
     },
     {
-      "path": "assets/ui/bar_fill_health.png",
-      "url": "assets/assets/ui/bar_fill_health.20a7b7abe510.png",
-      "size": 128,
-      "sha256": "20a7b7abe510fda49a70d7d00648e9e3637cb962fbecfd1c503093d57b42fa2b",
+      "path": "assets/ui/bubble_multi.png",
+      "url": "assets/assets/ui/bubble_multi.5b36f6cd2b32.png",
+      "size": 5110,
+      "sha256": "5b36f6cd2b326a663fd3524346b9e32b5907eac9fa14790c6240278cb6ae1fe9",
       "startup": true
     },
     {
-      "path": "assets/ui/bar_frame.png",
-      "url": "assets/assets/ui/bar_frame.73303a554226.png",
-      "size": 193,
-      "sha256": "73303a5542266ce75557e2b65419203aa3da80a98ed3583ffe4fc8eb3481f164",
+      "path": "assets/ui/bubble_single.png",
+      "url": "assets/assets/ui/bubble_single.a0d7e0248f66.png",
+      "size": 2267,
+      "sha256": "a0d7e0248f6653fbf3174abc6b018b2b6a63dd0d906e690933eb3d4aab0ce49c",
       "startup": true
     },
     {
-      "path": "assets/ui/button_normal.png",
-      "url": "assets/assets/ui/button_normal.f3171f8a91fd.png",
-      "size": 178,
-      "sha256": "f3171f8a91fd06c6529d0c3413ef9261a7908a7f660409e5648605ca22a6e890",
+      "path": "assets/ui/flag/checkpoint_off.png",
+      "url": "assets/assets/ui/flag/checkpoint_off.534154e7cf45.png",
+      "size": 410,
+      "sha256": "534154e7cf452ff634a2367443a09960127f93cbb2437332fb495ccfcdd677d2",
       "startup": true
     },
     {
-      "path": "assets/ui/button_pressed.png",
-      "url": "assets/assets/ui/button_pressed.d3bdedd8aaf1.png",
-      "size": 163,
-      "sha256": "d3bdedd8aaf1ca1805c254e9209e2e42bf6e4fd6b0824af81d7743b3d995af4f",
+      "path": "assets/ui/flag/checkpoint_on_0.png",
+      "url": "assets/assets/ui/flag/checkpoint_on_0.b534781f2131.png",
+      "size": 422,
+      "sha256": "b534781f2131e9355422f79a279bbf628bc58f68f294da479bedb63c7156c6f6",
       "startup": true
     },
     {
-      "path": "assets/ui/dialogue_box.png",
-      "url": "assets/assets/ui/dialogue_box.f0780b5e2c75.png",
-      "size": 259,
-      "sha256": "f0780b5e2c758967a84548e5f98fc229a74116bf01a95c0d861c70016fc26056",
+      "path": "assets/ui/flag/checkpoint_on_1.png",
+      "url": "assets/assets/ui/flag/checkpoint_on_1.b06785bb288e.png",
+      "size": 411,
+      "sha256": "b06785bb288e4aac3c382eb0c38558b794b0fdda5f7a78f4e116576a9aaa99c0",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/flag/checkpoint_on_2.png",
+      "url": "assets/assets/ui/flag/checkpoint_on_2.019350f90358.png",
+      "size": 441,
+      "sha256": "019350f9035826b93f38e1d696641873f4d5603f3a0c34d6e1226bfa7fe798ed",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/flag/checkpoint_on_3.png",
+      "url": "assets/assets/ui/flag/checkpoint_on_3.27d0a26c0304.png",
+      "size": 422,
+      "sha256": "27d0a26c0304c0c66713ef950695f119f5b98036c40b06963680a13b39ba79b5",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_01.png",
+      "url": "assets/assets/ui/frame/Frame_01.90f9cccca13e.png",
+      "size": 246,
+      "sha256": "90f9cccca13e27c7d39d46d351cf19c3478f18693199469474d983ce9a5741d7",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_02.png",
+      "url": "assets/assets/ui/frame/Frame_02.7973e1b87ea9.png",
+      "size": 213,
+      "sha256": "7973e1b87ea92d9eff3fa52e1c41d9eb77445520f6e967df398689da3bd50949",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_03.png",
+      "url": "assets/assets/ui/frame/Frame_03.5bce309a168c.png",
+      "size": 248,
+      "sha256": "5bce309a168ca3ff0b274180691beb27ab62fb2d464fc0249ca118fafdd11424",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_04.png",
+      "url": "assets/assets/ui/frame/Frame_04.b785a5beda6a.png",
+      "size": 291,
+      "sha256": "b785a5beda6a924a254cd7e54b739be12ba001c2d4dd4c4b120ecd7dfbbc9692",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_05.png",
+      "url": "assets/assets/ui/frame/Frame_05.f2186c1ea6bb.png",
+      "size": 278,
+      "sha256": "f2186c1ea6bba6aa1c233c76efe157193a71bc8ad6ada592f7a61b8453a4cc6a",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_06.png",
+      "url": "assets/assets/ui/frame/Frame_06.d13ade22ef2d.png",
+      "size": 283,
+      "sha256": "d13ade22ef2d1a631acc8cf1d0615b775d1318a238e084b5aed8d678782ec5b9",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_07.png",
+      "url": "assets/assets/ui/frame/Frame_07.754afdf3bd12.png",
+      "size": 180,
+      "sha256": "754afdf3bd1212f54840dc5623aec08fb40612b9bc7f5742014a315f06c7e166",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_08.png",
+      "url": "assets/assets/ui/frame/Frame_08.135953760a33.png",
+      "size": 343,
+      "sha256": "135953760a330e189c1498e764a9971bcb2d87b82ecb935bc8b2e499601f9095",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_09.png",
+      "url": "assets/assets/ui/frame/Frame_09.cacd05ff3f2d.png",
+      "size": 162,
+      "sha256": "cacd05ff3f2d21f86613b72db8b0aaf46ec8f1a2047d79414ebf62be40981999",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_10.png",
+      "url": "assets/assets/ui/frame/Frame_10.5b089995b432.png",
+      "size": 296,
+      "sha256": "5b089995b4328de1097096a362bb8a0965345caa3e7996877b25fae9b6b1af7d",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_11.png",
+      "url": "assets/assets/ui/frame/Frame_11.af730e0568c1.png",
+      "size": 274,
+      "sha256": "af730e0568c1606d1cfaa517a2cdb8e678a8973d877968ccfaebd4669d1e6c87",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/frame/Frame_12.png",
+      "url": "assets/assets/ui/frame/Frame_12.122f1f9c0c03.png",
+      "size": 290,
+      "sha256": "122f1f9c0c03c085560e7635ed67dfec08f97d5068a86530726dd084cd981c09",
       "startup": true
     },
     {
@@ -412,24 +1847,80 @@
       "startup": true
     },
     {
-      "path": "assets/ui/nameplate.png",
-      "url": "assets/assets/ui/nameplate.4d9f61d7d6e8.png",
-      "size": 159,
-      "sha256": "4d9f61d7d6e849ac1a6e7d13cc7ac9c6bab4c47b643d1e896699d1cfa5334bd2",
+      "path": "assets/ui/moon_wheel_active.png",
+      "url": "assets/assets/ui/moon_wheel_active.7c7f3f8057d3.png",
+      "size": 3824731,
+      "sha256": "7c7f3f8057d3b1af6a66cef917a0648155a2197015984b3ef8a862342f4b43e8",
       "startup": true
     },
     {
-      "path": "assets/ui/panel.png",
-      "url": "assets/assets/ui/panel.283dfc896da7.png",
-      "size": 288,
-      "sha256": "283dfc896da7b89f5db1d50bd4ab37621138f6dee7adfa606468752bfcfdc224",
+      "path": "assets/ui/moon_wheel_dim.png",
+      "url": "assets/assets/ui/moon_wheel_dim.2aa9aca2d350.png",
+      "size": 3458521,
+      "sha256": "2aa9aca2d35076287cbf7aed957850e4564321133c0c51206c3f65e538b8ca32",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/moon_wheel_normal.png",
+      "url": "assets/assets/ui/moon_wheel_normal.df05afe294f2.png",
+      "size": 3692618,
+      "sha256": "df05afe294f27bb0391f79222b0d766dcc6bd3853ad007af094e489aae061043",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/stealth/mark_alert.png",
+      "url": "assets/assets/ui/stealth/mark_alert.33a05763b362.png",
+      "size": 383591,
+      "sha256": "33a05763b36208805f17652158b59f21eb4459cc303b83a9b563c2e5bb65c0b8",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/stealth/mark_q.png",
+      "url": "assets/assets/ui/stealth/mark_q.f134c28cfa9f.png",
+      "size": 730032,
+      "sha256": "f134c28cfa9f8ecb5372cd65b1bafe87ff1d84842bfb854bdc21c7e9be160b43",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/tech/button.png",
+      "url": "assets/assets/ui/tech/button.402b02e57f1f.png",
+      "size": 2378,
+      "sha256": "402b02e57f1f2935629d12f780d6bccf020b2a19b2d56ed0ace688c3611f68d5",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/tech/frame_brackets.png",
+      "url": "assets/assets/ui/tech/frame_brackets.2bb92d7a842a.png",
+      "size": 1126,
+      "sha256": "2bb92d7a842ae827bff7de76750c1dbc89d6060c4f9bf1439bec214c4079ebe5",
+      "startup": true
+    },
+    {
+      "path": "assets/ui/tech/frame.png",
+      "url": "assets/assets/ui/tech/frame.90f9cccca13e.png",
+      "size": 246,
+      "sha256": "90f9cccca13e27c7d39d46d351cf19c3478f18693199469474d983ce9a5741d7",
+      "startup": true
+    },
+    {
+      "path": "core/archive.lua",
+      "url": "assets/core/archive.6d346497b112.lua",
+      "size": 5044,
+      "sha256": "6d346497b112a78ed4ebf98fc2086921c01f084dba7a0982c2c78932064bcb7d",
+      "startup": true
+    },
+    {
+      "path": "core/archive.ts",
+      "url": "assets/core/archive.1fc5a8249a11.ts",
+      "size": 4194,
+      "sha256": "1fc5a8249a110f7ea5a3997e6e8574b3fd0988f61caa69bcd727e835f1988fd3",
       "startup": true
     },
     {
       "path": "core/palette.lua",
-      "url": "assets/core/palette.96238927ab65.lua",
-      "size": 1784,
-      "sha256": "96238927ab65ebc82253482d2a8e29a23967653b50976b81df96d1da57ee1778",
+      "url": "assets/core/palette.5517d6cf2447.lua",
+      "size": 1415,
+      "sha256": "5517d6cf2447fce514133133136ac8c7a107bfa9e7b62d0fad427f5e67314f8b",
       "startup": true
     },
     {
@@ -441,65 +1932,121 @@
     },
     {
       "path": "core/types.lua",
-      "url": "assets/core/types.93f2e30dff74.lua",
-      "size": 213,
-      "sha256": "93f2e30dff742265f39905820b75ce00fce0bc53c083fcac1de3adbc76caf9d6",
+      "url": "assets/core/types.fada19e6b397.lua",
+      "size": 69,
+      "sha256": "fada19e6b397d960d015a5e638708478a2fd10be48cef02febe55421acf07a2e",
       "startup": true
     },
     {
       "path": "core/types.ts",
-      "url": "assets/core/types.cea5402256bf.ts",
-      "size": 3674,
-      "sha256": "cea5402256bf58c90fbd751f2e2664061857a4d96997adffbdb8219da44a5891",
+      "url": "assets/core/types.d08628789a16.ts",
+      "size": 5938,
+      "sha256": "d08628789a169141aa91bc97fab794fe9b33bbf5f42fc30abd8e3176146eb7a0",
+      "startup": true
+    },
+    {
+      "path": "data/ending_images.lua",
+      "url": "assets/data/ending_images.0ea1c3873279.lua",
+      "size": 264,
+      "sha256": "0ea1c3873279dd2b5360acbe1b58e7e810cf8684ecced4a9a8a6c7905bb83156",
+      "startup": true
+    },
+    {
+      "path": "data/ending_images.ts",
+      "url": "assets/data/ending_images.b59755dddcc9.ts",
+      "size": 398,
+      "sha256": "b59755dddcc9b34f51850501615716e55feea79b7c09a6826a3dd3a90cfb0b14",
       "startup": true
     },
     {
       "path": "data/story.lua",
-      "url": "assets/data/story.731874171070.lua",
-      "size": 9395,
-      "sha256": "7318741710709fe2ed871314d009c1513b77f7612defa37c996bc2d8c84169ae",
+      "url": "assets/data/story.6a723a877c54.lua",
+      "size": 11585,
+      "sha256": "6a723a877c541f36f9d7b48705cb63e0feca7fa39d8447adeed67f5195d252da",
       "startup": true
     },
     {
       "path": "data/story.ts",
-      "url": "assets/data/story.205694b87d34.ts",
-      "size": 8876,
-      "sha256": "205694b87d341c779fa260a05051af40ab714c770f0158a0d9f5e8baacc179f4",
+      "url": "assets/data/story.25a271d0c3f1.ts",
+      "size": 12171,
+      "sha256": "25a271d0c3f120a2d13dba75253b0ac5e6c39d5a5208c1015e06895e3bd07201",
       "startup": true
     },
     {
       "path": "data/tower.lua",
-      "url": "assets/data/tower.e4b36f7d84f4.lua",
-      "size": 29038,
-      "sha256": "e4b36f7d84f499d0e3220dc95fcbaa938a29097b771be52f12f0e54c4ba99765",
+      "url": "assets/data/tower.f6476c6db957.lua",
+      "size": 31358,
+      "sha256": "f6476c6db957103d6b9bde1c317db829206731e28a5a47e84acb1f239f5b58ed",
       "startup": true
     },
     {
       "path": "data/tower.ts",
-      "url": "assets/data/tower.326b36adfc3d.ts",
-      "size": 10605,
-      "sha256": "326b36adfc3d999982576373de8e6dfbd4128a84c2496c32fe0c1732ca65c44d",
+      "url": "assets/data/tower.72015a6f11ba.ts",
+      "size": 28611,
+      "sha256": "72015a6f11ba1f3672b3b00eeeba3f8d92c25d28b25abd061559440101c4a455",
       "startup": true
     },
     {
       "path": "game/audio.lua",
-      "url": "assets/game/audio.50e3a3c25cc6.lua",
-      "size": 2777,
-      "sha256": "50e3a3c25cc6aeab31947aabe38cd3c0f9b000a48208b522f8ab9fde401c81d6",
+      "url": "assets/game/audio.d61d7c945b16.lua",
+      "size": 3029,
+      "sha256": "d61d7c945b16b15ec7d8be828c039baa83f7341b17da1e981ce5927215d5407a",
       "startup": true
     },
     {
       "path": "game/audio.ts",
-      "url": "assets/game/audio.347925993f83.ts",
-      "size": 1722,
-      "sha256": "347925993f83156586e5a387e5e1b298cd2af136243db646b9314f1d297f35c4",
+      "url": "assets/game/audio.b0be46344a1c.ts",
+      "size": 2949,
+      "sha256": "b0be46344a1cbea698778e9e22fa9cb66f28e42b6bbacb4ddaeee824ac70893a",
+      "startup": true
+    },
+    {
+      "path": "game/boomfx.lua",
+      "url": "assets/game/boomfx.e41da0b7cf6b.lua",
+      "size": 3165,
+      "sha256": "e41da0b7cf6b2f190697726a1eff7849ad394170cbd98a1862ce02c5e11cc369",
+      "startup": true
+    },
+    {
+      "path": "game/boomfx.ts",
+      "url": "assets/game/boomfx.c31c1fdd964b.ts",
+      "size": 2719,
+      "sha256": "c31c1fdd964ba8fd197e84bdc77338f7ac6c52a4e44ea4da589dafe10a31e3fc",
+      "startup": true
+    },
+    {
+      "path": "game/causality_fx.lua",
+      "url": "assets/game/causality_fx.848a46810415.lua",
+      "size": 3494,
+      "sha256": "848a46810415245779e491b3a38439d670984a0184bcf52d59a3c85f334a8efe",
+      "startup": true
+    },
+    {
+      "path": "game/causality_fx.ts",
+      "url": "assets/game/causality_fx.3958b4873bbf.ts",
+      "size": 2951,
+      "sha256": "3958b4873bbf3e7c7e23b458f8b624476fa8fc7e9cf272ef8917d7b29b4ed3c5",
+      "startup": true
+    },
+    {
+      "path": "game/decor_light.lua",
+      "url": "assets/game/decor_light.20966cbe42bf.lua",
+      "size": 4575,
+      "sha256": "20966cbe42bf77927b0cc93153a7910d1d18b1436f88bbcc01be89ea12c0d902",
+      "startup": true
+    },
+    {
+      "path": "game/decor_light.ts",
+      "url": "assets/game/decor_light.fbea6787a9cf.ts",
+      "size": 3856,
+      "sha256": "fbea6787a9cfa35670ff3165cfc0152cc740abfae65d056e74d15370b1fd48a0",
       "startup": true
     },
     {
       "path": "game/effects.lua",
-      "url": "assets/game/effects.fc2f0efa22be.lua",
-      "size": 12731,
-      "sha256": "fc2f0efa22be0a9ee11f1f0ac425f53d49472b6cb206a64870c9ef20b9a56b5c",
+      "url": "assets/game/effects.d57878412a4e.lua",
+      "size": 8631,
+      "sha256": "d57878412a4efe4f4010f6a4a06beac7f07de161c877e2e88fa166af31dd3426",
       "startup": true
     },
     {
@@ -511,51 +2058,79 @@
     },
     {
       "path": "game/enemies.lua",
-      "url": "assets/game/enemies.01d6eeb1ce8c.lua",
-      "size": 24519,
-      "sha256": "01d6eeb1ce8cca6fdd9ff89045535b79e0a60da4e361fb7fa498fb38ab51bfc9",
+      "url": "assets/game/enemies.de3540880f57.lua",
+      "size": 26051,
+      "sha256": "de3540880f57d9775e79d3520d5f480cd91959c899c820683c3e498e8748f2fd",
       "startup": true
     },
     {
       "path": "game/enemies.ts",
-      "url": "assets/game/enemies.913d30127aaf.ts",
-      "size": 13186,
-      "sha256": "913d30127aaf71d37eb104bf2bc05561f04931afb2fc82f6010b7d53a715befa",
+      "url": "assets/game/enemies.1cf29d2370df.ts",
+      "size": 27950,
+      "sha256": "1cf29d2370df8c5d1dcd84c40c125ef564add198abc9e7f8886ac11153044cd6",
       "startup": true
     },
     {
       "path": "game/game.lua",
-      "url": "assets/game/game.2afca9d9ffc4.lua",
-      "size": 45106,
-      "sha256": "2afca9d9ffc406f74837bb65d203b27de435105cd4301fd21e23e5215c8bb079",
+      "url": "assets/game/game.d695bf3f35a0.lua",
+      "size": 83900,
+      "sha256": "d695bf3f35a06add19c654e8cfe36e372388c8559e93e62495fb8068b5ac958b",
       "startup": true
     },
     {
       "path": "game/game.ts",
-      "url": "assets/game/game.e182deed5528.ts",
-      "size": 29045,
-      "sha256": "e182deed5528b6e55e6b69faa2183c9052d8b48984d91660cb9129098c201cb0",
+      "url": "assets/game/game.95b6919d5842.ts",
+      "size": 85008,
+      "sha256": "95b6919d58429bf9f6393199fe6273e2a301a3c842e84c4ca5567854fcc62a56",
+      "startup": true
+    },
+    {
+      "path": "game/hero_frames.lua",
+      "url": "assets/game/hero_frames.467e2292b6b0.lua",
+      "size": 4072,
+      "sha256": "467e2292b6b01114cd59d2d275255b16d5210cbac491be919790459fe05b0a71",
+      "startup": true
+    },
+    {
+      "path": "game/hero_frames.ts",
+      "url": "assets/game/hero_frames.7041a35193b1.ts",
+      "size": 6335,
+      "sha256": "7041a35193b1bd1c9345c2eebd514a02592e7da5ad35e2b9cce72ecc41f10a1f",
       "startup": true
     },
     {
       "path": "game/mechanisms.lua",
-      "url": "assets/game/mechanisms.8ac7c0b39219.lua",
-      "size": 16751,
-      "sha256": "8ac7c0b39219fad948dc2aeb3ec8b124029b5964ba59f2797a58cbb6693f09dd",
+      "url": "assets/game/mechanisms.44cb0653303e.lua",
+      "size": 18995,
+      "sha256": "44cb0653303e7cf1ea03fb153809df1913d4c7b62bc97f415de85936f8154e4d",
       "startup": true
     },
     {
       "path": "game/mechanisms.ts",
-      "url": "assets/game/mechanisms.8fb425b26061.ts",
-      "size": 9791,
-      "sha256": "8fb425b260610ed9ac7922133d6493b832f3c76c7b84a03f01b4bf80acae36ed",
+      "url": "assets/game/mechanisms.477e064e8b6f.ts",
+      "size": 18215,
+      "sha256": "477e064e8b6f73e36a5832b0eee74fe17d74bac37a5bafe0351c1597cd8b0dac",
+      "startup": true
+    },
+    {
+      "path": "game/ninja_render.lua",
+      "url": "assets/game/ninja_render.a70c58d4da4b.lua",
+      "size": 9341,
+      "sha256": "a70c58d4da4bea112e7578dfd46f52f67b852017c822f832fbf396735f405e64",
+      "startup": true
+    },
+    {
+      "path": "game/ninja_render.ts",
+      "url": "assets/game/ninja_render.8115e900c19c.ts",
+      "size": 11714,
+      "sha256": "8115e900c19c8aff0fab15c381ca01751d7f977a1270a59218de07526ed13ea7",
       "startup": true
     },
     {
       "path": "game/physics.lua",
-      "url": "assets/game/physics.dcd6c8cb6372.lua",
-      "size": 8682,
-      "sha256": "dcd6c8cb6372c55b8672fec51158438fdee606243fe6c24b9c294713167e4135",
+      "url": "assets/game/physics.025cd888d452.lua",
+      "size": 6241,
+      "sha256": "025cd888d452563ca02f31b6d657ed13071bae14598fbe0f62f8234083947aef",
       "startup": true
     },
     {
@@ -567,79 +2142,121 @@
     },
     {
       "path": "game/player.lua",
-      "url": "assets/game/player.407d167d73f6.lua",
-      "size": 18816,
-      "sha256": "407d167d73f6008bafb622e2ea2b3a8feda15dd106c102bff8369f4312ab1c14",
+      "url": "assets/game/player.86c29605693d.lua",
+      "size": 15245,
+      "sha256": "86c29605693de165fd70955f29be1c3b6c9fbaa1600e0bd55818eb60a51491fc",
       "startup": true
     },
     {
       "path": "game/player.ts",
-      "url": "assets/game/player.45b02e15a0e2.ts",
-      "size": 14637,
-      "sha256": "45b02e15a0e22898083aee9a445bc3c0af6b65c2254a7051db49a2c542eb734e",
+      "url": "assets/game/player.f384fd1832d8.ts",
+      "size": 15616,
+      "sha256": "f384fd1832d810873ca4a20b654ca7e5a355e9c7e439d8cd88f447218f5d788f",
       "startup": true
     },
     {
       "path": "game/render_chars.lua",
-      "url": "assets/game/render_chars.2e9828d128b5.lua",
-      "size": 46252,
-      "sha256": "2e9828d128b5636d96491809e23c712d7789779569f63e0a938c22705d80185e",
+      "url": "assets/game/render_chars.ea3ae1332f78.lua",
+      "size": 28564,
+      "sha256": "ea3ae1332f7866bc101f002715e584bd79bc894e7f2b00b0af0039b95bb93e65",
       "startup": true
     },
     {
       "path": "game/render_chars.ts",
-      "url": "assets/game/render_chars.24d96d235246.ts",
-      "size": 19921,
-      "sha256": "24d96d23524635de71be82c3c44a90f27743d1f344c3b5de335c142f50637d9c",
+      "url": "assets/game/render_chars.55fd9ce32c49.ts",
+      "size": 19977,
+      "sha256": "55fd9ce32c491ac9cf17016a4fe45ec073cbab01ae1d51a9cf9d2538b6b75d59",
       "startup": true
     },
     {
       "path": "game/render_world.lua",
-      "url": "assets/game/render_world.dfcbbccefa02.lua",
-      "size": 92563,
-      "sha256": "dfcbbccefa026a99ea98233b4ceffba9ae885a50ee8d8f4273c42fabc06dc380",
+      "url": "assets/game/render_world.83d5a1c009be.lua",
+      "size": 113740,
+      "sha256": "83d5a1c009bebaafc644d35842f4e654f3b5e15246b952159a538ad34200ec54",
       "startup": true
     },
     {
       "path": "game/render_world.ts",
-      "url": "assets/game/render_world.206855289eba.ts",
-      "size": 44616,
-      "sha256": "206855289ebae8a96ff89e1f66991fe8a6ddfc6aa9c78ceaac0813623ea723a8",
+      "url": "assets/game/render_world.60080c8f1565.ts",
+      "size": 101361,
+      "sha256": "60080c8f1565e9507ade67c47260738b0a0007d561621c34afc3575ec8a1ef84",
       "startup": true
     },
     {
       "path": "game/sheetfx.lua",
-      "url": "assets/game/sheetfx.d535969f62cf.lua",
-      "size": 3580,
-      "sha256": "d535969f62cfa831462170d6bf986e2934fda9842b2086865685e35c2eac6faa",
+      "url": "assets/game/sheetfx.db3f63a10995.lua",
+      "size": 2836,
+      "sha256": "db3f63a109956314a6c5aea9bfc9b00c00cf542b7f66b87a583c66ee74a887ab",
       "startup": true
     },
     {
       "path": "game/sheetfx.ts",
-      "url": "assets/game/sheetfx.bc4b126befc2.ts",
-      "size": 2834,
-      "sha256": "bc4b126befc2e520d42f4d64e3be6a843f2782c6aa09bb07bf0c2b009a9b4437",
+      "url": "assets/game/sheetfx.87d349fd98f2.ts",
+      "size": 2737,
+      "sha256": "87d349fd98f2829b8dad4198bfa4864d09230f7d7cb9c56cc089e75b24dbd9d4",
+      "startup": true
+    },
+    {
+      "path": "game/slashfx.lua",
+      "url": "assets/game/slashfx.ce2e8958f76a.lua",
+      "size": 8551,
+      "sha256": "ce2e8958f76a628a2f21f2e9db4d50838360023383f0036d88bc7e237c19841a",
+      "startup": true
+    },
+    {
+      "path": "game/slashfx.ts",
+      "url": "assets/game/slashfx.b4f9575515b6.ts",
+      "size": 7477,
+      "sha256": "b4f9575515b6422d26e75c91bcc6654edc238d245d147dfec79a8a2e41e8a591",
+      "startup": true
+    },
+    {
+      "path": "game/stealth.lua",
+      "url": "assets/game/stealth.e16b982a73d6.lua",
+      "size": 23161,
+      "sha256": "e16b982a73d6903a2ae14f839c5978df668822bea40d00a14fca60723af3ef01",
+      "startup": true
+    },
+    {
+      "path": "game/stealth.ts",
+      "url": "assets/game/stealth.5539ec8e977d.ts",
+      "size": 24780,
+      "sha256": "5539ec8e977d9ff2d29018fcdeb50635df394d08388bf980b5423c85e1b9c957",
+      "startup": true
+    },
+    {
+      "path": "game/timeline_tree.lua",
+      "url": "assets/game/timeline_tree.8ef9d64066db.lua",
+      "size": 4739,
+      "sha256": "8ef9d64066db73b96cb54878bb37cd5d78584d45f9261e319a3acc09bc8b27bd",
+      "startup": true
+    },
+    {
+      "path": "game/timeline_tree.ts",
+      "url": "assets/game/timeline_tree.5c96b6e0a3f2.ts",
+      "size": 5442,
+      "sha256": "5c96b6e0a3f259ebcbfe45c1a1b255f9d9984a0274dec14a7e623aad6de11f86",
       "startup": true
     },
     {
       "path": "game/world.lua",
-      "url": "assets/game/world.71791fc03f34.lua",
-      "size": 2289,
-      "sha256": "71791fc03f3416deab773d956c58eb982aca19a50201cbfeae5512cad941d770",
+      "url": "assets/game/world.ffdc332bb3d6.lua",
+      "size": 4797,
+      "sha256": "ffdc332bb3d6b03fe88f923cf884c89d749f8caaa32796e13bf4ac61a97454b0",
       "startup": true
     },
     {
       "path": "game/world.ts",
-      "url": "assets/game/world.cb68508ca881.ts",
-      "size": 1488,
-      "sha256": "cb68508ca881e4cb1c44cf21f01ec05afb3d08ecc7358f7454d92bcf72eb3f57",
+      "url": "assets/game/world.40afa7af68ee.ts",
+      "size": 4465,
+      "sha256": "40afa7af68ee32d0b172f5d9ecdfbaa301f13f8d3a9c7d31cb9dddfbc48750ae",
       "startup": true
     },
     {
       "path": "init.lua",
-      "url": "assets/init.7971fe882976.lua",
-      "size": 398,
-      "sha256": "7971fe8829767b3527b8e8351282385e6291af9e300eef06afd3a4da8039574c",
+      "url": "assets/init.06673ed8fd8d.lua",
+      "size": 288,
+      "sha256": "06673ed8fd8de647511dc88c5e6d6c0ed7075afee95adc1df6f12fb7461a59e6",
       "startup": true
     },
     {
@@ -651,72 +2268,114 @@
     },
     {
       "path": "scenes/intro.lua",
-      "url": "assets/scenes/intro.18340268a12b.lua",
-      "size": 47001,
-      "sha256": "18340268a12b3f42a9e0aa9daeb736d1b8cdfeb2541588e8ad9c676a0c3780ab",
+      "url": "assets/scenes/intro.8bab33af0db2.lua",
+      "size": 33785,
+      "sha256": "8bab33af0db20acaac879f2cb882d6293869ec5f6f913e4b2246268ea7be0030",
       "startup": true
     },
     {
       "path": "scenes/intro.ts",
-      "url": "assets/scenes/intro.577c349820c5.ts",
-      "size": 25906,
-      "sha256": "577c349820c5e3daafc8853f1301ff3c942917f8602dbf4bee39f14044ce4668",
+      "url": "assets/scenes/intro.c54d85ed8dbb.ts",
+      "size": 29964,
+      "sha256": "c54d85ed8dbb08a821b3e9648d954875e105f4f7aefa027b97e114433bf422ca",
       "startup": true
     },
     {
       "path": "ui/dialog.lua",
-      "url": "assets/ui/dialog.b7a0c84c6efc.lua",
-      "size": 14582,
-      "sha256": "b7a0c84c6efcbf78d0e117a89333e3dd109977cdc172d6f84d8150172d0029c1",
+      "url": "assets/ui/dialog.27f401508202.lua",
+      "size": 15610,
+      "sha256": "27f4015082026fc5b9e5cced0612a500eb3334af00a38c29b73adcecd19bea68",
       "startup": true
     },
     {
       "path": "ui/dialog.ts",
-      "url": "assets/ui/dialog.c4524941b8bc.ts",
-      "size": 10458,
-      "sha256": "c4524941b8bc7167167399cd1babefb86e0305edb7ecb6e556ea2c2b2dd6dbb1",
+      "url": "assets/ui/dialog.866b3b00ad65.ts",
+      "size": 14863,
+      "sha256": "866b3b00ad65f68783e83200b72e87c1e6ded76c9b850efd95c9e9ec1c0a98b0",
       "startup": true
     },
     {
       "path": "ui/hud.lua",
-      "url": "assets/ui/hud.2ef696e24478.lua",
-      "size": 25654,
-      "sha256": "2ef696e24478c430fc86cbe2fa3c71c9edba71c4c158515f794390eb8f589d4c",
+      "url": "assets/ui/hud.6c0aedc7dd22.lua",
+      "size": 46636,
+      "sha256": "6c0aedc7dd221e4208cf91a420bc54679f9aa3a641963b85458abb49512cdf06",
       "startup": true
     },
     {
       "path": "ui/hud.ts",
-      "url": "assets/ui/hud.cd79e58d8a5e.ts",
-      "size": 15927,
-      "sha256": "cd79e58d8a5e1c22d2778c8af0927a8c697edd4326dda7e91c6c708b5a7b79b6",
+      "url": "assets/ui/hud.eacc667ab454.ts",
+      "size": 49076,
+      "sha256": "eacc667ab454cb5b2b9943f6cda38f65ad5e680f39c414f137d21f56680375f5",
+      "startup": true
+    },
+    {
+      "path": "ui/name_entry.lua",
+      "url": "assets/ui/name_entry.14c86adf87b0.lua",
+      "size": 6036,
+      "sha256": "14c86adf87b0e73ec89f3c6d8aeaf2cde62df0999f9b41431d1bc2a746116175",
+      "startup": true
+    },
+    {
+      "path": "ui/name_entry.ts",
+      "url": "assets/ui/name_entry.c8d6ac339561.ts",
+      "size": 5827,
+      "sha256": "c8d6ac3395618a01278e30bcc5f9be68cdee7c6250eae34235db35200e543e96",
       "startup": true
     },
     {
       "path": "ui/notebook.lua",
-      "url": "assets/ui/notebook.34792ff55ddc.lua",
-      "size": 14114,
-      "sha256": "34792ff55ddc82bb838bb9b52da86b56692ebecf1dcbc8b4e787d94c06087ab7",
+      "url": "assets/ui/notebook.9340900fb5d1.lua",
+      "size": 10398,
+      "sha256": "9340900fb5d1d9c22c29ae946349867fe01abc29bba492f6c0dfff0d3554cddc",
       "startup": true
     },
     {
       "path": "ui/notebook.ts",
-      "url": "assets/ui/notebook.d26770f31da6.ts",
-      "size": 7836,
-      "sha256": "d26770f31da6b3bc501900f43f2ec09b548844f546e8c8a6e5cd39e697bc45f8",
+      "url": "assets/ui/notebook.00d2eb941cfe.ts",
+      "size": 8823,
+      "sha256": "00d2eb941cfef1270775845d122200792dd7ac5ed43692bd3c65e641a3a7d179",
       "startup": true
     },
     {
-      "path": "ui/touch.lua",
-      "url": "assets/ui/touch.d97ebf1008d9.lua",
-      "size": 17558,
-      "sha256": "d97ebf1008d92e6f46dc50994761d733f6471c13465721b9ed3cabb5c0130c91",
+      "path": "ui/tech_ui.lua",
+      "url": "assets/ui/tech_ui.79d42665d60a.lua",
+      "size": 1765,
+      "sha256": "79d42665d60aa2020994a2a14db887cfddbf17a0c3b7ea56da52741ec8d16bc9",
       "startup": true
     },
     {
-      "path": "ui/touch.ts",
-      "url": "assets/ui/touch.cb5086ee3c81.ts",
-      "size": 12807,
-      "sha256": "cb5086ee3c81461138ab2edc02a561b5b374566d873e2daea65c2fcfe5dd69fd",
+      "path": "ui/tech_ui.ts",
+      "url": "assets/ui/tech_ui.6666d884cbb7.ts",
+      "size": 1682,
+      "sha256": "6666d884cbb76b1d81df19bd311f03909b711671397e882998c7b53e83471e23",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_gallery.lua",
+      "url": "assets/ui/tree_gallery.60234f71805c.lua",
+      "size": 13266,
+      "sha256": "60234f71805c28dc38c6c0a5037e3f1a0fe76779fccf62f92baeddb7faa255fc",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_gallery.ts",
+      "url": "assets/ui/tree_gallery.ad815624cef1.ts",
+      "size": 11303,
+      "sha256": "ad815624cef1b2aca4b917d67db447c6f23528178c7594ed4782ec6d191adcfb",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_overlay.lua",
+      "url": "assets/ui/tree_overlay.0a89ea48f17b.lua",
+      "size": 13181,
+      "sha256": "0a89ea48f17b9eb71004eb4cf04a595d843cae84b05bc416cac1ccbed8ddabd5",
+      "startup": true
+    },
+    {
+      "path": "ui/tree_overlay.ts",
+      "url": "assets/ui/tree_overlay.b46715a9aca9.ts",
+      "size": 11665,
+      "sha256": "b46715a9aca94608743087cd597fb11a721a95618f0c23da1e6ca5960b45a6f2",
       "startup": true
     }
   ]
