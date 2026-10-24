@@ -1,7 +1,7 @@
 {
   "format": "dora-web-features",
   "version": 2,
-  "activeProfile": "dora-preset",
+  "activeProfile": "custom",
   "studioAgentHost": false,
   "profiles": {
     "core": {
@@ -42,15 +42,15 @@
     "threads": false,
     "crossOriginIsolationRequired": false,
     "dynamicLinking": false,
-    "rustBridge": true,
+    "rustBridge": false,
     "wasmRuntime": false,
     "yueCompiler": false,
-    "machineLearning": true,
+    "machineLearning": false,
     "tealCompiler": false,
     "xmlCompiler": false,
-    "loveNode": true,
-    "model3D": true,
-    "jolt3D": true,
+    "loveNode": false,
+    "model3D": false,
+    "jolt3D": false,
     "video": false,
     "workspace": false
   }
