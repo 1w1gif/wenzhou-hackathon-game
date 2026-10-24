@@ -2128,9 +2128,9 @@
     },
     {
       "path": "init.lua",
-      "url": "assets/init.9ff7cee53afb.lua",
+      "url": "assets/init.678da2ddea72.lua",
       "size": 707,
-      "sha256": "9ff7cee53afb28a8ee1a27afbaa422c70af7ba463860a1575a6f95d5696ce0db",
+      "sha256": "678da2ddea72a9bf34568afb027c47aaf7ae2694b8a98df09b7bf9b9aa2d7022",
       "startup": true
     },
     {
@@ -2156,9 +2156,9 @@
     },
     {
       "path": "ui/hud.lua",
-      "url": "assets/ui/hud.31db24faa1e1.lua",
-      "size": 48886,
-      "sha256": "31db24faa1e10a92e1e2743ad5ba1f711b6310023886a29ad562ea7ba237e0a3",
+      "url": "assets/ui/hud.abce18a92a30.lua",
+      "size": 47699,
+      "sha256": "abce18a92a305b217ec30b3407e364764abc4a2a455aae2216682d1b34cfdc0e",
       "startup": true
     },
     {
