@@ -30,7 +30,7 @@ dist-ssr
 .zcode/
 
 # 旧的本地副本（保留在磁盘，不提交）
-yanyue/
+/yanyue/
 yanyue-baxiang/
 
 # Dora 项目：AI 会话残留与临时文件
