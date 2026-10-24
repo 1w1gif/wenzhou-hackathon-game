@@ -12,6 +12,8 @@ local isMobile = App.platform == "Android" or App.platform == "iOS" -- 11
 local vw = View.size.width -- 12
 if isMobile and vw > MOBILE_BASE_WIDTH * 1.15 then -- 12
 	View.scale = vw / MOBILE_BASE_WIDTH -- 14
+elseif not isMobile then -- 14
+	View.scale = 2.24 -- 15
 end -- 14
 local game = __TS__New(Game) -- 17
 game:start() -- 18
