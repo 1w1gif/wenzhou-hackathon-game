@@ -525,16 +525,16 @@
     },
     {
       "path": "game/game.lua",
-      "url": "assets/game/game.9dd0755b00ff.lua",
-      "size": 44759,
-      "sha256": "9dd0755b00fffc1ae7b678c70735a6be02b276c570de88e8e76989936eabad23",
+      "url": "assets/game/game.2afca9d9ffc4.lua",
+      "size": 45106,
+      "sha256": "2afca9d9ffc406f74837bb65d203b27de435105cd4301fd21e23e5215c8bb079",
       "startup": true
     },
     {
       "path": "game/game.ts",
-      "url": "assets/game/game.32ad668e05ff.ts",
-      "size": 27683,
-      "sha256": "32ad668e05ff207baa285c8cfe18cbc02b1c32c9dc8a899d271f9d2449eebbaf",
+      "url": "assets/game/game.e182deed5528.ts",
+      "size": 29045,
+      "sha256": "e182deed5528b6e55e6b69faa2183c9052d8b48984d91660cb9129098c201cb0",
       "startup": true
     },
     {
@@ -651,16 +651,16 @@
     },
     {
       "path": "scenes/intro.lua",
-      "url": "assets/scenes/intro.fe60777f48f5.lua",
-      "size": 47065,
-      "sha256": "fe60777f48f573f50b8f69a3ae522720368e923d0d2c66a33453f31e4ff2737c",
+      "url": "assets/scenes/intro.18340268a12b.lua",
+      "size": 47001,
+      "sha256": "18340268a12b3f42a9e0aa9daeb736d1b8cdfeb2541588e8ad9c676a0c3780ab",
       "startup": true
     },
     {
       "path": "scenes/intro.ts",
-      "url": "assets/scenes/intro.b16a3cbc82ab.ts",
-      "size": 25277,
-      "sha256": "b16a3cbc82ab615fae0d987f82e12a420fee365f741e6aef6395de1de619f639",
+      "url": "assets/scenes/intro.577c349820c5.ts",
+      "size": 25906,
+      "sha256": "577c349820c5e3daafc8853f1301ff3c942917f8602dbf4bee39f14044ce4668",
       "startup": true
     },
     {
@@ -679,16 +679,16 @@
     },
     {
       "path": "ui/hud.lua",
-      "url": "assets/ui/hud.de119c0eb3d4.lua",
+      "url": "assets/ui/hud.2ef696e24478.lua",
       "size": 25654,
-      "sha256": "de119c0eb3d460c622f0c2a7d9e3e72d109647f9302903e07b460e57d4240cd1",
+      "sha256": "2ef696e24478c430fc86cbe2fa3c71c9edba71c4c158515f794390eb8f589d4c",
       "startup": true
     },
     {
       "path": "ui/hud.ts",
-      "url": "assets/ui/hud.e8a0dc766d8a.ts",
+      "url": "assets/ui/hud.cd79e58d8a5e.ts",
       "size": 15927,
-      "sha256": "e8a0dc766d8aa5558dba6a17882545837df701ca83211e20872a737b81679539",
+      "sha256": "cd79e58d8a5e1c22d2778c8af0927a8c697edd4326dda7e91c6c708b5a7b79b6",
       "startup": true
     },
     {

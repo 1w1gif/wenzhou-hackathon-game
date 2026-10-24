@@ -1,5 +1,5 @@
 // game/game.ts — 《衍月·八相》主状态机与游戏主循环
-import { Color, Director, DrawNode, KeyName, Keyboard, Node, Vec2, View } from "Dora";
+import { Color, print, Director, DrawNode, KeyName, Keyboard, Node, Vec2, View } from "Dora";
 import { EnemySpawn, LoopState, Platform, Rect, StoryNode } from "core/types";
 import { activePlatforms, bodyRect, clamp, lerp, rectOverlap } from "game/physics";
 import { createLoopState } from "game/world";
@@ -134,6 +134,15 @@ export class Game {
       return false;
     });
     this.root.onKeyDown((key) => this.onKey(key));
+    // 触屏/鼠标点击：标题屏开始、序章跳过、死亡复活、结局回标题（手机无键盘的完整路径）
+    this.root.touchEnabled = true;
+    this.root.slot("Tapped", () => {
+      if (this.mode === "title" || this.mode === "dead" || this.mode === "ending") {
+        this.onKey(KeyName.Return);
+      } else if (this.mode === "prologue") {
+        this.onKey(KeyName.Escape);
+      }
+    });
   }
 
   private resetRun(): void {
@@ -224,12 +233,12 @@ export class Game {
         }
         break;
       case "dead":
-        if (key === KeyName.R) {
+        if (key === KeyName.R || key === KeyName.Return || key === KeyName.E) {
           this.revive();
         }
         break;
       case "ending":
-        if (key === KeyName.R) {
+        if (key === KeyName.R || key === KeyName.Return || key === KeyName.E) {
           this.toTitle();
         }
         break;

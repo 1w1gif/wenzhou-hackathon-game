@@ -264,7 +264,7 @@ function HUD.prototype.____constructor(self, parent)
         0.5,
         Palette.inkSoft
     )
-    setText(self.titleStartLb, "按任意键开始")
+    setText(self.titleStartLb, "点击屏幕开始")
     self:drawTitleBg(w, h)
     self.pauseNode = Node()
     self.pauseNode:addTo(parent)

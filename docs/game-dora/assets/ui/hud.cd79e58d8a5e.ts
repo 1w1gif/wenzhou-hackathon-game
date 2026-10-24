@@ -180,7 +180,7 @@ export class HUD {
     const titleSub = makeLabel(this.titleNode, 24, 0, -16, 0.5, 0.5, Palette.paleInk);
     setText(titleSub, UI_TEXT.subtitle);
     this.titleStartLb = makeLabel(this.titleNode, 24, 0, -110, 0.5, 0.5, Palette.inkSoft);
-    setText(this.titleStartLb, "按任意键开始");
+    setText(this.titleStartLb, "点击屏幕开始");
     this.drawTitleBg(w, h);
     // 暂停层
     this.pauseNode = Node();

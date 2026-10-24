@@ -3,6 +3,8 @@
 // 构造器均为「值 + 命名空间」合并写法：既可当函数调用，也提供 X.Type 类型。
 
 declare module "Dora" {
+  export const print: { (s: string): void };
+
   // ---------- 基础值类型 ----------
   export interface Vec2Type {
     x: number;
@@ -60,14 +62,22 @@ declare module "Dora" {
   }
 
   // ---------- 输入 ----------
-  export type KeyName =
-    | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M"
-    | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z"
-    | "Space" | "Escape" | "Return" | "Tab" | "LShift" | "LeftShift" | "RShift"
-    | "Left" | "Right" | "Up" | "Down" | "Enter" | "Esc"
-    | "Num0" | "Num1" | "Num2" | "Num3" | "Num4" | "Num5" | "Num6" | "Num7" | "Num8" | "Num9"
-    | "NumAdd" | "NumSub" | "NumMult" | "NumDiv" | "NumEnter" | "NumDecimal";
-  export const KeyName: Record<KeyName, KeyName>;
+  // KeyName 是纯 TS 侧 const enum（编译期替换为字符串字面量）；
+  // 引擎不导出运行时 KeyName 对象，不能用 Record 声明（否则取值 nil）
+  export const enum KeyName {
+    A = "A", B = "B", C = "C", D = "D", E = "E", F = "F", G = "G", H = "H",
+    I = "I", J = "J", K = "K", L = "L", M = "M", N = "N", O = "O", P = "P",
+    Q = "Q", R = "R", S = "S", T = "T", U = "U", V = "V", W = "W", X = "X",
+    Y = "Y", Z = "Z",
+    Space = "Space", Escape = "Escape", Return = "Return", Tab = "Tab",
+    LShift = "LShift", LeftShift = "LeftShift", RShift = "RShift",
+    Left = "Left", Right = "Right", Up = "Up", Down = "Down",
+    Enter = "Enter", Esc = "Esc",
+    Num0 = "Num0", Num1 = "Num1", Num2 = "Num2", Num3 = "Num3", Num4 = "Num4",
+    Num5 = "Num5", Num6 = "Num6", Num7 = "Num7", Num8 = "Num8", Num9 = "Num9",
+    NumAdd = "NumAdd", NumSub = "NumSub", NumMult = "NumMult", NumDiv = "NumDiv",
+    NumEnter = "NumEnter", NumDecimal = "NumDecimal",
+  }
 
   export const Keyboard: {
     isKeyPressed(key: KeyName): boolean;

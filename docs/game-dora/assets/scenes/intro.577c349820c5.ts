@@ -112,7 +112,7 @@ export function createIntro(parent: Node.Type, onFinish: () => void): IntroHandl
   // ---------- UI 标签（Label 工厂可能返回 undefined，全部判空） ----------
   const hintLb = Label("sarasa-mono-sc-regular", 15);
   if (hintLb !== undefined) {
-    hintLb.text = "按 J 跳过序章";
+    hintLb.text = "点击屏幕跳过序章";
     hintLb.color = col(Palette.paleInk);
     hintLb.anchor = Vec2(1, 0.5);
     hintLb.position = Vec2(W / 2 - 24, H / 2 - 26);
